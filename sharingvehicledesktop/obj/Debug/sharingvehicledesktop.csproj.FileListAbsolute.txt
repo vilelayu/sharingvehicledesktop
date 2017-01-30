@@ -19,3 +19,17 @@ C:\Users\saulo.melissa-PC\documents\visual studio 2015\Projects\sharingvehiclede
 C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop2\sharingvehicledesktop\bin\Debug\sharingvehicledesktop.exe.config
 C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop2\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.exe
 C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop2\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.pdb
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop2\sharingvehicledesktop\bin\Debug\sharingvehicledesktop.exe
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop2\sharingvehicledesktop\bin\Debug\sharingvehicledesktop.pdb
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop2\sharingvehicledesktop\bin\Debug\MySql.Data.xml
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop2\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.csprojResolveAssemblyReference.cache
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop2\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.Agenda.resources
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop2\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.CadastroCar.resources
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop2\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.CadastroCombustivel.resources
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop2\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.CadastroGasto.resources
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop2\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.CadastroMotorista.resources
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop2\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.CadastroUsuario.resources
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop2\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Form1.resources
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop2\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.Menu.resources
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop2\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Properties.Resources.resources
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop2\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.csproj.GenerateResource.Cache
