@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using sharingvehicledesktop.DTO;
 
 namespace sharingvehicledesktop.Apresentacao
 {
     public partial class Menu : Form
     {
-        public Menu()
+        public Menu( )
         {
             InitializeComponent();
         }
@@ -52,8 +53,11 @@ namespace sharingvehicledesktop.Apresentacao
             agenda.Show();
         }
 
-        private void button13_Click(object sender, EventArgs e)
+  
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
             Form1 log = new Form1();
             log.Show();
             this.Close();
