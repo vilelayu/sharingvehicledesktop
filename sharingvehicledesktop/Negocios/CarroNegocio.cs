@@ -139,7 +139,7 @@ namespace sharingvehicledesktop.Negocios
         /// <param name="car"></param>
         /// <returns></returns>
         
-        public string PesquisaVeiculo(CarroDTO car)
+        public string PesquisaidVeiculo(CarroDTO car)
         {
             try
             {
@@ -158,6 +158,44 @@ namespace sharingvehicledesktop.Negocios
                 acessoDadosSqlServer = null;
             }
         }
+       public string PesquisaRenavamVeiculo(CarroDTO car)
+        {
+            try
+            {
+                acessoDadosSqlServer.LimparParametros();
+                acessoDadosSqlServer.AdicionarParametros("_Renavam", car.Renavam);
 
-}
+                string retorno = acessoDadosSqlServer.ExecutarManipulacao(CommandType.StoredProcedure, "spPesquisarRenavanCarro").ToString();
+                return retorno;
+            }
+            catch (Exception exception)
+            {
+                return exception.Message;
+            }
+            finally
+            {
+                acessoDadosSqlServer = null;
+            }
+        }
+        public string PesquisaPlacaVeiculo(CarroDTO car)
+        {
+            try
+            {
+                acessoDadosSqlServer.LimparParametros();
+                acessoDadosSqlServer.AdicionarParametros("_Placa", car.Renavam);
+
+                string retorno = acessoDadosSqlServer.ExecutarManipulacao(CommandType.StoredProcedure, "spPesquisarPlacaCarro").ToString();
+                return retorno;
+            }
+            catch (Exception exception)
+            {
+                return exception.Message;
+            }
+            finally
+            {
+                acessoDadosSqlServer = null;
+            }
+        }
+
+    }
 }
