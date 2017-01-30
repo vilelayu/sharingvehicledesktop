@@ -33,5 +33,16 @@ namespace sharingvehicledesktop.Properties {
                 return ((string)(this["conexao"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;password=;persistsecurityinfo=True;database=sharing" +
+            "vehicle")]
+        public string conexaoP {
+            get {
+                return ((string)(this["conexaoP"]));
+            }
+        }
     }
 }
