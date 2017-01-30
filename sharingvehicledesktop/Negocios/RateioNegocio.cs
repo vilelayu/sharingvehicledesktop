@@ -73,7 +73,7 @@ namespace sharingvehicledesktop.Negocios
         /// </summary>
         /// <param name="selecionaGeral"></param>
         /// <returns></returns>
-        public string SelecionaRateioGeral(RateioDTO selecionaGeral)
+        public string SelecionaRateioGeral()
         {
             try
             {
