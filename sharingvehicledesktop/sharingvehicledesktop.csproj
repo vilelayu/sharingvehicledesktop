@@ -101,6 +101,12 @@
     <Compile Include="Apresentacao\CadastroUsuario.Designer.cs">
       <DependentUpon>CadastroUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apresentacao\Deslocamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\Deslocamento.Designer.cs">
+      <DependentUpon>Deslocamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Apresentacao\Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Apresentacao\CadastroUsuario.resx">
       <DependentUpon>CadastroUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentacao\Deslocamento.resx">
+      <DependentUpon>Deslocamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apresentacao\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
