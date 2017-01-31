@@ -18,7 +18,7 @@ namespace sharingvehicledesktop.Apresentacao
         public Menu(string dto)
         {
             InitializeComponent();
-            label1.Text = dto;
+            label1.Text = label1.Text+dto+"!";
         }
         
 
@@ -68,6 +68,11 @@ namespace sharingvehicledesktop.Apresentacao
         }
 
         private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }

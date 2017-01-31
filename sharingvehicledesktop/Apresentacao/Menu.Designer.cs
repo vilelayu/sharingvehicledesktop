@@ -44,6 +44,20 @@
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
+            this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.abastecimetoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.carroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deslocamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.combustivelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.motoristaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rateioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.alterarSenhaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatoriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gastosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gastosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.vistoriasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.abastecimentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vistoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -164,7 +178,9 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuToolStripMenuItem});
+            this.menuToolStripMenuItem,
+            this.cadastrosToolStripMenuItem,
+            this.relatoriosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(790, 24);
@@ -174,15 +190,17 @@
             // menuToolStripMenuItem
             // 
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sairToolStripMenuItem});
+            this.sairToolStripMenuItem,
+            this.alterarSenhaToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.menuToolStripMenuItem.Text = "Menu";
+            this.menuToolStripMenuItem.Click += new System.EventHandler(this.menuToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
@@ -191,9 +209,106 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(596, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(83, 13);
             this.label1.TabIndex = 16;
-            this.label1.Text = "label1";
+            this.label1.Text = "Seja bem vindo ";
+            // 
+            // cadastrosToolStripMenuItem
+            // 
+            this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.abastecimetoToolStripMenuItem,
+            this.carroToolStripMenuItem,
+            this.deslocamentoToolStripMenuItem,
+            this.combustivelToolStripMenuItem,
+            this.motoristaToolStripMenuItem,
+            this.rateioToolStripMenuItem,
+            this.gastosToolStripMenuItem,
+            this.vistoriaToolStripMenuItem});
+            this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
+            this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.cadastrosToolStripMenuItem.Text = "Cadastros";
+            // 
+            // abastecimetoToolStripMenuItem
+            // 
+            this.abastecimetoToolStripMenuItem.Name = "abastecimetoToolStripMenuItem";
+            this.abastecimetoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.abastecimetoToolStripMenuItem.Text = "Abastecimeto";
+            // 
+            // carroToolStripMenuItem
+            // 
+            this.carroToolStripMenuItem.Name = "carroToolStripMenuItem";
+            this.carroToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.carroToolStripMenuItem.Text = "Carro";
+            // 
+            // deslocamentoToolStripMenuItem
+            // 
+            this.deslocamentoToolStripMenuItem.Name = "deslocamentoToolStripMenuItem";
+            this.deslocamentoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.deslocamentoToolStripMenuItem.Text = "Deslocamento";
+            // 
+            // combustivelToolStripMenuItem
+            // 
+            this.combustivelToolStripMenuItem.Name = "combustivelToolStripMenuItem";
+            this.combustivelToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.combustivelToolStripMenuItem.Text = "Combustivel";
+            // 
+            // motoristaToolStripMenuItem
+            // 
+            this.motoristaToolStripMenuItem.Name = "motoristaToolStripMenuItem";
+            this.motoristaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.motoristaToolStripMenuItem.Text = "Motorista";
+            // 
+            // rateioToolStripMenuItem
+            // 
+            this.rateioToolStripMenuItem.Name = "rateioToolStripMenuItem";
+            this.rateioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.rateioToolStripMenuItem.Text = "Rateio";
+            // 
+            // alterarSenhaToolStripMenuItem
+            // 
+            this.alterarSenhaToolStripMenuItem.Name = "alterarSenhaToolStripMenuItem";
+            this.alterarSenhaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.alterarSenhaToolStripMenuItem.Text = "Alterar Senha";
+            // 
+            // relatoriosToolStripMenuItem
+            // 
+            this.relatoriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gastosToolStripMenuItem1,
+            this.vistoriasToolStripMenuItem,
+            this.abastecimentoToolStripMenuItem});
+            this.relatoriosToolStripMenuItem.Name = "relatoriosToolStripMenuItem";
+            this.relatoriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.relatoriosToolStripMenuItem.Text = "Relatorios";
+            // 
+            // gastosToolStripMenuItem
+            // 
+            this.gastosToolStripMenuItem.Name = "gastosToolStripMenuItem";
+            this.gastosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.gastosToolStripMenuItem.Text = "Gastos";
+            // 
+            // gastosToolStripMenuItem1
+            // 
+            this.gastosToolStripMenuItem1.Name = "gastosToolStripMenuItem1";
+            this.gastosToolStripMenuItem1.Size = new System.Drawing.Size(154, 22);
+            this.gastosToolStripMenuItem1.Text = "Gastos";
+            // 
+            // vistoriasToolStripMenuItem
+            // 
+            this.vistoriasToolStripMenuItem.Name = "vistoriasToolStripMenuItem";
+            this.vistoriasToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.vistoriasToolStripMenuItem.Text = "Vistorias";
+            // 
+            // abastecimentoToolStripMenuItem
+            // 
+            this.abastecimentoToolStripMenuItem.Name = "abastecimentoToolStripMenuItem";
+            this.abastecimentoToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.abastecimentoToolStripMenuItem.Text = "Abastecimento";
+            // 
+            // vistoriaToolStripMenuItem
+            // 
+            this.vistoriaToolStripMenuItem.Name = "vistoriaToolStripMenuItem";
+            this.vistoriaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.vistoriaToolStripMenuItem.Text = "Vistoria";
             // 
             // Menu
             // 
@@ -243,5 +358,19 @@
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem alterarSenhaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem abastecimetoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem carroToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deslocamentoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem combustivelToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem motoristaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rateioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gastosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem vistoriaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem relatoriosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gastosToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem vistoriasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem abastecimentoToolStripMenuItem;
     }
 }
