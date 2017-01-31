@@ -21,36 +21,6 @@ namespace sharingvehicledesktop.Apresentacao
             label1.Text = label1.Text+dto+"!";
         }
         
-
-        private void Menu_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            CadastroCar car = new CadastroCar();
-            car.Show();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            CadastroMotorista motorista = new CadastroMotorista();
-            motorista.Show();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            CadastroCombustivel abastecer = new CadastroCombustivel();
-            abastecer.Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            CadastroGasto gasto = new CadastroGasto();
-            gasto.Show();
-        }
-
         private void button6_Click(object sender, EventArgs e)
         {
             Agenda agenda = new Agenda();
@@ -67,14 +37,32 @@ namespace sharingvehicledesktop.Apresentacao
             this.Close();
         }
 
-        private void button8_Click(object sender, EventArgs e)
-        {
+      
 
+        private void abastecimetoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CadastroCombustivel abastecer = new CadastroCombustivel();
+            abastecer.Show();
         }
 
-        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
+        private void carroToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            CadastroCar car = new CadastroCar();
+            car.Show();
+        }
 
+        
+
+        private void motoristaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CadastroMotorista motorista = new CadastroMotorista();
+            motorista.Show();
+        }
+
+        private void gastosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CadastroGasto gasto = new CadastroGasto();
+            gasto.Show();
         }
     }
 }
