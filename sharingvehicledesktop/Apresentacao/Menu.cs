@@ -15,9 +15,10 @@ namespace sharingvehicledesktop.Apresentacao
     {
         
 
-        public Menu( )
+        public Menu(string dto)
         {
             InitializeComponent();
+            label1.Text = dto;
         }
         
 
@@ -64,6 +65,11 @@ namespace sharingvehicledesktop.Apresentacao
             Form1 log = new Form1();
             log.Show();
             this.Close();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

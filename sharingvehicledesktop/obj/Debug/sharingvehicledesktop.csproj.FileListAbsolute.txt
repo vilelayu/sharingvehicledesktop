@@ -33,3 +33,4 @@ C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop2\sharingvehicledesktop\
 C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop2\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.Menu.resources
 C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop2\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Properties.Resources.resources
 C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop2\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.csproj.GenerateResource.Cache
+C:\Users\saulo.melissa-PC\Documents\Visual Studio 2015\Projects\sharingvehicledesktop\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.Deslocamento.resources
