@@ -43,7 +43,7 @@ namespace sharingvehicledesktop
             dto.senha = txtSenha.Text;
             if (negocio.PesquisaLogin(dto) == "Acesso Permitido")
             {
-                Apresentacao.Menu menu = new Apresentacao.Menu(dto);
+                Apresentacao.Menu menu = new Apresentacao.Menu();
                 menu.Show();
                 this.Hide();
             }
