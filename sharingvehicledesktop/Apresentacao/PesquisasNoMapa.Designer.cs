@@ -92,6 +92,7 @@
             this.btnCarregaPesquisa.TabIndex = 5;
             this.btnCarregaPesquisa.Text = "Carregar Pesquisa ";
             this.btnCarregaPesquisa.UseVisualStyleBackColor = false;
+            this.btnCarregaPesquisa.Click += new System.EventHandler(this.btnCarregaPesquisa_Click);
             // 
             // webBrowser1
             // 
