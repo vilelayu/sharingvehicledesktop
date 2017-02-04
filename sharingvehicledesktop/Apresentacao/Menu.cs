@@ -20,7 +20,11 @@ namespace sharingvehicledesktop.Apresentacao
             InitializeComponent();
             label1.Text = label1.Text+dto+"!";
         }
-        
+
+        public Menu()
+        {
+        }
+
         private void button6_Click(object sender, EventArgs e)
         {
             Agenda agenda = new Agenda();
@@ -51,6 +55,8 @@ namespace sharingvehicledesktop.Apresentacao
             car.Show();
         }
 
+        
+
         private void motoristaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CadastroMotorista motorista = new CadastroMotorista();
@@ -63,15 +69,10 @@ namespace sharingvehicledesktop.Apresentacao
             gasto.Show();
         }
 
-        private void deslocamentoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void mapaGPSToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Deslocamento desloc = new Deslocamento();
-            desloc.Show();
-        }
-
-        private void vistoriaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+            PesquisasNoMapa pesquisa = new PesquisasNoMapa();
+            pesquisa.Show();
         }
     }
 }

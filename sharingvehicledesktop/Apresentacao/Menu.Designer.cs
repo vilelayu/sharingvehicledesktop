@@ -117,7 +117,6 @@
             this.deslocamentoToolStripMenuItem.Name = "deslocamentoToolStripMenuItem";
             this.deslocamentoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.deslocamentoToolStripMenuItem.Text = "Deslocamento";
-            this.deslocamentoToolStripMenuItem.Click += new System.EventHandler(this.deslocamentoToolStripMenuItem_Click);
             // 
             // motoristaToolStripMenuItem
             // 
@@ -144,7 +143,6 @@
             this.vistoriaToolStripMenuItem.Name = "vistoriaToolStripMenuItem";
             this.vistoriaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.vistoriaToolStripMenuItem.Text = "Vistoria";
-            this.vistoriaToolStripMenuItem.Click += new System.EventHandler(this.vistoriaToolStripMenuItem_Click);
             // 
             // relatoriosToolStripMenuItem
             // 

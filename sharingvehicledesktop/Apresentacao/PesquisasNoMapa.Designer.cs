@@ -36,6 +36,7 @@
             this.btnCarregaPesquisa = new System.Windows.Forms.Button();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.PainelNotificacao = new System.Windows.Forms.Panel();
+            this.BtnRetornaMenu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // progressBar1
@@ -44,7 +45,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.progressBar1.Location = new System.Drawing.Point(1, 1);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(1042, 47);
+            this.progressBar1.Size = new System.Drawing.Size(1125, 47);
             this.progressBar1.TabIndex = 0;
             // 
             // label1
@@ -86,7 +87,7 @@
             this.btnCarregaPesquisa.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnCarregaPesquisa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCarregaPesquisa.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCarregaPesquisa.Location = new System.Drawing.Point(886, 15);
+            this.btnCarregaPesquisa.Location = new System.Drawing.Point(836, 13);
             this.btnCarregaPesquisa.Name = "btnCarregaPesquisa";
             this.btnCarregaPesquisa.Size = new System.Drawing.Size(138, 23);
             this.btnCarregaPesquisa.TabIndex = 5;
@@ -101,7 +102,7 @@
             this.webBrowser1.Location = new System.Drawing.Point(1, 50);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(840, 396);
+            this.webBrowser1.Size = new System.Drawing.Size(923, 396);
             this.webBrowser1.TabIndex = 6;
             // 
             // PainelNotificacao
@@ -110,16 +111,30 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PainelNotificacao.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.PainelNotificacao.ForeColor = System.Drawing.SystemColors.Control;
-            this.PainelNotificacao.Location = new System.Drawing.Point(847, 54);
+            this.PainelNotificacao.Location = new System.Drawing.Point(930, 54);
             this.PainelNotificacao.Name = "PainelNotificacao";
             this.PainelNotificacao.Size = new System.Drawing.Size(183, 381);
             this.PainelNotificacao.TabIndex = 7;
+            // 
+            // BtnRetornaMenu
+            // 
+            this.BtnRetornaMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnRetornaMenu.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnRetornaMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRetornaMenu.Location = new System.Drawing.Point(994, 13);
+            this.BtnRetornaMenu.Name = "BtnRetornaMenu";
+            this.BtnRetornaMenu.Size = new System.Drawing.Size(107, 23);
+            this.BtnRetornaMenu.TabIndex = 8;
+            this.BtnRetornaMenu.Text = "Retornar ao Menu";
+            this.BtnRetornaMenu.UseVisualStyleBackColor = true;
+            this.BtnRetornaMenu.Click += new System.EventHandler(this.BtnRetornaMenu_Click);
             // 
             // PesquisasNoMapa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1042, 447);
+            this.ClientSize = new System.Drawing.Size(1125, 447);
+            this.Controls.Add(this.BtnRetornaMenu);
             this.Controls.Add(this.PainelNotificacao);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.btnCarregaPesquisa);
@@ -145,5 +160,6 @@
         private System.Windows.Forms.Button btnCarregaPesquisa;
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Panel PainelNotificacao;
+        private System.Windows.Forms.Button BtnRetornaMenu;
     }
 }

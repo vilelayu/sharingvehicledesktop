@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using sharingvehicledesktop.DTO;
+using sharingvehicledesktop.Apresentacao; 
 
 namespace sharingvehicledesktop.Apresentacao
 {
@@ -142,5 +144,9 @@ namespace sharingvehicledesktop.Apresentacao
             progressBar1.Style = ProgressBarStyle.Marquee;
         }
 
+        private void BtnRetornaMenu_Click(object sender, EventArgs e)
+        {
+            this.Close();             
+        }
     }
 }
