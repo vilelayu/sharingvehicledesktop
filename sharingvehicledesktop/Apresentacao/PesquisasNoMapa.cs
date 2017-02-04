@@ -148,5 +148,21 @@ namespace sharingvehicledesktop.Apresentacao
         {
             this.Close();             
         }
+
+        private void CarregaPesquisaWeb_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtPesquisa.Text) && string.IsNullOrWhiteSpace(txtRegiaoDaPesquisa.Text))
+                MessageBox.Show("Por favor informe o ponto de início e o ponto de chegada");
+            else if (string.IsNullOrWhiteSpace(txtPesquisa.Text))
+                MessageBox.Show("Por favor informe o ponto de início");
+            else if (string.IsNullOrWhiteSpace(txtRegiaoDaPesquisa.Text))
+                MessageBox.Show("Por favor informe o ponto chegada");
+            else
+            {
+                // Neste programa de exemplo eu uso apenas dois pontos: Inicio e Destino.
+                // porém podem ser usados mais pontos se quiser criar uma rota mais complexa.
+                NavigateToRoute(new string[2] { txtPesquisa.Text, txtRegiaoDaPesquisa.Text });
+            }
+        }
     }
 }
