@@ -36,4 +36,3 @@ C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop2\sharingvehicledesktop\
 C:\Users\saulo.melissa-PC\Documents\Visual Studio 2015\Projects\sharingvehicledesktop\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.Deslocamento.resources
 C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop2\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.Deslocamento.resources
 C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop2\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.PesquisasNoMapa.resources
-C:\Users\saulo.melissa-PC\documents\visual studio 2015\Projects\sharingvehicledesktop\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.PesquisasNoMapa.resources
