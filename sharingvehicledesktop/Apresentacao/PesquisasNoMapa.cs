@@ -142,9 +142,5 @@ namespace sharingvehicledesktop.Apresentacao
             progressBar1.Style = ProgressBarStyle.Marquee;
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

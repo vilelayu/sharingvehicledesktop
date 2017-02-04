@@ -51,8 +51,6 @@ namespace sharingvehicledesktop.Apresentacao
             car.Show();
         }
 
-        
-
         private void motoristaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CadastroMotorista motorista = new CadastroMotorista();
@@ -63,6 +61,17 @@ namespace sharingvehicledesktop.Apresentacao
         {
             CadastroGasto gasto = new CadastroGasto();
             gasto.Show();
+        }
+
+        private void deslocamentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Deslocamento desloc = new Deslocamento();
+            desloc.Show();
+        }
+
+        private void vistoriaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
