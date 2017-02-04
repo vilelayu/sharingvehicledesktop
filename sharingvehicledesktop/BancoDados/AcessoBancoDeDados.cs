@@ -11,7 +11,7 @@ namespace sharingvehicledesktop.BancoDados
         //Cria a conexão
         private MySqlConnection CriarConexao()
         {
-            return new MySqlConnection(Settings.Default.conexaoP);
+            return new MySqlConnection(Settings.Default.conexao);
         }
 
         //Parâmetros que vão para o banco

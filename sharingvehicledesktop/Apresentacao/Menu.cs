@@ -74,5 +74,11 @@ namespace sharingvehicledesktop.Apresentacao
             PesquisasNoMapa pesquisa = new PesquisasNoMapa();
             pesquisa.Show();
         }
+
+        private void questionarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            questionario tela = new questionario();
+            tela.Show();
+        }
     }
 }

@@ -119,6 +119,12 @@
     <Compile Include="Apresentacao\PesquisasNoMapa.Designer.cs">
       <DependentUpon>PesquisasNoMapa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apresentacao\questionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\questionario.Designer.cs">
+      <DependentUpon>questionario.cs</DependentUpon>
+    </Compile>
     <Compile Include="BancoDados\AcessoBancoDeDados.cs" />
     <Compile Include="DTO\AgendaDTO.cs" />
     <Compile Include="DTO\CarroDTO.cs" />
@@ -177,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Apresentacao\PesquisasNoMapa.resx">
       <DependentUpon>PesquisasNoMapa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentacao\questionario.resx">
+      <DependentUpon>questionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -44,8 +44,9 @@
             this.gastosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.vistoriasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.abastecimentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
             this.mapaGPSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
+            this.questionarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,7 +56,8 @@
             this.menuToolStripMenuItem,
             this.cadastrosToolStripMenuItem,
             this.relatoriosToolStripMenuItem,
-            this.mapaGPSToolStripMenuItem});
+            this.mapaGPSToolStripMenuItem,
+            this.questionarioToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(790, 24);
@@ -74,14 +76,14 @@
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // alterarSenhaToolStripMenuItem
             // 
             this.alterarSenhaToolStripMenuItem.Name = "alterarSenhaToolStripMenuItem";
-            this.alterarSenhaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.alterarSenhaToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.alterarSenhaToolStripMenuItem.Text = "Alterar Senha";
             // 
             // cadastrosToolStripMenuItem
@@ -101,47 +103,47 @@
             // abastecimetoToolStripMenuItem
             // 
             this.abastecimetoToolStripMenuItem.Name = "abastecimetoToolStripMenuItem";
-            this.abastecimetoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.abastecimetoToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.abastecimetoToolStripMenuItem.Text = "Abastecimeto";
             this.abastecimetoToolStripMenuItem.Click += new System.EventHandler(this.abastecimetoToolStripMenuItem_Click);
             // 
             // carroToolStripMenuItem
             // 
             this.carroToolStripMenuItem.Name = "carroToolStripMenuItem";
-            this.carroToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.carroToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.carroToolStripMenuItem.Text = "Carro";
             this.carroToolStripMenuItem.Click += new System.EventHandler(this.carroToolStripMenuItem_Click);
             // 
             // deslocamentoToolStripMenuItem
             // 
             this.deslocamentoToolStripMenuItem.Name = "deslocamentoToolStripMenuItem";
-            this.deslocamentoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.deslocamentoToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.deslocamentoToolStripMenuItem.Text = "Deslocamento";
             // 
             // motoristaToolStripMenuItem
             // 
             this.motoristaToolStripMenuItem.Name = "motoristaToolStripMenuItem";
-            this.motoristaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.motoristaToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.motoristaToolStripMenuItem.Text = "Motorista";
             this.motoristaToolStripMenuItem.Click += new System.EventHandler(this.motoristaToolStripMenuItem_Click);
             // 
             // rateioToolStripMenuItem
             // 
             this.rateioToolStripMenuItem.Name = "rateioToolStripMenuItem";
-            this.rateioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.rateioToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.rateioToolStripMenuItem.Text = "Rateio";
             // 
             // gastosToolStripMenuItem
             // 
             this.gastosToolStripMenuItem.Name = "gastosToolStripMenuItem";
-            this.gastosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.gastosToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.gastosToolStripMenuItem.Text = "Gastos";
             this.gastosToolStripMenuItem.Click += new System.EventHandler(this.gastosToolStripMenuItem_Click);
             // 
             // vistoriaToolStripMenuItem
             // 
             this.vistoriaToolStripMenuItem.Name = "vistoriaToolStripMenuItem";
-            this.vistoriaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.vistoriaToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.vistoriaToolStripMenuItem.Text = "Vistoria";
             // 
             // relatoriosToolStripMenuItem
@@ -172,6 +174,13 @@
             this.abastecimentoToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.abastecimentoToolStripMenuItem.Text = "Abastecimento";
             // 
+            // mapaGPSToolStripMenuItem
+            // 
+            this.mapaGPSToolStripMenuItem.Name = "mapaGPSToolStripMenuItem";
+            this.mapaGPSToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
+            this.mapaGPSToolStripMenuItem.Text = "Mapa/GPS";
+            this.mapaGPSToolStripMenuItem.Click += new System.EventHandler(this.mapaGPSToolStripMenuItem_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -181,12 +190,12 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "Seja bem vindo ";
             // 
-            // mapaGPSToolStripMenuItem
+            // questionarioToolStripMenuItem
             // 
-            this.mapaGPSToolStripMenuItem.Name = "mapaGPSToolStripMenuItem";
-            this.mapaGPSToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
-            this.mapaGPSToolStripMenuItem.Text = "Mapa/GPS";
-            this.mapaGPSToolStripMenuItem.Click += new System.EventHandler(this.mapaGPSToolStripMenuItem_Click);
+            this.questionarioToolStripMenuItem.Name = "questionarioToolStripMenuItem";
+            this.questionarioToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
+            this.questionarioToolStripMenuItem.Text = "Questionario";
+            this.questionarioToolStripMenuItem.Click += new System.EventHandler(this.questionarioToolStripMenuItem_Click);
             // 
             // Menu
             // 
@@ -224,5 +233,6 @@
         private System.Windows.Forms.ToolStripMenuItem vistoriasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem abastecimentoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mapaGPSToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem questionarioToolStripMenuItem;
     }
 }
