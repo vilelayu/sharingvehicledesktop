@@ -33,10 +33,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtPesquisa = new System.Windows.Forms.TextBox();
             this.txtRegiaoDaPesquisa = new System.Windows.Forms.TextBox();
-            this.btnCarregaPesquisa = new System.Windows.Forms.Button();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.PainelNotificacao = new System.Windows.Forms.Panel();
             this.BtnRetornaMenu = new System.Windows.Forms.Button();
+            this.CarregaPesquisaWeb = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // progressBar1
@@ -80,20 +80,6 @@
             this.txtRegiaoDaPesquisa.Size = new System.Drawing.Size(243, 20);
             this.txtRegiaoDaPesquisa.TabIndex = 4;
             // 
-            // btnCarregaPesquisa
-            // 
-            this.btnCarregaPesquisa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCarregaPesquisa.BackColor = System.Drawing.SystemColors.Control;
-            this.btnCarregaPesquisa.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnCarregaPesquisa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCarregaPesquisa.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCarregaPesquisa.Location = new System.Drawing.Point(836, 13);
-            this.btnCarregaPesquisa.Name = "btnCarregaPesquisa";
-            this.btnCarregaPesquisa.Size = new System.Drawing.Size(138, 23);
-            this.btnCarregaPesquisa.TabIndex = 5;
-            this.btnCarregaPesquisa.Text = "Carregar Pesquisa ";
-            this.btnCarregaPesquisa.UseVisualStyleBackColor = false;
-            // 
             // webBrowser1
             // 
             this.webBrowser1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -129,15 +115,28 @@
             this.BtnRetornaMenu.UseVisualStyleBackColor = true;
             this.BtnRetornaMenu.Click += new System.EventHandler(this.BtnRetornaMenu_Click);
             // 
+            // CarregaPesquisaWeb
+            // 
+            this.CarregaPesquisaWeb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CarregaPesquisaWeb.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.CarregaPesquisaWeb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CarregaPesquisaWeb.Location = new System.Drawing.Point(851, 14);
+            this.CarregaPesquisaWeb.Name = "CarregaPesquisaWeb";
+            this.CarregaPesquisaWeb.Size = new System.Drawing.Size(125, 23);
+            this.CarregaPesquisaWeb.TabIndex = 9;
+            this.CarregaPesquisaWeb.Text = "Carregue o Mapa";
+            this.CarregaPesquisaWeb.UseVisualStyleBackColor = true;
+            this.CarregaPesquisaWeb.Click += new System.EventHandler(this.CarregaPesquisaWeb_Click);
+            // 
             // PesquisasNoMapa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1125, 447);
+            this.Controls.Add(this.CarregaPesquisaWeb);
             this.Controls.Add(this.BtnRetornaMenu);
             this.Controls.Add(this.PainelNotificacao);
             this.Controls.Add(this.webBrowser1);
-            this.Controls.Add(this.btnCarregaPesquisa);
             this.Controls.Add(this.txtRegiaoDaPesquisa);
             this.Controls.Add(this.txtPesquisa);
             this.Controls.Add(this.label2);
@@ -157,9 +156,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtPesquisa;
         private System.Windows.Forms.TextBox txtRegiaoDaPesquisa;
-        private System.Windows.Forms.Button btnCarregaPesquisa;
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Panel PainelNotificacao;
         private System.Windows.Forms.Button BtnRetornaMenu;
+        private System.Windows.Forms.Button CarregaPesquisaWeb;
     }
 }
