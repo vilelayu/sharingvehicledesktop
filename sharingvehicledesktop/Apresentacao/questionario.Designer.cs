@@ -37,14 +37,14 @@
             this.webBrowser1.Location = new System.Drawing.Point(0, 0);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(284, 261);
+            this.webBrowser1.Size = new System.Drawing.Size(960, 486);
             this.webBrowser1.TabIndex = 0;
             // 
             // questionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(960, 486);
             this.Controls.Add(this.webBrowser1);
             this.Name = "questionario";
             this.Text = "questionario";
