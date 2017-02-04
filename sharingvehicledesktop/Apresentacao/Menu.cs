@@ -64,5 +64,11 @@ namespace sharingvehicledesktop.Apresentacao
             CadastroGasto gasto = new CadastroGasto();
             gasto.Show();
         }
+
+        private void mapaGPSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PesquisasNoMapa pesquisa = new PesquisasNoMapa();
+            pesquisa.Show();
+        }
     }
 }
