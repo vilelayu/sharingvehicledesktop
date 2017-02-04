@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="sharingvehicleDataSet1" targetNamespace="http://tempuri.org/sharingvehicleDataSet1.xsd" xmlns:mstns="http://tempuri.org/sharingvehicleDataSet1.xsd" xmlns="http://tempuri.org/sharingvehicleDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="conexao" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="conexao (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.sharingvehicledesktop.Properties.Settings.GlobalReference.Default.conexao" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="abastecimentoTableAdapter" GeneratorDataComponentClassName="abastecimentoTableAdapter" Name="abastecimento" UserDataComponentName="abastecimentoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="conexao (Settings)" DbObjectName="sharingvehicle.abastecimento" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `Dia`, `combustivel`, `Valor`, `Litros`, `Carro_ID` FROM `abastecimento`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="agendaTableAdapter" GeneratorDataComponentClassName="agendaTableAdapter" Name="agenda" UserDataComponentName="agendaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="conexao (Settings)" DbObjectName="sharingvehicle.agenda" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `dia`, `horario`, `Carro_ID`, `Motorista_ID` FROM `agenda`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="carroTableAdapter" GeneratorDataComponentClassName="carroTableAdapter" Name="carro" UserDataComponentName="carroTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="conexao (Settings)" DbObjectName="sharingvehicle.carro" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `ID`, `Renavan`, `Modelo`, `Marca`, `Placa`, `Cor`, `Combustivel`, `Quilometragem` FROM `carro`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="deslocamentoTableAdapter" GeneratorDataComponentClassName="deslocamentoTableAdapter" Name="deslocamento" UserDataComponentName="deslocamentoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="conexao (Settings)" DbObjectName="sharingvehicle.deslocamento" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `Data`, `QuilometragemDeslocada`, `Carro_ID`, `Motorista_ID` FROM `deslocamento`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="gastoTableAdapter" GeneratorDataComponentClassName="gastoTableAdapter" Name="gasto" UserDataComponentName="gastoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="conexao (Settings)" DbObjectName="sharingvehicle.gasto" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `TipoGasto`, `NumeroParcela`, `ValorParcela`, `Carro_ID` FROM `gasto`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="grupoTableAdapter" GeneratorDataComponentClassName="grupoTableAdapter" Name="grupo" UserDataComponentName="grupoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="conexao (Settings)" DbObjectName="sharingvehicle.grupo" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `Nome`, `Regiao`, `Rateio_id`, `Agenda_id` FROM `grupo`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="motoristaTableAdapter" GeneratorDataComponentClassName="motoristaTableAdapter" Name="motorista" UserDataComponentName="motoristaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="conexao (Settings)" DbObjectName="sharingvehicle.motorista" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `ID`, `Nome`, `CNH`, `CPF`, `DataNascimento`, `DataVencimentoCNH`, `Usuario_idUsuario` FROM `motorista`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="motorista_has_grupoTableAdapter" GeneratorDataComponentClassName="motorista_has_grupoTableAdapter" Name="motorista_has_grupo" UserDataComponentName="motorista_has_grupoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="conexao (Settings)" DbObjectName="sharingvehicle.motorista_has_grupo" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Motorista_ID`, `Grupo_id`, `Grupo_Rateio_id`, `Grupo_Agenda_id` FROM `motorista_has_grupo`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="rateioTableAdapter" GeneratorDataComponentClassName="rateioTableAdapter" Name="rateio" UserDataComponentName="rateioTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="conexao (Settings)" DbObjectName="sharingvehicle.rateio" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `DataSaida`, `DataRetorno`, `QuilometragemUso` FROM `rateio`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="revisaoTableAdapter" GeneratorDataComponentClassName="revisaoTableAdapter" Name="revisao" UserDataComponentName="revisaoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="conexao (Settings)" DbObjectName="sharingvehicle.revisao" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `Tipo`, `NomeOficina`, `DataEntrada`, `DataSaida`, `HoraEntrada`, `HoraSaida`, `NomeItem`, `Preco`, `Quantidade`, `Carro_ID` FROM `revisao`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="usuarioTableAdapter" GeneratorDataComponentClassName="usuarioTableAdapter" Name="usuario" UserDataComponentName="usuarioTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="conexao (Settings)" DbObjectName="sharingvehicle.usuario" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `idUsuario`, `Nome`, `Senha` FROM `usuario`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="sharingvehicleDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="sharingvehicleDataSet1" msprop:Generator_UserDSName="sharingvehicleDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="abastecimento" msprop:Generator_TableClassName="abastecimentoDataTable" msprop:Generator_TableVarName="tableabastecimento" msprop:Generator_TablePropName="abastecimento" msprop:Generator_RowDeletingName="abastecimentoRowDeleting" msprop:Generator_RowChangingName="abastecimentoRowChanging" msprop:Generator_RowEvHandlerName="abastecimentoRowChangeEventHandler" msprop:Generator_RowDeletedName="abastecimentoRowDeleted" msprop:Generator_UserTableName="abastecimento" msprop:Generator_RowChangedName="abastecimentoRowChanged" msprop:Generator_RowEvArgName="abastecimentoRowChangeEvent" msprop:Generator_RowClassName="abastecimentoRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="agenda" msprop:Generator_TableClassName="agendaDataTable" msprop:Generator_TableVarName="tableagenda" msprop:Generator_TablePropName="agenda" msprop:Generator_RowDeletingName="agendaRowDeleting" msprop:Generator_RowChangingName="agendaRowChanging" msprop:Generator_RowEvHandlerName="agendaRowChangeEventHandler" msprop:Generator_RowDeletedName="agendaRowDeleted" msprop:Generator_UserTableName="agenda" msprop:Generator_RowChangedName="agendaRowChanged" msprop:Generator_RowEvArgName="agendaRowChangeEvent" msprop:Generator_RowClassName="agendaRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="carro" msprop:Generator_TableClassName="carroDataTable" msprop:Generator_TableVarName="tablecarro" msprop:Generator_TablePropName="carro" msprop:Generator_RowDeletingName="carroRowDeleting" msprop:Generator_RowChangingName="carroRowChanging" msprop:Generator_RowEvHandlerName="carroRowChangeEventHandler" msprop:Generator_RowDeletedName="carroRowDeleted" msprop:Generator_UserTableName="carro" msprop:Generator_RowChangedName="carroRowChanged" msprop:Generator_RowEvArgName="carroRowChangeEvent" msprop:Generator_RowClassName="carroRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="deslocamento" msprop:Generator_TableClassName="deslocamentoDataTable" msprop:Generator_TableVarName="tabledeslocamento" msprop:Generator_TablePropName="deslocamento" msprop:Generator_RowDeletingName="deslocamentoRowDeleting" msprop:Generator_RowChangingName="deslocamentoRowChanging" msprop:Generator_RowEvHandlerName="deslocamentoRowChangeEventHandler" msprop:Generator_RowDeletedName="deslocamentoRowDeleted" msprop:Generator_UserTableName="deslocamento" msprop:Generator_RowChangedName="deslocamentoRowChanged" msprop:Generator_RowEvArgName="deslocamentoRowChangeEvent" msprop:Generator_RowClassName="deslocamentoRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="gasto" msprop:Generator_TableClassName="gastoDataTable" msprop:Generator_TableVarName="tablegasto" msprop:Generator_TablePropName="gasto" msprop:Generator_RowDeletingName="gastoRowDeleting" msprop:Generator_RowChangingName="gastoRowChanging" msprop:Generator_RowEvHandlerName="gastoRowChangeEventHandler" msprop:Generator_RowDeletedName="gastoRowDeleted" msprop:Generator_UserTableName="gasto" msprop:Generator_RowChangedName="gastoRowChanged" msprop:Generator_RowEvArgName="gastoRowChangeEvent" msprop:Generator_RowClassName="gastoRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="grupo" msprop:Generator_TableClassName="grupoDataTable" msprop:Generator_TableVarName="tablegrupo" msprop:Generator_TablePropName="grupo" msprop:Generator_RowDeletingName="grupoRowDeleting" msprop:Generator_RowChangingName="grupoRowChanging" msprop:Generator_RowEvHandlerName="grupoRowChangeEventHandler" msprop:Generator_RowDeletedName="grupoRowDeleted" msprop:Generator_UserTableName="grupo" msprop:Generator_RowChangedName="grupoRowChanged" msprop:Generator_RowEvArgName="grupoRowChangeEvent" msprop:Generator_RowClassName="grupoRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="motorista" msprop:Generator_TableClassName="motoristaDataTable" msprop:Generator_TableVarName="tablemotorista" msprop:Generator_TablePropName="motorista" msprop:Generator_RowDeletingName="motoristaRowDeleting" msprop:Generator_RowChangingName="motoristaRowChanging" msprop:Generator_RowEvHandlerName="motoristaRowChangeEventHandler" msprop:Generator_RowDeletedName="motoristaRowDeleted" msprop:Generator_UserTableName="motorista" msprop:Generator_RowChangedName="motoristaRowChanged" msprop:Generator_RowEvArgName="motoristaRowChangeEvent" msprop:Generator_RowClassName="motoristaRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="motorista_has_grupo" msprop:Generator_TableClassName="motorista_has_grupoDataTable" msprop:Generator_TableVarName="tablemotorista_has_grupo" msprop:Generator_TablePropName="motorista_has_grupo" msprop:Generator_RowDeletingName="motorista_has_grupoRowDeleting" msprop:Generator_RowChangingName="motorista_has_grupoRowChanging" msprop:Generator_RowEvHandlerName="motorista_has_grupoRowChangeEventHandler" msprop:Generator_RowDeletedName="motorista_has_grupoRowDeleted" msprop:Generator_UserTableName="motorista_has_grupo" msprop:Generator_RowChangedName="motorista_has_grupoRowChanged" msprop:Generator_RowEvArgName="motorista_has_grupoRowChangeEvent" msprop:Generator_RowClassName="motorista_has_grupoRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="rateio" msprop:Generator_TableClassName="rateioDataTable" msprop:Generator_TableVarName="tablerateio" msprop:Generator_TablePropName="rateio" msprop:Generator_RowDeletingName="rateioRowDeleting" msprop:Generator_RowChangingName="rateioRowChanging" msprop:Generator_RowEvHandlerName="rateioRowChangeEventHandler" msprop:Generator_RowDeletedName="rateioRowDeleted" msprop:Generator_UserTableName="rateio" msprop:Generator_RowChangedName="rateioRowChanged" msprop:Generator_RowEvArgName="rateioRowChangeEvent" msprop:Generator_RowClassName="rateioRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="revisao" msprop:Generator_TableClassName="revisaoDataTable" msprop:Generator_TableVarName="tablerevisao" msprop:Generator_TablePropName="revisao" msprop:Generator_RowDeletingName="revisaoRowDeleting" msprop:Generator_RowChangingName="revisaoRowChanging" msprop:Generator_RowEvHandlerName="revisaoRowChangeEventHandler" msprop:Generator_RowDeletedName="revisaoRowDeleted" msprop:Generator_UserTableName="revisao" msprop:Generator_RowChangedName="revisaoRowChanged" msprop:Generator_RowEvArgName="revisaoRowChangeEvent" msprop:Generator_RowClassName="revisaoRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="usuario" msprop:Generator_TableClassName="usuarioDataTable" msprop:Generator_TableVarName="tableusuario" msprop:Generator_TablePropName="usuario" msprop:Generator_RowDeletingName="usuarioRowDeleting" msprop:Generator_RowChangingName="usuarioRowChanging" msprop:Generator_RowEvHandlerName="usuarioRowChangeEventHandler" msprop:Generator_RowDeletedName="usuarioRowDeleted" msprop:Generator_UserTableName="usuario" msprop:Generator_RowChangedName="usuarioRowChanged" msprop:Generator_RowEvArgName="usuarioRowChangeEvent" msprop:Generator_RowClassName="usuarioRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

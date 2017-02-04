@@ -45,8 +45,8 @@
             this.vistoriasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.abastecimentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mapaGPSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
             this.questionarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -167,6 +167,7 @@
             this.vistoriasToolStripMenuItem.Name = "vistoriasToolStripMenuItem";
             this.vistoriasToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.vistoriasToolStripMenuItem.Text = "Vistorias";
+            this.vistoriasToolStripMenuItem.Click += new System.EventHandler(this.vistoriasToolStripMenuItem_Click);
             // 
             // abastecimentoToolStripMenuItem
             // 
@@ -181,6 +182,13 @@
             this.mapaGPSToolStripMenuItem.Text = "Mapa/GPS";
             this.mapaGPSToolStripMenuItem.Click += new System.EventHandler(this.mapaGPSToolStripMenuItem_Click);
             // 
+            // questionarioToolStripMenuItem
+            // 
+            this.questionarioToolStripMenuItem.Name = "questionarioToolStripMenuItem";
+            this.questionarioToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
+            this.questionarioToolStripMenuItem.Text = "Questionario";
+            this.questionarioToolStripMenuItem.Click += new System.EventHandler(this.questionarioToolStripMenuItem_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -190,13 +198,6 @@
             this.label1.Size = new System.Drawing.Size(166, 25);
             this.label1.TabIndex = 16;
             this.label1.Text = "Seja bem vindo ";
-            // 
-            // questionarioToolStripMenuItem
-            // 
-            this.questionarioToolStripMenuItem.Name = "questionarioToolStripMenuItem";
-            this.questionarioToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
-            this.questionarioToolStripMenuItem.Text = "Questionario";
-            this.questionarioToolStripMenuItem.Click += new System.EventHandler(this.questionarioToolStripMenuItem_Click);
             // 
             // Menu
             // 

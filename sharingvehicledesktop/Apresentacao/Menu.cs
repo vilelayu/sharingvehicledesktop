@@ -81,5 +81,11 @@ namespace sharingvehicledesktop.Apresentacao
             questionario tela = new questionario();
             tela.Show();
         }
+
+        private void vistoriasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            relatorioDeVistoria vistoria = new relatorioDeVistoria();
+            vistoria.Show();
+        }
     }
 }

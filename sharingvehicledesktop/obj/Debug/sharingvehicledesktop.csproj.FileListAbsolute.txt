@@ -41,3 +41,7 @@ C:\Users\saulo.melissa-PC\Documents\Visual Studio 2015\Projects\sharingvehiclede
 C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\bin\Debug\sharingvehicledesktop.exe.config
 C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.exe
 C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.pdb
+C:\Users\saulo.melissa-PC\Documents\Visual Studio 2015\Projects\sharingvehicledesktop\sharingvehicledesktop\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\saulo.melissa-PC\Documents\Visual Studio 2015\Projects\sharingvehicledesktop\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.relatorioDeVistoria.resources
+C:\Users\saulo.melissa-PC\Documents\Visual Studio 2015\Projects\sharingvehicledesktop\sharingvehicledesktop\obj\Debug\RdlCompile.cache
+C:\Users\saulo.melissa-PC\Documents\Visual Studio 2015\Projects\sharingvehicledesktop\sharingvehicledesktop\obj\Debug\RdlCompile.compiled

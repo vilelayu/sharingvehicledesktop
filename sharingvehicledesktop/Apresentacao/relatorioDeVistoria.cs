@@ -16,5 +16,11 @@ namespace sharingvehicledesktop.Apresentacao
         {
             InitializeComponent();
         }
+
+        private void relatorioDeVistoria_Load(object sender, EventArgs e)
+        {
+
+            this.reportViewer1.RefreshReport();
+        }
     }
 }
