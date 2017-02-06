@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Deslocamento));
             this.txtIDdeslocamento = new System.Windows.Forms.TextBox();
             this.txtIdCarroDeslocamento = new System.Windows.Forms.TextBox();
             this.txtIdMotoristaDeslocamento = new System.Windows.Forms.TextBox();
@@ -38,11 +39,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnFecharTela = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btanAtualizarDeslocamento = new System.Windows.Forms.Button();
             this.btnSalarDeslocamento = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.btVoltar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtIDdeslocamento
@@ -139,22 +140,6 @@
             this.label5.Text = "MOTORISTA - ID ";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // btnFecharTela
-            // 
-            this.btnFecharTela.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFecharTela.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnFecharTela.FlatAppearance.BorderSize = 2;
-            this.btnFecharTela.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
-            this.btnFecharTela.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFecharTela.ForeColor = System.Drawing.Color.White;
-            this.btnFecharTela.Location = new System.Drawing.Point(464, 12);
-            this.btnFecharTela.Name = "btnFecharTela";
-            this.btnFecharTela.Size = new System.Drawing.Size(97, 29);
-            this.btnFecharTela.TabIndex = 13;
-            this.btnFecharTela.Text = "Fechar Tela ";
-            this.btnFecharTela.UseVisualStyleBackColor = true;
-            this.btnFecharTela.Click += new System.EventHandler(this.btnFecharTela_Click);
-            // 
             // btnLimpar
             // 
             this.btnLimpar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -199,11 +184,23 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(12, 12);
+            this.label6.Location = new System.Drawing.Point(82, 12);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(273, 24);
             this.label6.TabIndex = 17;
             this.label6.Text = "Cadastro de Deslocamento: ";
+            // 
+            // btVoltar
+            // 
+            this.btVoltar.BackgroundImage = global::sharingvehicledesktop.Properties.Resources._8395_32x32;
+            this.btVoltar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btVoltar.Location = new System.Drawing.Point(12, 9);
+            this.btVoltar.Name = "btVoltar";
+            this.btVoltar.Size = new System.Drawing.Size(36, 32);
+            this.btVoltar.TabIndex = 18;
+            this.btVoltar.UseVisualStyleBackColor = true;
+            this.btVoltar.Click += new System.EventHandler(this.btVoltar_Click);
             // 
             // Deslocamento
             // 
@@ -212,11 +209,11 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(573, 355);
             this.ControlBox = false;
+            this.Controls.Add(this.btVoltar);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnSalarDeslocamento);
             this.Controls.Add(this.btanAtualizarDeslocamento);
             this.Controls.Add(this.btnLimpar);
-            this.Controls.Add(this.btnFecharTela);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -228,6 +225,7 @@
             this.Controls.Add(this.txtIdCarroDeslocamento);
             this.Controls.Add(this.txtIDdeslocamento);
             this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Deslocamento";
             this.Text = "Deslocamento";
@@ -249,10 +247,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnFecharTela;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btanAtualizarDeslocamento;
         private System.Windows.Forms.Button btnSalarDeslocamento;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btVoltar;
     }
 }

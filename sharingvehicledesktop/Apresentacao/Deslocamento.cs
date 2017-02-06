@@ -57,7 +57,8 @@ namespace sharingvehicledesktop.Apresentacao
 
         }
 
-        private void btnFecharTela_Click(object sender, EventArgs e)
+
+        private void btVoltar_Click(object sender, EventArgs e)
         {
             this.Close();
         }

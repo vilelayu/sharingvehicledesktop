@@ -87,5 +87,11 @@ namespace sharingvehicledesktop.Apresentacao
             relatorioDeVistoria vistoria = new relatorioDeVistoria();
             vistoria.Show();
         }
+
+        private void deslocamentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Deslocamento NovoDeslocamento = new Deslocamento();
+            NovoDeslocamento.Show(); 
+        }
     }
 }

@@ -45,6 +45,8 @@
             // 
             // btVolta
             // 
+            this.btVolta.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btVolta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btVolta.Image = ((System.Drawing.Image)(resources.GetObject("btVolta.Image")));
             this.btVolta.Location = new System.Drawing.Point(12, 12);
             this.btVolta.Name = "btVolta";
@@ -175,6 +177,7 @@
             this.Controls.Add(this.btVolta);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CadastroGasto";
             this.Text = "CadastroGasto";
             this.ResumeLayout(false);

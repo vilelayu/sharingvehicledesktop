@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroUsuario));
             this.btConfirma = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -90,6 +91,8 @@
             // btVoltar
             // 
             this.btVoltar.BackgroundImage = global::sharingvehicledesktop.Properties.Resources._8395_32x32;
+            this.btVoltar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btVoltar.Location = new System.Drawing.Point(12, 12);
             this.btVoltar.Name = "btVoltar";
             this.btVoltar.Size = new System.Drawing.Size(36, 32);
@@ -118,6 +121,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btConfirma);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CadastroUsuario";
             this.Text = "CadastroUsuario";
             this.Load += new System.EventHandler(this.CadastroUsuario_Load);

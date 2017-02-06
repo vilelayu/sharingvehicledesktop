@@ -45,3 +45,35 @@ C:\Users\saulo.melissa-PC\Documents\Visual Studio 2015\Projects\sharingvehiclede
 C:\Users\saulo.melissa-PC\Documents\Visual Studio 2015\Projects\sharingvehicledesktop\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.relatorioDeVistoria.resources
 C:\Users\saulo.melissa-PC\Documents\Visual Studio 2015\Projects\sharingvehicledesktop\sharingvehicledesktop\obj\Debug\RdlCompile.cache
 C:\Users\saulo.melissa-PC\Documents\Visual Studio 2015\Projects\sharingvehicledesktop\sharingvehicledesktop\obj\Debug\RdlCompile.compiled
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\bin\Debug\sharingvehicledesktop.exe
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\bin\Debug\sharingvehicledesktop.pdb
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\bin\Debug\MySql.Data.xml
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.csprojResolveAssemblyReference.cache
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.Agenda.resources
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.CadastroCar.resources
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.CadastroCombustivel.resources
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.CadastroGasto.resources
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.CadastroMotorista.resources
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.CadastroUsuario.resources
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.Deslocamento.resources
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Form1.resources
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.Menu.resources
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.PesquisasNoMapa.resources
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.questionario.resources
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.relatorioDeVistoria.resources
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Properties.Resources.resources
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.csproj.GenerateResource.Cache
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\obj\Debug\RdlCompile.cache
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\obj\Debug\RdlCompile.compiled

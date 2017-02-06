@@ -26,7 +26,9 @@ namespace sharingvehicledesktop
 
         private void button2_Click(object sender, EventArgs e)
         {
-             Close();
+            Close();
+            // Finaliza a sessão por completo após fechar o fomrulário. 
+            Application.Exit(); 
         }
 
         private void label4_Click(object sender, EventArgs e)
