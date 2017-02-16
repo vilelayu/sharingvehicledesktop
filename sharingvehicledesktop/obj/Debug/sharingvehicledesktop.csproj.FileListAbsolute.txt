@@ -77,3 +77,4 @@ C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\
 C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.csproj.GenerateResource.Cache
 C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\obj\Debug\RdlCompile.cache
 C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\obj\Debug\RdlCompile.compiled
+C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.RateioDosGastos.resources

@@ -132,6 +132,12 @@
     <Compile Include="Apresentacao\questionario.Designer.cs">
       <DependentUpon>questionario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apresentacao\RateioDosGastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\RateioDosGastos.Designer.cs">
+      <DependentUpon>RateioDosGastos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Apresentacao\relatorioDeVistoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Apresentacao\questionario.resx">
       <DependentUpon>questionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentacao\RateioDosGastos.resx">
+      <DependentUpon>RateioDosGastos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apresentacao\relatorioDeVistoria.resx">
       <DependentUpon>relatorioDeVistoria.cs</DependentUpon>

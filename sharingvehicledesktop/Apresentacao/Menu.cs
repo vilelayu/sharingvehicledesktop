@@ -93,5 +93,18 @@ namespace sharingvehicledesktop.Apresentacao
             Deslocamento NovoDeslocamento = new Deslocamento();
             NovoDeslocamento.Show(); 
         }
+                
+
+        private void rateioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RateioDosGastos Rateio = new RateioDosGastos(); 
+            Rateio.Show();
+        }
+
+        private void vistoriaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            relatorioDeVistoria vistoria = new relatorioDeVistoria();
+            vistoria.Show();
+        }
     }
 }

@@ -17,9 +17,13 @@ namespace sharingvehicledesktop.Apresentacao
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Este método encaminha o Relatório para a tela e exibe os dados para os usuários.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void relatorioDeVistoria_Load(object sender, EventArgs e)
         {
-
             this.reportViewer1.RefreshReport();
         }
     }
