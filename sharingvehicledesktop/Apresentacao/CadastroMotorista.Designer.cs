@@ -45,6 +45,7 @@
             this.btcancela = new System.Windows.Forms.Button();
             this.txtnascimento = new System.Windows.Forms.TextBox();
             this.txtvencimento = new System.Windows.Forms.TextBox();
+            this.TxtDataInserir = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // button1
@@ -193,10 +194,18 @@
             // 
             // txtvencimento
             // 
-            this.txtvencimento.Location = new System.Drawing.Point(359, 312);
+            this.txtvencimento.Location = new System.Drawing.Point(359, 338);
             this.txtvencimento.Name = "txtvencimento";
             this.txtvencimento.Size = new System.Drawing.Size(282, 20);
             this.txtvencimento.TabIndex = 43;
+            // 
+            // TxtDataInserir
+            // 
+            this.TxtDataInserir.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.TxtDataInserir.Location = new System.Drawing.Point(359, 312);
+            this.TxtDataInserir.Name = "TxtDataInserir";
+            this.TxtDataInserir.Size = new System.Drawing.Size(282, 20);
+            this.TxtDataInserir.TabIndex = 29;
             // 
             // CadastroMotorista
             // 
@@ -204,6 +213,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(669, 420);
+            this.Controls.Add(this.TxtDataInserir);
             this.Controls.Add(this.txtvencimento);
             this.Controls.Add(this.txtnascimento);
             this.Controls.Add(this.Txtid);
@@ -247,5 +257,6 @@
         private System.Windows.Forms.Button btcancela;
         private System.Windows.Forms.TextBox txtnascimento;
         private System.Windows.Forms.TextBox txtvencimento;
+        private System.Windows.Forms.DateTimePicker TxtDataInserir;
     }
 }

@@ -32,6 +32,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.BtnVoltar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -63,12 +64,24 @@
             this.BtnVoltar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BtnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("BtnVoltar.Image")));
-            this.BtnVoltar.Location = new System.Drawing.Point(12, 12);
+            this.BtnVoltar.Location = new System.Drawing.Point(12, 27);
             this.BtnVoltar.Name = "BtnVoltar";
             this.BtnVoltar.Size = new System.Drawing.Size(46, 39);
             this.BtnVoltar.TabIndex = 2;
             this.BtnVoltar.UseVisualStyleBackColor = true;
             this.BtnVoltar.Click += new System.EventHandler(this.BtnVoltar_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(13, 4);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(606, 20);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Aqui você irá verificar todos os dados para que contribua com os valores dos veíc" +
+    "ulos que utilizou.";
             // 
             // RateioDosGastos
             // 
@@ -76,6 +89,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1158, 522);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnVoltar);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.button1);
@@ -84,6 +98,7 @@
             this.Text = "Rateio dos Gastos";
             this.Load += new System.EventHandler(this.RateioDosGastos_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -92,5 +107,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button BtnVoltar;
+        private System.Windows.Forms.Label label1;
     }
 }
