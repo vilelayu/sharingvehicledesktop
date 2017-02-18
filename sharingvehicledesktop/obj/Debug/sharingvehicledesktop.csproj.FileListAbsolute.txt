@@ -78,3 +78,6 @@ C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\
 C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\obj\Debug\RdlCompile.cache
 C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\obj\Debug\RdlCompile.compiled
 C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop4\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.RateioDosGastos.resources
+C:\Users\saulo.melissa-PC\Source\Repos\sharingvehicledesktop3\sharingvehicledesktop\bin\Debug\sharingvehicledesktop.exe.config
+C:\Users\saulo.melissa-PC\Source\Repos\sharingvehicledesktop3\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.exe
+C:\Users\saulo.melissa-PC\Source\Repos\sharingvehicledesktop3\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.pdb

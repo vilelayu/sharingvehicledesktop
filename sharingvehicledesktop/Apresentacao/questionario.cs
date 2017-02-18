@@ -15,12 +15,31 @@ namespace sharingvehicledesktop.Apresentacao
         public questionario()
         {
             InitializeComponent();
+            webBrowser1.Visible = false;
+            comboBox1.Items.Add("Emprestimo");
+            comboBox1.Items.Add("Devolução ");
         }
 
         private void questionario_Load(object sender, EventArgs e)
         {
-            string url = " https://yurivilea.typeform.com/to/oBVkjT";
-            webBrowser1.Navigate(url);
+            
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (comboBox1.Text == "Emprestimo")
+            {
+                webBrowser1.Visible = true;
+                string url = " https://yurivilea.typeform.com/to/oBVkjT";
+                webBrowser1.Navigate(url);
+            }
+            else
+            {
+                webBrowser1.Visible = true;
+                string url = " https://yurivilea.typeform.com/to/oBVkjT";
+                webBrowser1.Navigate(url);
+            }
         }
     }
 }
