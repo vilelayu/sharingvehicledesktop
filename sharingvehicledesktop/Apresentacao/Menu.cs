@@ -19,6 +19,7 @@ namespace sharingvehicledesktop.Apresentacao
         {
             InitializeComponent();
             label1.Text = label1.Text+dto+"!";
+            OcultaBradesco();
         }
 
         public Menu()
@@ -105,6 +106,26 @@ namespace sharingvehicledesktop.Apresentacao
         {
             relatorioDeVistoria vistoria = new relatorioDeVistoria();
             vistoria.Show();
+        }
+
+        /// <summary>
+        /// Mostra site do bradesco.
+        /// </summary>
+        public void RealizaSeguro()
+        {
+            webBradesco.Visible = true;
+            string url = "http://www.bradescoseguros.com.br/wps/portal/TransforDigital/Site/Produtos/Auto";
+            webBradesco.Navigate(url);        
+        }
+
+        private void contrateUmSeguroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RealizaSeguro();
+        }
+
+        public void OcultaBradesco()
+        {
+            webBradesco.Hide();
         }
     }
 }

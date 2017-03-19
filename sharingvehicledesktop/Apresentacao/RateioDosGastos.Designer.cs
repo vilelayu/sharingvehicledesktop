@@ -33,6 +33,13 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.BtnVoltar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.WebRateio = new System.Windows.Forms.WebBrowser();
+            this.groupBoxInfo = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Dia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Horario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBoxInfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -43,7 +50,7 @@
             this.button1.FlatAppearance.BorderSize = 2;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(498, 237);
+            this.button1.Location = new System.Drawing.Point(484, 230);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(152, 34);
             this.button1.TabIndex = 0;
@@ -54,7 +61,7 @@
             // progressBar1
             // 
             this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.progressBar1.Location = new System.Drawing.Point(316, 279);
+            this.progressBar1.Location = new System.Drawing.Point(302, 272);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(543, 23);
             this.progressBar1.TabIndex = 1;
@@ -83,12 +90,57 @@
             this.label1.Text = "Aqui você irá verificar todos os dados para que contribua com os valores dos veíc" +
     "ulos que utilizou.";
             // 
+            // WebRateio
+            // 
+            this.WebRateio.Location = new System.Drawing.Point(12, 72);
+            this.WebRateio.MinimumSize = new System.Drawing.Size(20, 20);
+            this.WebRateio.Name = "WebRateio";
+            this.WebRateio.Size = new System.Drawing.Size(554, 237);
+            this.WebRateio.TabIndex = 4;
+            // 
+            // groupBoxInfo
+            // 
+            this.groupBoxInfo.BackColor = System.Drawing.Color.Gainsboro;
+            this.groupBoxInfo.Controls.Add(this.dataGridView1);
+            this.groupBoxInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxInfo.ForeColor = System.Drawing.Color.White;
+            this.groupBoxInfo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.groupBoxInfo.Location = new System.Drawing.Point(12, 315);
+            this.groupBoxInfo.Name = "groupBoxInfo";
+            this.groupBoxInfo.Size = new System.Drawing.Size(554, 195);
+            this.groupBoxInfo.TabIndex = 5;
+            this.groupBoxInfo.TabStop = false;
+            this.groupBoxInfo.Text = "Informações";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Dia,
+            this.Horario});
+            this.dataGridView1.Location = new System.Drawing.Point(304, 19);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(244, 159);
+            this.dataGridView1.TabIndex = 6;
+            // 
+            // Dia
+            // 
+            this.Dia.HeaderText = "Dia";
+            this.Dia.Name = "Dia";
+            // 
+            // Horario
+            // 
+            this.Horario.HeaderText = "Horario";
+            this.Horario.Name = "Horario";
+            // 
             // RateioDosGastos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1158, 522);
+            this.Controls.Add(this.groupBoxInfo);
+            this.Controls.Add(this.WebRateio);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnVoltar);
             this.Controls.Add(this.progressBar1);
@@ -97,6 +149,8 @@
             this.Name = "RateioDosGastos";
             this.Text = "Rateio dos Gastos";
             this.Load += new System.EventHandler(this.RateioDosGastos_Load);
+            this.groupBoxInfo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,5 +162,10 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button BtnVoltar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.WebBrowser WebRateio;
+        private System.Windows.Forms.GroupBox groupBoxInfo;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Dia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Horario;
     }
 }

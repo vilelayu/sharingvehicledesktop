@@ -48,6 +48,8 @@
             this.mapaGPSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.questionarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
+            this.webBradesco = new System.Windows.Forms.WebBrowser();
+            this.contrateUmSeguroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,7 +60,8 @@
             this.cadastrosToolStripMenuItem,
             this.relatoriosToolStripMenuItem,
             this.mapaGPSToolStripMenuItem,
-            this.questionarioToolStripMenuItem});
+            this.questionarioToolStripMenuItem,
+            this.contrateUmSeguroToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(972, 24);
@@ -104,49 +107,49 @@
             // abastecimetoToolStripMenuItem
             // 
             this.abastecimetoToolStripMenuItem.Name = "abastecimetoToolStripMenuItem";
-            this.abastecimetoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.abastecimetoToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.abastecimetoToolStripMenuItem.Text = "Abastecimeto";
             this.abastecimetoToolStripMenuItem.Click += new System.EventHandler(this.abastecimetoToolStripMenuItem_Click);
             // 
             // carroToolStripMenuItem
             // 
             this.carroToolStripMenuItem.Name = "carroToolStripMenuItem";
-            this.carroToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.carroToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.carroToolStripMenuItem.Text = "Carro";
             this.carroToolStripMenuItem.Click += new System.EventHandler(this.carroToolStripMenuItem_Click);
             // 
             // deslocamentoToolStripMenuItem
             // 
             this.deslocamentoToolStripMenuItem.Name = "deslocamentoToolStripMenuItem";
-            this.deslocamentoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.deslocamentoToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.deslocamentoToolStripMenuItem.Text = "Deslocamento";
             this.deslocamentoToolStripMenuItem.Click += new System.EventHandler(this.deslocamentoToolStripMenuItem_Click);
             // 
             // motoristaToolStripMenuItem
             // 
             this.motoristaToolStripMenuItem.Name = "motoristaToolStripMenuItem";
-            this.motoristaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.motoristaToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.motoristaToolStripMenuItem.Text = "Motorista";
             this.motoristaToolStripMenuItem.Click += new System.EventHandler(this.motoristaToolStripMenuItem_Click);
             // 
             // rateioToolStripMenuItem
             // 
             this.rateioToolStripMenuItem.Name = "rateioToolStripMenuItem";
-            this.rateioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.rateioToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.rateioToolStripMenuItem.Text = "Rateio";
             this.rateioToolStripMenuItem.Click += new System.EventHandler(this.rateioToolStripMenuItem_Click);
             // 
             // gastosToolStripMenuItem
             // 
             this.gastosToolStripMenuItem.Name = "gastosToolStripMenuItem";
-            this.gastosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.gastosToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.gastosToolStripMenuItem.Text = "Gastos";
             this.gastosToolStripMenuItem.Click += new System.EventHandler(this.gastosToolStripMenuItem_Click);
             // 
             // vistoriaToolStripMenuItem
             // 
             this.vistoriaToolStripMenuItem.Name = "vistoriaToolStripMenuItem";
-            this.vistoriaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.vistoriaToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.vistoriaToolStripMenuItem.Text = "Vistoria";
             this.vistoriaToolStripMenuItem.Click += new System.EventHandler(this.vistoriaToolStripMenuItem_Click);
             // 
@@ -205,12 +208,31 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "Seja bem vindo ";
             // 
+            // webBradesco
+            // 
+            this.webBradesco.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.webBradesco.Location = new System.Drawing.Point(12, 130);
+            this.webBradesco.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBradesco.Name = "webBradesco";
+            this.webBradesco.Size = new System.Drawing.Size(948, 329);
+            this.webBradesco.TabIndex = 17;
+            // 
+            // contrateUmSeguroToolStripMenuItem
+            // 
+            this.contrateUmSeguroToolStripMenuItem.Name = "contrateUmSeguroToolStripMenuItem";
+            this.contrateUmSeguroToolStripMenuItem.Size = new System.Drawing.Size(125, 20);
+            this.contrateUmSeguroToolStripMenuItem.Text = "Contrate um seguro";
+            this.contrateUmSeguroToolStripMenuItem.Click += new System.EventHandler(this.contrateUmSeguroToolStripMenuItem_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(972, 471);
+            this.Controls.Add(this.webBradesco);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -244,5 +266,7 @@
         private System.Windows.Forms.ToolStripMenuItem abastecimentoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mapaGPSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem questionarioToolStripMenuItem;
+        private System.Windows.Forms.WebBrowser webBradesco;
+        private System.Windows.Forms.ToolStripMenuItem contrateUmSeguroToolStripMenuItem;
     }
 }

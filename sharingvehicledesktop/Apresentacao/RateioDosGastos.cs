@@ -15,6 +15,7 @@ namespace sharingvehicledesktop.Apresentacao
         public RateioDosGastos()
         {
             InitializeComponent();
+            OcultaItem();
         }
 
         /// <summary>
@@ -68,11 +69,30 @@ namespace sharingvehicledesktop.Apresentacao
             progressBar1.Value = 0; //Zera a progress bar   
             button1.Hide();
             progressBar1.Hide();
+            WebRateio.Show();
+            groupBoxInfo.Show();
+            MostraMapa();
+        }
+
+        public void OcultaItem()
+        {
+            WebRateio.Hide();
+            groupBoxInfo.Hide();
+        }
+
+      
+        public void MostraMapa()
+        {
+            WebRateio.Visible = true;
+            string url = "https://www.google.com.br/maps";
+            WebRateio.Navigate(url);
         }
 
         private void RateioDosGastos_Load(object sender, EventArgs e)
         {
 
         }
+
+        
     }
 }
