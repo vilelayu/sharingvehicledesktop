@@ -50,6 +50,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.webBradesco = new System.Windows.Forms.WebBrowser();
             this.contrateUmSeguroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -226,12 +227,24 @@
             this.contrateUmSeguroToolStripMenuItem.Text = "Contrate um seguro";
             this.contrateUmSeguroToolStripMenuItem.Click += new System.EventHandler(this.contrateUmSeguroToolStripMenuItem_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(852, 106);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(105, 19);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Imagine Cup ";
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(972, 471);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.webBradesco);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
@@ -268,5 +281,6 @@
         private System.Windows.Forms.ToolStripMenuItem questionarioToolStripMenuItem;
         private System.Windows.Forms.WebBrowser webBradesco;
         private System.Windows.Forms.ToolStripMenuItem contrateUmSeguroToolStripMenuItem;
+        private System.Windows.Forms.Label label2;
     }
 }
