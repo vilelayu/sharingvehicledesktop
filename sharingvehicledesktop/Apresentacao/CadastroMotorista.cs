@@ -26,6 +26,11 @@ namespace sharingvehicledesktop.Apresentacao
 
         private void btsalva_Click(object sender, EventArgs e)
         {
+            SalvarDados();
+        }
+
+        public void SalvarDados()
+        {
             dto.cnh = txtCnh.Text;
             dto.cpf = txtcpf.Text;
             dto.dataNascimento = txtnascimento.Text;
@@ -54,8 +59,7 @@ namespace sharingvehicledesktop.Apresentacao
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-          
+        {          
             this.Close();
         }
     }

@@ -115,7 +115,9 @@ namespace sharingvehicledesktop.Apresentacao
         {
             webBradesco.Visible = true;
             string url = "http://www.bradescoseguros.com.br/wps/portal/TransforDigital/Site/Produtos/Auto";
-            webBradesco.Navigate(url);        
+            webBradesco.Navigate(url);
+            LabelImagineCup.Show();
+            LabelContrataSeguro.Hide(); 
         }
 
         private void contrateUmSeguroToolStripMenuItem_Click(object sender, EventArgs e)
@@ -126,6 +128,7 @@ namespace sharingvehicledesktop.Apresentacao
         public void OcultaBradesco()
         {
             webBradesco.Hide();
+            LabelImagineCup.Hide(); 
         }
     }
 }

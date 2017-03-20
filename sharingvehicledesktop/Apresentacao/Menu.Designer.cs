@@ -47,10 +47,11 @@
             this.abastecimentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mapaGPSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.questionarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contrateUmSeguroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.webBradesco = new System.Windows.Forms.WebBrowser();
-            this.contrateUmSeguroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label2 = new System.Windows.Forms.Label();
+            this.LabelImagineCup = new System.Windows.Forms.Label();
+            this.LabelContrataSeguro = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,14 +82,14 @@
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // alterarSenhaToolStripMenuItem
             // 
             this.alterarSenhaToolStripMenuItem.Name = "alterarSenhaToolStripMenuItem";
-            this.alterarSenhaToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.alterarSenhaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.alterarSenhaToolStripMenuItem.Text = "Alterar Senha";
             // 
             // cadastrosToolStripMenuItem
@@ -108,49 +109,49 @@
             // abastecimetoToolStripMenuItem
             // 
             this.abastecimetoToolStripMenuItem.Name = "abastecimetoToolStripMenuItem";
-            this.abastecimetoToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.abastecimetoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.abastecimetoToolStripMenuItem.Text = "Abastecimeto";
             this.abastecimetoToolStripMenuItem.Click += new System.EventHandler(this.abastecimetoToolStripMenuItem_Click);
             // 
             // carroToolStripMenuItem
             // 
             this.carroToolStripMenuItem.Name = "carroToolStripMenuItem";
-            this.carroToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.carroToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.carroToolStripMenuItem.Text = "Carro";
             this.carroToolStripMenuItem.Click += new System.EventHandler(this.carroToolStripMenuItem_Click);
             // 
             // deslocamentoToolStripMenuItem
             // 
             this.deslocamentoToolStripMenuItem.Name = "deslocamentoToolStripMenuItem";
-            this.deslocamentoToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.deslocamentoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.deslocamentoToolStripMenuItem.Text = "Deslocamento";
             this.deslocamentoToolStripMenuItem.Click += new System.EventHandler(this.deslocamentoToolStripMenuItem_Click);
             // 
             // motoristaToolStripMenuItem
             // 
             this.motoristaToolStripMenuItem.Name = "motoristaToolStripMenuItem";
-            this.motoristaToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.motoristaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.motoristaToolStripMenuItem.Text = "Motorista";
             this.motoristaToolStripMenuItem.Click += new System.EventHandler(this.motoristaToolStripMenuItem_Click);
             // 
             // rateioToolStripMenuItem
             // 
             this.rateioToolStripMenuItem.Name = "rateioToolStripMenuItem";
-            this.rateioToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.rateioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.rateioToolStripMenuItem.Text = "Rateio";
             this.rateioToolStripMenuItem.Click += new System.EventHandler(this.rateioToolStripMenuItem_Click);
             // 
             // gastosToolStripMenuItem
             // 
             this.gastosToolStripMenuItem.Name = "gastosToolStripMenuItem";
-            this.gastosToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.gastosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.gastosToolStripMenuItem.Text = "Gastos";
             this.gastosToolStripMenuItem.Click += new System.EventHandler(this.gastosToolStripMenuItem_Click);
             // 
             // vistoriaToolStripMenuItem
             // 
             this.vistoriaToolStripMenuItem.Name = "vistoriaToolStripMenuItem";
-            this.vistoriaToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.vistoriaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.vistoriaToolStripMenuItem.Text = "Vistoria";
             this.vistoriaToolStripMenuItem.Click += new System.EventHandler(this.vistoriaToolStripMenuItem_Click);
             // 
@@ -197,17 +198,24 @@
             this.questionarioToolStripMenuItem.Text = "Questionario";
             this.questionarioToolStripMenuItem.Click += new System.EventHandler(this.questionarioToolStripMenuItem_Click);
             // 
+            // contrateUmSeguroToolStripMenuItem
+            // 
+            this.contrateUmSeguroToolStripMenuItem.Name = "contrateUmSeguroToolStripMenuItem";
+            this.contrateUmSeguroToolStripMenuItem.Size = new System.Drawing.Size(125, 20);
+            this.contrateUmSeguroToolStripMenuItem.Text = "Contrate um seguro";
+            this.contrateUmSeguroToolStripMenuItem.Click += new System.EventHandler(this.contrateUmSeguroToolStripMenuItem_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Turquoise;
             this.label1.Location = new System.Drawing.Point(531, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 25);
+            this.label1.Size = new System.Drawing.Size(174, 25);
             this.label1.TabIndex = 16;
-            this.label1.Text = "Seja bem vindo ";
+            this.label1.Text = "Seja bem vindo, ";
             // 
             // webBradesco
             // 
@@ -220,23 +228,28 @@
             this.webBradesco.Size = new System.Drawing.Size(948, 329);
             this.webBradesco.TabIndex = 17;
             // 
-            // contrateUmSeguroToolStripMenuItem
+            // LabelImagineCup
             // 
-            this.contrateUmSeguroToolStripMenuItem.Name = "contrateUmSeguroToolStripMenuItem";
-            this.contrateUmSeguroToolStripMenuItem.Size = new System.Drawing.Size(125, 20);
-            this.contrateUmSeguroToolStripMenuItem.Text = "Contrate um seguro";
-            this.contrateUmSeguroToolStripMenuItem.Click += new System.EventHandler(this.contrateUmSeguroToolStripMenuItem_Click);
+            this.LabelImagineCup.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.LabelImagineCup.AutoSize = true;
+            this.LabelImagineCup.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelImagineCup.ForeColor = System.Drawing.Color.Fuchsia;
+            this.LabelImagineCup.Location = new System.Drawing.Point(855, 108);
+            this.LabelImagineCup.Name = "LabelImagineCup";
+            this.LabelImagineCup.Size = new System.Drawing.Size(105, 19);
+            this.LabelImagineCup.TabIndex = 18;
+            this.LabelImagineCup.Text = "Imagine Cup ";
             // 
-            // label2
+            // LabelContrataSeguro
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(852, 106);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 19);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Imagine Cup ";
+            this.LabelContrataSeguro.AutoSize = true;
+            this.LabelContrataSeguro.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelContrataSeguro.ForeColor = System.Drawing.Color.White;
+            this.LabelContrataSeguro.Location = new System.Drawing.Point(9, 34);
+            this.LabelContrataSeguro.Name = "LabelContrataSeguro";
+            this.LabelContrataSeguro.Size = new System.Drawing.Size(334, 15);
+            this.LabelContrataSeguro.TabIndex = 19;
+            this.LabelContrataSeguro.Text = "Contrate um seguro para o seu veículo, é só selecionar o opção acima.";
             // 
             // Menu
             // 
@@ -244,7 +257,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(972, 471);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.LabelContrataSeguro);
+            this.Controls.Add(this.LabelImagineCup);
             this.Controls.Add(this.webBradesco);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
@@ -281,6 +295,7 @@
         private System.Windows.Forms.ToolStripMenuItem questionarioToolStripMenuItem;
         private System.Windows.Forms.WebBrowser webBradesco;
         private System.Windows.Forms.ToolStripMenuItem contrateUmSeguroToolStripMenuItem;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label LabelImagineCup;
+        private System.Windows.Forms.Label LabelContrataSeguro;
     }
 }

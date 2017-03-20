@@ -38,8 +38,15 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Dia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Horario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.webGoogle = new System.Windows.Forms.WebBrowser();
+            this.groupBoxInfo2 = new System.Windows.Forms.GroupBox();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBoxInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBoxInfo2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -50,7 +57,7 @@
             this.button1.FlatAppearance.BorderSize = 2;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(484, 230);
+            this.button1.Location = new System.Drawing.Point(484, 255);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(152, 34);
             this.button1.TabIndex = 0;
@@ -61,7 +68,7 @@
             // progressBar1
             // 
             this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.progressBar1.Location = new System.Drawing.Point(302, 272);
+            this.progressBar1.Location = new System.Drawing.Point(302, 297);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(543, 23);
             this.progressBar1.TabIndex = 1;
@@ -83,7 +90,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(13, 4);
+            this.label1.Location = new System.Drawing.Point(12, 4);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(606, 20);
             this.label1.TabIndex = 3;
@@ -102,15 +109,15 @@
             // 
             this.groupBoxInfo.BackColor = System.Drawing.Color.Gainsboro;
             this.groupBoxInfo.Controls.Add(this.dataGridView1);
-            this.groupBoxInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxInfo.ForeColor = System.Drawing.Color.White;
+            this.groupBoxInfo.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxInfo.ForeColor = System.Drawing.Color.Black;
             this.groupBoxInfo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.groupBoxInfo.Location = new System.Drawing.Point(12, 315);
             this.groupBoxInfo.Name = "groupBoxInfo";
             this.groupBoxInfo.Size = new System.Drawing.Size(554, 195);
             this.groupBoxInfo.TabIndex = 5;
             this.groupBoxInfo.TabStop = false;
-            this.groupBoxInfo.Text = "Informações";
+            this.groupBoxInfo.Text = "Informações:";
             // 
             // dataGridView1
             // 
@@ -133,12 +140,57 @@
             this.Horario.HeaderText = "Horario";
             this.Horario.Name = "Horario";
             // 
+            // webGoogle
+            // 
+            this.webGoogle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.webGoogle.Location = new System.Drawing.Point(592, 72);
+            this.webGoogle.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webGoogle.Name = "webGoogle";
+            this.webGoogle.Size = new System.Drawing.Size(554, 237);
+            this.webGoogle.TabIndex = 6;
+            // 
+            // groupBoxInfo2
+            // 
+            this.groupBoxInfo2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxInfo2.BackColor = System.Drawing.Color.LightGray;
+            this.groupBoxInfo2.Controls.Add(this.dataGridView2);
+            this.groupBoxInfo2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxInfo2.Location = new System.Drawing.Point(592, 315);
+            this.groupBoxInfo2.Name = "groupBoxInfo2";
+            this.groupBoxInfo2.Size = new System.Drawing.Size(554, 195);
+            this.groupBoxInfo2.TabIndex = 7;
+            this.groupBoxInfo2.TabStop = false;
+            this.groupBoxInfo2.Text = "Informações:";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2});
+            this.dataGridView2.Location = new System.Drawing.Point(304, 19);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(244, 159);
+            this.dataGridView2.TabIndex = 7;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Dia";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Horario";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
             // RateioDosGastos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1158, 522);
+            this.Controls.Add(this.groupBoxInfo2);
+            this.Controls.Add(this.webGoogle);
             this.Controls.Add(this.groupBoxInfo);
             this.Controls.Add(this.WebRateio);
             this.Controls.Add(this.label1);
@@ -151,6 +203,8 @@
             this.Load += new System.EventHandler(this.RateioDosGastos_Load);
             this.groupBoxInfo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBoxInfo2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,5 +221,10 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Dia;
         private System.Windows.Forms.DataGridViewTextBoxColumn Horario;
+        private System.Windows.Forms.WebBrowser webGoogle;
+        private System.Windows.Forms.GroupBox groupBoxInfo2;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
     }
 }

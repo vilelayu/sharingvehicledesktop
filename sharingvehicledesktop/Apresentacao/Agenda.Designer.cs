@@ -39,13 +39,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.txtCodigoMotorista = new System.Windows.Forms.TextBox();
+            this.txtCodigoVeiculo = new System.Windows.Forms.TextBox();
+            this.txtDia = new System.Windows.Forms.TextBox();
+            this.txtHora = new System.Windows.Forms.TextBox();
+            this.btnSalvarAgenda = new System.Windows.Forms.Button();
+            this.BtnCancelar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -147,58 +147,60 @@
             this.label6.TabIndex = 8;
             this.label6.Text = "Horario";
             // 
-            // textBox1
+            // txtID
             // 
-            this.textBox1.Location = new System.Drawing.Point(341, 100);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(282, 20);
-            this.textBox1.TabIndex = 9;
+            this.txtID.Location = new System.Drawing.Point(341, 100);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(282, 20);
+            this.txtID.TabIndex = 9;
             // 
-            // textBox2
+            // txtCodigoMotorista
             // 
-            this.textBox2.Location = new System.Drawing.Point(341, 177);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(282, 20);
-            this.textBox2.TabIndex = 10;
+            this.txtCodigoMotorista.Location = new System.Drawing.Point(341, 177);
+            this.txtCodigoMotorista.Name = "txtCodigoMotorista";
+            this.txtCodigoMotorista.Size = new System.Drawing.Size(282, 20);
+            this.txtCodigoMotorista.TabIndex = 10;
             // 
-            // textBox3
+            // txtCodigoVeiculo
             // 
-            this.textBox3.Location = new System.Drawing.Point(341, 241);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(282, 20);
-            this.textBox3.TabIndex = 11;
+            this.txtCodigoVeiculo.Location = new System.Drawing.Point(341, 241);
+            this.txtCodigoVeiculo.Name = "txtCodigoVeiculo";
+            this.txtCodigoVeiculo.Size = new System.Drawing.Size(282, 20);
+            this.txtCodigoVeiculo.TabIndex = 11;
             // 
-            // textBox4
+            // txtDia
             // 
-            this.textBox4.Location = new System.Drawing.Point(341, 319);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 12;
+            this.txtDia.Location = new System.Drawing.Point(341, 319);
+            this.txtDia.Name = "txtDia";
+            this.txtDia.Size = new System.Drawing.Size(100, 20);
+            this.txtDia.TabIndex = 12;
             // 
-            // textBox5
+            // txtHora
             // 
-            this.textBox5.Location = new System.Drawing.Point(522, 320);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 13;
+            this.txtHora.Location = new System.Drawing.Point(522, 320);
+            this.txtHora.Name = "txtHora";
+            this.txtHora.Size = new System.Drawing.Size(100, 20);
+            this.txtHora.TabIndex = 13;
             // 
-            // button2
+            // btnSalvarAgenda
             // 
-            this.button2.Location = new System.Drawing.Point(548, 379);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Salvar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSalvarAgenda.Location = new System.Drawing.Point(581, 379);
+            this.btnSalvarAgenda.Name = "btnSalvarAgenda";
+            this.btnSalvarAgenda.Size = new System.Drawing.Size(75, 23);
+            this.btnSalvarAgenda.TabIndex = 14;
+            this.btnSalvarAgenda.Text = "Salvar";
+            this.btnSalvarAgenda.UseVisualStyleBackColor = true;
+            this.btnSalvarAgenda.Click += new System.EventHandler(this.btnSalvarAgenda_Click);
             // 
-            // button3
+            // BtnCancelar
             // 
-            this.button3.Location = new System.Drawing.Point(664, 379);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Cancelar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BtnCancelar.Location = new System.Drawing.Point(664, 379);
+            this.BtnCancelar.Name = "BtnCancelar";
+            this.BtnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.BtnCancelar.TabIndex = 15;
+            this.BtnCancelar.Text = "Cancelar";
+            this.BtnCancelar.UseVisualStyleBackColor = true;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // Agenda
             // 
@@ -206,13 +208,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(775, 414);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.BtnCancelar);
+            this.Controls.Add(this.btnSalvarAgenda);
+            this.Controls.Add(this.txtHora);
+            this.Controls.Add(this.txtDia);
+            this.Controls.Add(this.txtCodigoVeiculo);
+            this.Controls.Add(this.txtCodigoMotorista);
+            this.Controls.Add(this.txtID);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -243,12 +245,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.TextBox txtCodigoMotorista;
+        private System.Windows.Forms.TextBox txtCodigoVeiculo;
+        private System.Windows.Forms.TextBox txtDia;
+        private System.Windows.Forms.TextBox txtHora;
+        private System.Windows.Forms.Button btnSalvarAgenda;
+        private System.Windows.Forms.Button BtnCancelar;
     }
 }

@@ -37,9 +37,23 @@ namespace sharingvehicledesktop.Apresentacao
 
         private void btConfirma_Click(object sender, EventArgs e)
         {
-            if (txtNome.Text == "" || txtSenha.Text == "")
+            verificaCamposParaInserir(); 
+        }
+
+
+        /// <summary>
+        /// Verifica campos e manda os dados para o DTO e inserir. 
+        /// Para não sobrecarregar o Botão de inserção é melhor chamar só o método. 
+        /// </summary>
+        public void verificaCamposParaInserir()
+        {
+            if (txtNome.Text == "" || txtSenha.Text == "" || TxtRepeteSenha.Text == "")
             {
-                MessageBox.Show("Possui campo obrigatorio vazio", "informação", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Possui campo obrigatorio vazio, favor preencher corretamente! ", "Informação:", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if (txtSenha.Text != TxtRepeteSenha.Text)
+            {
+                MessageBox.Show("Os campos de senha não batem um com o outro. \nVerifique se realmente digitou correto!", "FALHA:", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -58,8 +72,14 @@ namespace sharingvehicledesktop.Apresentacao
                 {
                     txtNome.Text = "";
                     txtSenha.Text = "";
+                    TxtRepeteSenha.Text = "";
                 }
             }
+        }
+
+        private void BtnCancelaCadastroUsu_Click(object sender, EventArgs e)
+        {
+            this.Close(); 
         }
     }
 }

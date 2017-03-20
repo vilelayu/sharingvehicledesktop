@@ -2,6 +2,7 @@
 using sharingvehicledesktop.DTO;
 using sharingvehicledesktop.BancoDados;
 using System.Data;
+using System.Windows.Forms;
 
 namespace sharingvehicledesktop.Negocios
 {
@@ -24,7 +25,7 @@ namespace sharingvehicledesktop.Negocios
                 acessoDadosSqlServer.AdicionarParametros("Senha", usuario.senha);
              
                 string retorno = acessoDadosSqlServer.ExecutarManipulacao(CommandType.StoredProcedure, "spInsereUsuario").ToString();
-                return retorno;
+                return retorno + "Cadastro efetuado com sucesso!";
             }
             catch (Exception exception)
             {
@@ -151,18 +152,18 @@ namespace sharingvehicledesktop.Negocios
                 acessoDadosSqlServer.AdicionarParametros("_Nome", usuario.nome);
                 acessoDadosSqlServer.AdicionarParametros("_Senha", usuario.senha);
 
-                string retorno = acessoDadosSqlServer.ExecutarManipulacao(CommandType.StoredProcedure, "spLoginEntrarUsuario").ToString();
+                string retorno = acessoDadosSqlServer.ExecutarManipulacao(CommandType.StoredProcedure, "spLoginEntrarUsuario").ToString();               
                 return retorno;
             }
             catch (Exception exception)
             {
-                return exception.Message;
+                return exception.Message;    
             }
             finally
             {
                 acessoDadosSqlServer = null;
             }
-
+             
         }
     }
 }

@@ -36,16 +36,25 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.btVoltar = new System.Windows.Forms.Button();
             this.txtSenha = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.TxtRepeteSenha = new System.Windows.Forms.TextBox();
+            this.BtnCancelaCadastroUsu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btConfirma
             // 
-            this.btConfirma.Location = new System.Drawing.Point(127, 288);
+            this.btConfirma.BackColor = System.Drawing.Color.White;
+            this.btConfirma.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btConfirma.FlatAppearance.BorderSize = 0;
+            this.btConfirma.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btConfirma.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.btConfirma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btConfirma.Location = new System.Drawing.Point(235, 316);
             this.btConfirma.Name = "btConfirma";
             this.btConfirma.Size = new System.Drawing.Size(75, 23);
             this.btConfirma.TabIndex = 0;
             this.btConfirma.Text = "Confirmar";
-            this.btConfirma.UseVisualStyleBackColor = true;
+            this.btConfirma.UseVisualStyleBackColor = false;
             this.btConfirma.Click += new System.EventHandler(this.btConfirma_Click);
             // 
             // label1
@@ -107,12 +116,50 @@
             this.txtSenha.Size = new System.Drawing.Size(272, 20);
             this.txtSenha.TabIndex = 5;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(35, 225);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(178, 25);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Repita a senha:";
+            // 
+            // TxtRepeteSenha
+            // 
+            this.TxtRepeteSenha.Location = new System.Drawing.Point(38, 253);
+            this.TxtRepeteSenha.Name = "TxtRepeteSenha";
+            this.TxtRepeteSenha.Size = new System.Drawing.Size(272, 20);
+            this.TxtRepeteSenha.TabIndex = 8;
+            this.TxtRepeteSenha.UseSystemPasswordChar = true;
+            // 
+            // BtnCancelaCadastroUsu
+            // 
+            this.BtnCancelaCadastroUsu.BackColor = System.Drawing.Color.White;
+            this.BtnCancelaCadastroUsu.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.BtnCancelaCadastroUsu.FlatAppearance.BorderSize = 0;
+            this.BtnCancelaCadastroUsu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.BtnCancelaCadastroUsu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.BtnCancelaCadastroUsu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCancelaCadastroUsu.Location = new System.Drawing.Point(143, 316);
+            this.BtnCancelaCadastroUsu.Name = "BtnCancelaCadastroUsu";
+            this.BtnCancelaCadastroUsu.Size = new System.Drawing.Size(75, 23);
+            this.BtnCancelaCadastroUsu.TabIndex = 9;
+            this.BtnCancelaCadastroUsu.Text = "Cancelar";
+            this.BtnCancelaCadastroUsu.UseVisualStyleBackColor = false;
+            this.BtnCancelaCadastroUsu.Click += new System.EventHandler(this.BtnCancelaCadastroUsu_Click);
+            // 
             // CadastroUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(334, 351);
+            this.Controls.Add(this.BtnCancelaCadastroUsu);
+            this.Controls.Add(this.TxtRepeteSenha);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btVoltar);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtNome);
@@ -120,7 +167,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btConfirma);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CadastroUsuario";
             this.Text = "CadastroUsuario";
@@ -139,5 +186,8 @@
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Button btVoltar;
         private System.Windows.Forms.TextBox txtSenha;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox TxtRepeteSenha;
+        private System.Windows.Forms.Button BtnCancelaCadastroUsu;
     }
 }

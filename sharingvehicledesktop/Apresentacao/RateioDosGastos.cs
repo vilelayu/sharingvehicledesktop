@@ -71,13 +71,17 @@ namespace sharingvehicledesktop.Apresentacao
             progressBar1.Hide();
             WebRateio.Show();
             groupBoxInfo.Show();
+            groupBoxInfo2.Show(); 
             MostraMapa();
+            MostraMapaGoogle(); 
         }
 
         public void OcultaItem()
         {
             WebRateio.Hide();
             groupBoxInfo.Hide();
+            groupBoxInfo2.Hide();
+            webGoogle.Hide(); 
         }
 
       
@@ -86,6 +90,13 @@ namespace sharingvehicledesktop.Apresentacao
             WebRateio.Visible = true;
             string url = "https://www.google.com.br/maps";
             WebRateio.Navigate(url);
+        }
+
+        public void MostraMapaGoogle()
+        {
+            webGoogle.Visible = true;
+            string url = "https://www.google.com.br/maps";
+            webGoogle.Navigate(url); 
         }
 
         private void RateioDosGastos_Load(object sender, EventArgs e)
