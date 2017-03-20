@@ -41,10 +41,6 @@
             this.rateioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gastosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vistoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.relatoriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gastosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.vistoriasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.abastecimentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mapaGPSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.questionarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contrateUmSeguroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,7 +56,6 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem,
             this.cadastrosToolStripMenuItem,
-            this.relatoriosToolStripMenuItem,
             this.mapaGPSToolStripMenuItem,
             this.questionarioToolStripMenuItem,
             this.contrateUmSeguroToolStripMenuItem});
@@ -82,14 +77,14 @@
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // alterarSenhaToolStripMenuItem
             // 
             this.alterarSenhaToolStripMenuItem.Name = "alterarSenhaToolStripMenuItem";
-            this.alterarSenhaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.alterarSenhaToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.alterarSenhaToolStripMenuItem.Text = "Alterar Senha";
             // 
             // cadastrosToolStripMenuItem
@@ -109,80 +104,51 @@
             // abastecimetoToolStripMenuItem
             // 
             this.abastecimetoToolStripMenuItem.Name = "abastecimetoToolStripMenuItem";
-            this.abastecimetoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.abastecimetoToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.abastecimetoToolStripMenuItem.Text = "Abastecimeto";
             this.abastecimetoToolStripMenuItem.Click += new System.EventHandler(this.abastecimetoToolStripMenuItem_Click);
             // 
             // carroToolStripMenuItem
             // 
             this.carroToolStripMenuItem.Name = "carroToolStripMenuItem";
-            this.carroToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.carroToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.carroToolStripMenuItem.Text = "Carro";
             this.carroToolStripMenuItem.Click += new System.EventHandler(this.carroToolStripMenuItem_Click);
             // 
             // deslocamentoToolStripMenuItem
             // 
             this.deslocamentoToolStripMenuItem.Name = "deslocamentoToolStripMenuItem";
-            this.deslocamentoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.deslocamentoToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.deslocamentoToolStripMenuItem.Text = "Deslocamento";
             this.deslocamentoToolStripMenuItem.Click += new System.EventHandler(this.deslocamentoToolStripMenuItem_Click);
             // 
             // motoristaToolStripMenuItem
             // 
             this.motoristaToolStripMenuItem.Name = "motoristaToolStripMenuItem";
-            this.motoristaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.motoristaToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.motoristaToolStripMenuItem.Text = "Motorista";
             this.motoristaToolStripMenuItem.Click += new System.EventHandler(this.motoristaToolStripMenuItem_Click);
             // 
             // rateioToolStripMenuItem
             // 
             this.rateioToolStripMenuItem.Name = "rateioToolStripMenuItem";
-            this.rateioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.rateioToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.rateioToolStripMenuItem.Text = "Rateio";
             this.rateioToolStripMenuItem.Click += new System.EventHandler(this.rateioToolStripMenuItem_Click);
             // 
             // gastosToolStripMenuItem
             // 
             this.gastosToolStripMenuItem.Name = "gastosToolStripMenuItem";
-            this.gastosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.gastosToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.gastosToolStripMenuItem.Text = "Gastos";
             this.gastosToolStripMenuItem.Click += new System.EventHandler(this.gastosToolStripMenuItem_Click);
             // 
             // vistoriaToolStripMenuItem
             // 
             this.vistoriaToolStripMenuItem.Name = "vistoriaToolStripMenuItem";
-            this.vistoriaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.vistoriaToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.vistoriaToolStripMenuItem.Text = "Vistoria";
             this.vistoriaToolStripMenuItem.Click += new System.EventHandler(this.vistoriaToolStripMenuItem_Click);
-            // 
-            // relatoriosToolStripMenuItem
-            // 
-            this.relatoriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.gastosToolStripMenuItem1,
-            this.vistoriasToolStripMenuItem,
-            this.abastecimentoToolStripMenuItem});
-            this.relatoriosToolStripMenuItem.Name = "relatoriosToolStripMenuItem";
-            this.relatoriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.relatoriosToolStripMenuItem.Text = "Relatorios";
-            // 
-            // gastosToolStripMenuItem1
-            // 
-            this.gastosToolStripMenuItem1.Name = "gastosToolStripMenuItem1";
-            this.gastosToolStripMenuItem1.Size = new System.Drawing.Size(154, 22);
-            this.gastosToolStripMenuItem1.Text = "Gastos";
-            // 
-            // vistoriasToolStripMenuItem
-            // 
-            this.vistoriasToolStripMenuItem.Name = "vistoriasToolStripMenuItem";
-            this.vistoriasToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.vistoriasToolStripMenuItem.Text = "Vistorias";
-            this.vistoriasToolStripMenuItem.Click += new System.EventHandler(this.vistoriasToolStripMenuItem_Click);
-            // 
-            // abastecimentoToolStripMenuItem
-            // 
-            this.abastecimentoToolStripMenuItem.Name = "abastecimentoToolStripMenuItem";
-            this.abastecimentoToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.abastecimentoToolStripMenuItem.Text = "Abastecimento";
             // 
             // mapaGPSToolStripMenuItem
             // 
@@ -287,10 +253,6 @@
         private System.Windows.Forms.ToolStripMenuItem rateioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gastosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vistoriaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem relatoriosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gastosToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem vistoriasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem abastecimentoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mapaGPSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem questionarioToolStripMenuItem;
         private System.Windows.Forms.WebBrowser webBradesco;
