@@ -146,24 +146,25 @@ namespace sharingvehicledesktop.Negocios
         /// <returns></returns>
         public string PesquisaLogin(UsuarioDTO usuario)
         {
+            string retorno; 
             try
             {
                 acessoDadosSqlServer.LimparParametros();
                 acessoDadosSqlServer.AdicionarParametros("_Nome", usuario.nome);
                 acessoDadosSqlServer.AdicionarParametros("_Senha", usuario.senha);
 
-                string retorno = acessoDadosSqlServer.ExecutarManipulacao(CommandType.StoredProcedure, "spLoginEntrarUsuario").ToString();               
-                return retorno;
+                retorno = (acessoDadosSqlServer.ExecutarManipulacao(CommandType.StoredProcedure, "spLoginEntrarUsuario")).ToString();               
+                return retorno;             
             }
             catch (Exception exception)
             {
-                return exception.Message;    
+                retorno = "Não foi possível se conectar ao Banco! Tente novamente mais tarde.." + exception.Message;    
             }
             finally
             {
                 acessoDadosSqlServer = null;
             }
-             
+            return retorno;
         }
     }
 }

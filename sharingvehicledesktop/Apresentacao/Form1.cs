@@ -41,6 +41,11 @@ namespace sharingvehicledesktop
 
         private void button1_Click(object sender, EventArgs e)
         {
+            VerificaLogin();
+        }
+
+        public void VerificaLogin()
+        {
             dto.nome = txtUsuario.Text;
             dto.senha = txtSenha.Text;
 
@@ -49,16 +54,15 @@ namespace sharingvehicledesktop
                 Apresentacao.Menu menu = new Apresentacao.Menu(txtUsuario.Text);
                 menu.Show();
                 this.Hide();
-            }
-            //Ainda precisa ser corrigido para exibição desta mensagem, o código não identifica o retorno da camada de negocio após não exibir o Acesso Permitido!
-            else if (negocio.PesquisaLogin(dto) == "O usuário ou a senha estão incorretos!")
-            {
-                MessageBox.Show("Senha ou usuario incorreto! \nVerifique os dados novamente!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.None);
-            }
+            }           
             else
             {
-                MessageBox.Show("Não foi possível se conectar ao Banco! Tente novamente mais tarde..", "Desculpe", MessageBoxButtons.OK, MessageBoxIcon.Error); 
+                MessageBox.Show("Senha ou usuario incorreto! \nVerifique os dados novamente!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            //else
+            //{
+            //    MessageBox.Show("Não foi possível se conectar ao Banco! Tente novamente mais tarde..", "Desculpe", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
         }
 
         private void Form1_Load(object sender, EventArgs e)
