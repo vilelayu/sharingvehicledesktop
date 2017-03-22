@@ -35,9 +35,9 @@
             this.txtPesquisa = new System.Windows.Forms.TextBox();
             this.txtRegiaoDaPesquisa = new System.Windows.Forms.TextBox();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.PainelNotificacao = new System.Windows.Forms.Panel();
             this.BtnRetornaMenu = new System.Windows.Forms.Button();
             this.CarregaPesquisaWeb = new System.Windows.Forms.Button();
+            this.PainelNotificacao = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // progressBar1
@@ -54,18 +54,18 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(22, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 13);
+            this.label1.Size = new System.Drawing.Size(111, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "O que deseja pesquisar? ";
+            this.label1.Text = "Qual sua localização?";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(429, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 13);
+            this.label2.Size = new System.Drawing.Size(81, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Região a ser pesquisada: ";
+            this.label2.Text = "Onde deseja ir?";
             // 
             // txtPesquisa
             // 
@@ -76,7 +76,7 @@
             // 
             // txtRegiaoDaPesquisa
             // 
-            this.txtRegiaoDaPesquisa.Location = new System.Drawing.Point(563, 15);
+            this.txtRegiaoDaPesquisa.Location = new System.Drawing.Point(520, 15);
             this.txtRegiaoDaPesquisa.Name = "txtRegiaoDaPesquisa";
             this.txtRegiaoDaPesquisa.Size = new System.Drawing.Size(243, 20);
             this.txtRegiaoDaPesquisa.TabIndex = 4;
@@ -91,17 +91,6 @@
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(923, 396);
             this.webBrowser1.TabIndex = 6;
-            // 
-            // PainelNotificacao
-            // 
-            this.PainelNotificacao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.PainelNotificacao.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.PainelNotificacao.ForeColor = System.Drawing.SystemColors.Control;
-            this.PainelNotificacao.Location = new System.Drawing.Point(930, 54);
-            this.PainelNotificacao.Name = "PainelNotificacao";
-            this.PainelNotificacao.Size = new System.Drawing.Size(183, 381);
-            this.PainelNotificacao.TabIndex = 7;
             // 
             // BtnRetornaMenu
             // 
@@ -128,6 +117,17 @@
             this.CarregaPesquisaWeb.Text = "Carregue o Mapa";
             this.CarregaPesquisaWeb.UseVisualStyleBackColor = true;
             this.CarregaPesquisaWeb.Click += new System.EventHandler(this.CarregaPesquisaWeb_Click);
+            // 
+            // PainelNotificacao
+            // 
+            this.PainelNotificacao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PainelNotificacao.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.PainelNotificacao.ForeColor = System.Drawing.SystemColors.Control;
+            this.PainelNotificacao.Location = new System.Drawing.Point(930, 50);
+            this.PainelNotificacao.Name = "PainelNotificacao";
+            this.PainelNotificacao.Size = new System.Drawing.Size(183, 385);
+            this.PainelNotificacao.TabIndex = 7;
             // 
             // PesquisasNoMapa
             // 
@@ -159,8 +159,8 @@
         private System.Windows.Forms.TextBox txtPesquisa;
         private System.Windows.Forms.TextBox txtRegiaoDaPesquisa;
         private System.Windows.Forms.WebBrowser webBrowser1;
-        private System.Windows.Forms.Panel PainelNotificacao;
         private System.Windows.Forms.Button BtnRetornaMenu;
         private System.Windows.Forms.Button CarregaPesquisaWeb;
+        private System.Windows.Forms.Panel PainelNotificacao;
     }
 }
