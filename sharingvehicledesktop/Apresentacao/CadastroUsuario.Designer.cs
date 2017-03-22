@@ -39,6 +39,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.TxtRepeteSenha = new System.Windows.Forms.TextBox();
             this.BtnCancelaCadastroUsu = new System.Windows.Forms.Button();
+            this.CbVisualizaSenha = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // btConfirma
@@ -115,6 +116,8 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(272, 20);
             this.txtSenha.TabIndex = 5;
+            this.txtSenha.UseSystemPasswordChar = true;
+            this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
             // 
             // label4
             // 
@@ -151,12 +154,27 @@
             this.BtnCancelaCadastroUsu.UseVisualStyleBackColor = false;
             this.BtnCancelaCadastroUsu.Click += new System.EventHandler(this.BtnCancelaCadastroUsu_Click);
             // 
+            // CbVisualizaSenha
+            // 
+            this.CbVisualizaSenha.AutoSize = true;
+            this.CbVisualizaSenha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CbVisualizaSenha.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CbVisualizaSenha.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.CbVisualizaSenha.Location = new System.Drawing.Point(38, 280);
+            this.CbVisualizaSenha.Name = "CbVisualizaSenha";
+            this.CbVisualizaSenha.Size = new System.Drawing.Size(112, 20);
+            this.CbVisualizaSenha.TabIndex = 10;
+            this.CbVisualizaSenha.Text = "Visualizar senhas. ";
+            this.CbVisualizaSenha.UseVisualStyleBackColor = true;
+            this.CbVisualizaSenha.CheckedChanged += new System.EventHandler(this.VerificaSenha);
+            // 
             // CadastroUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(334, 351);
+            this.Controls.Add(this.CbVisualizaSenha);
             this.Controls.Add(this.BtnCancelaCadastroUsu);
             this.Controls.Add(this.TxtRepeteSenha);
             this.Controls.Add(this.label4);
@@ -189,5 +207,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox TxtRepeteSenha;
         private System.Windows.Forms.Button BtnCancelaCadastroUsu;
+        private System.Windows.Forms.CheckBox CbVisualizaSenha;
     }
 }

@@ -16,8 +16,7 @@ namespace sharingvehicledesktop.Apresentacao
     {
         public CadastroUsuario()
         {
-            InitializeComponent();
-            txtSenha.PasswordChar = '*';
+            InitializeComponent();                      
         }
         
         UsuarioDTO dto = new UsuarioDTO();
@@ -26,6 +25,24 @@ namespace sharingvehicledesktop.Apresentacao
         private void CadastroUsuario_Load(object sender, EventArgs e)
         {
 
+        }
+
+
+        /// <summary>
+        /// Possibilita visualizar a senha do usuário antes de salvar, Caso queira visualizar sua senha é só selecionar o checkBox da tela. 
+        /// </summary>
+        private void VerificaSenha(object sender, EventArgs e)
+        {
+            if (CbVisualizaSenha.Checked == true)
+            {
+                txtSenha.UseSystemPasswordChar = false;
+                TxtRepeteSenha.UseSystemPasswordChar = false;
+            }
+            else if (CbVisualizaSenha.Checked == false)
+            {
+                txtSenha.UseSystemPasswordChar = true;
+                TxtRepeteSenha.UseSystemPasswordChar = true; 
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -79,7 +96,16 @@ namespace sharingvehicledesktop.Apresentacao
 
         private void BtnCancelaCadastroUsu_Click(object sender, EventArgs e)
         {
-            this.Close(); 
+            this.Close();
+            Form1 novo = new Form1();
+            novo.Show(); 
         }
+
+        private void txtSenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

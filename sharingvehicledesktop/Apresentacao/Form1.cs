@@ -17,8 +17,7 @@ namespace sharingvehicledesktop
     {
         public Form1()
         {
-            InitializeComponent();
-           // txtSenha.PasswordChar = '*';
+            InitializeComponent();           
         }
 
         UsuarioDTO dto = new UsuarioDTO();
