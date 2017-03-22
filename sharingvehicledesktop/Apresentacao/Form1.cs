@@ -54,14 +54,14 @@ namespace sharingvehicledesktop
                 menu.Show();
                 this.Hide();
             }           
+            else if (negocio.PesquisaLogin(dto) == "O usuário ou a senha estão incorretos!")
+            {
+                MessageBox.Show("Senha ou usuario incorreto! \nVerifique os dados, tente novamente!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             else
             {
-                MessageBox.Show("Senha ou usuario incorreto! \nVerifique os dados novamente!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Não foi possível se conectar ao Banco! Tente novamente mais tarde...", "Desculpe", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            //else
-            //{
-            //    MessageBox.Show("Não foi possível se conectar ao Banco! Tente novamente mais tarde..", "Desculpe", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
         }
 
         private void Form1_Load(object sender, EventArgs e)
