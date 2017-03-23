@@ -144,6 +144,7 @@
     <Compile Include="Apresentacao\relatorioDeVistoria.Designer.cs">
       <DependentUpon>relatorioDeVistoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="BancoDados\AcessoBancoDados2.cs" />
     <Compile Include="BancoDados\AcessoBancoDeDados.cs" />
     <Compile Include="DTO\AgendaDTO.cs" />
     <Compile Include="DTO\CarroDTO.cs" />
