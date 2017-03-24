@@ -8,20 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using sharingvehicledesktop.DTO;
-using sharingvehicledesktop.Apresentacao; 
+using sharingvehicledesktop.Apresentacao;
 
 namespace sharingvehicledesktop.Apresentacao
 {
     public partial class Menu : Form
     {
-        
+
 
         public Menu(string dto)
         {
             InitializeComponent();
-            label1.Text = label1.Text+dto+"!";
+            label1.Text = label1.Text + dto + "!";
             OcultaBradesco();
-            BtnMinimizaWebBradesco.Visible = false; 
+            BtnMinimizaWebBradesco.Visible = false;
+            panelNoticia.Hide(); 
         }
 
         public Menu()
@@ -34,7 +35,7 @@ namespace sharingvehicledesktop.Apresentacao
             agenda.Show();
         }
 
-  
+
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -44,7 +45,7 @@ namespace sharingvehicledesktop.Apresentacao
             this.Close();
         }
 
-      
+
 
         private void abastecimetoToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -58,7 +59,7 @@ namespace sharingvehicledesktop.Apresentacao
             car.Show();
         }
 
-        
+
 
         private void motoristaToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -80,23 +81,23 @@ namespace sharingvehicledesktop.Apresentacao
 
         private void questionarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-        
+
             questionario tela = new questionario();
             tela.Show();
         }
 
-      
+
 
         private void deslocamentoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Deslocamento NovoDeslocamento = new Deslocamento();
-            NovoDeslocamento.Show(); 
+            NovoDeslocamento.Show();
         }
-                
+
 
         private void rateioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            RateioDosGastos Rateio = new RateioDosGastos(); 
+            RateioDosGastos Rateio = new RateioDosGastos();
             Rateio.Show();
         }
 
@@ -110,19 +111,19 @@ namespace sharingvehicledesktop.Apresentacao
             webBradesco.Navigate(url);
             LabelImagineCup.Show();
             LabelContrataSeguro.Hide();
-            BtnFacebook.Hide(); 
+            BtnFacebook.Hide();
         }
 
         private void contrateUmSeguroToolStripMenuItem_Click(object sender, EventArgs e)
         {
             RealizaSeguro();
-            BtnMinimizaWebBradesco.Visible = true; 
+            BtnMinimizaWebBradesco.Visible = true;
         }
 
         public void OcultaBradesco()
         {
             webBradesco.Hide();
-            LabelImagineCup.Hide(); 
+            LabelImagineCup.Hide();
         }
 
         private void agendaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -133,26 +134,48 @@ namespace sharingvehicledesktop.Apresentacao
 
         private void BtnMinimizaWebBradesco_Click(object sender, EventArgs e)
         {
-            BtnMinimizaWebBradesco.Visible = false; 
+            BtnMinimizaWebBradesco.Visible = false;
             webBradesco.Hide();
             LabelImagineCup.Visible = false;
-            BtnFacebook.Show(); 
+            BtnFacebook.Show();
         }
 
         private void alterarSenhaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CadastroUsuario MudarSenha = new CadastroUsuario();
-            MudarSenha.Show();        
-        }   
-        
+            MudarSenha.Show();
+        }
+
         /// <summary>
         /// Abre a página do projeto no facebook através do navegador da máquina. 
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void BtnFacebook_Click(object sender, EventArgs e)
-        {            
-            System.Diagnostics.Process.Start("https://www.facebook.com/Sharingvehicle/"); 
+        {
+            System.Diagnostics.Process.Start("https://www.facebook.com/Sharingvehicle/");
+        }
+
+        /// <summary>
+        /// Aumenta e diminui o painel de notícias.
+        /// </summary>
+        public void verificaTamanhopainel()
+        {
+            if (BtnGerenciaTamanhoPainel.Text == "+")
+            {
+                panelNoticia.Show();
+                BtnGerenciaTamanhoPainel.Text = "-";
+            }
+            else if (BtnGerenciaTamanhoPainel.Text == "-")
+            {
+                panelNoticia.Hide();
+                BtnGerenciaTamanhoPainel.Text = "+";
+            }
+        }
+
+        private void BtnGerenciaTamanhoPainel_Click(object sender, EventArgs e)
+        {
+            verificaTamanhopainel(); 
         }
     }
 }

@@ -54,6 +54,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.LblImagineBarra = new System.Windows.Forms.Label();
             this.BtnFacebook = new System.Windows.Forms.Button();
+            this.BtnGerenciaTamanhoPainel = new System.Windows.Forms.Button();
+            this.panelNoticia = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.PainelDesenvolvedor.SuspendLayout();
             this.SuspendLayout();
@@ -299,12 +301,41 @@
             this.BtnFacebook.UseVisualStyleBackColor = true;
             this.BtnFacebook.Click += new System.EventHandler(this.BtnFacebook_Click);
             // 
+            // BtnGerenciaTamanhoPainel
+            // 
+            this.BtnGerenciaTamanhoPainel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnGerenciaTamanhoPainel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnGerenciaTamanhoPainel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.BtnGerenciaTamanhoPainel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
+            this.BtnGerenciaTamanhoPainel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnGerenciaTamanhoPainel.Location = new System.Drawing.Point(937, 0);
+            this.BtnGerenciaTamanhoPainel.Name = "BtnGerenciaTamanhoPainel";
+            this.BtnGerenciaTamanhoPainel.Size = new System.Drawing.Size(35, 24);
+            this.BtnGerenciaTamanhoPainel.TabIndex = 23;
+            this.BtnGerenciaTamanhoPainel.Text = "+";
+            this.BtnGerenciaTamanhoPainel.UseVisualStyleBackColor = false;
+            this.BtnGerenciaTamanhoPainel.Click += new System.EventHandler(this.BtnGerenciaTamanhoPainel_Click);
+            // 
+            // panelNoticia
+            // 
+            this.panelNoticia.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelNoticia.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelNoticia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelNoticia.Location = new System.Drawing.Point(563, 24);
+            this.panelNoticia.Name = "panelNoticia";
+            this.panelNoticia.Size = new System.Drawing.Size(409, 422);
+            this.panelNoticia.TabIndex = 24;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(972, 471);
+            this.Controls.Add(this.panelNoticia);
+            this.Controls.Add(this.BtnGerenciaTamanhoPainel);
             this.Controls.Add(this.BtnFacebook);
             this.Controls.Add(this.PainelDesenvolvedor);
             this.Controls.Add(this.BtnMinimizaWebBradesco);
@@ -352,5 +383,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label LblImagineBarra;
         private System.Windows.Forms.Button BtnFacebook;
+        private System.Windows.Forms.Button BtnGerenciaTamanhoPainel;
+        private System.Windows.Forms.Panel panelNoticia;
     }
 }
