@@ -83,11 +83,7 @@ namespace sharingvehicledesktop.Apresentacao
             tela.Show();
         }
 
-        private void vistoriasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            relatorioDeVistoria vistoria = new relatorioDeVistoria();
-            vistoria.Show();
-        }
+      
 
         private void deslocamentoToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -100,12 +96,6 @@ namespace sharingvehicledesktop.Apresentacao
         {
             RateioDosGastos Rateio = new RateioDosGastos(); 
             Rateio.Show();
-        }
-
-        private void vistoriaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            relatorioDeVistoria vistoria = new relatorioDeVistoria();
-            vistoria.Show();
         }
 
         /// <summary>
@@ -129,6 +119,12 @@ namespace sharingvehicledesktop.Apresentacao
         {
             webBradesco.Hide();
             LabelImagineCup.Hide(); 
+        }
+
+        private void agendaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Agenda agenda = new Agenda();
+            agenda.Show();
         }
     }
 }

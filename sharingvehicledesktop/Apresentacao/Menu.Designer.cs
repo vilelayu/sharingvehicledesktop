@@ -48,6 +48,7 @@
             this.webBradesco = new System.Windows.Forms.WebBrowser();
             this.LabelImagineCup = new System.Windows.Forms.Label();
             this.LabelContrataSeguro = new System.Windows.Forms.Label();
+            this.agendaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,7 +59,8 @@
             this.cadastrosToolStripMenuItem,
             this.mapaGPSToolStripMenuItem,
             this.questionarioToolStripMenuItem,
-            this.contrateUmSeguroToolStripMenuItem});
+            this.contrateUmSeguroToolStripMenuItem,
+            this.agendaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(972, 24);
@@ -148,7 +150,7 @@
             this.vistoriaToolStripMenuItem.Name = "vistoriaToolStripMenuItem";
             this.vistoriaToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.vistoriaToolStripMenuItem.Text = "Vistoria";
-            this.vistoriaToolStripMenuItem.Click += new System.EventHandler(this.vistoriaToolStripMenuItem_Click);
+           
             // 
             // mapaGPSToolStripMenuItem
             // 
@@ -217,6 +219,13 @@
             this.LabelContrataSeguro.TabIndex = 19;
             this.LabelContrataSeguro.Text = "Contrate um seguro para o seu veículo, é só selecionar o opção acima.";
             // 
+            // agendaToolStripMenuItem
+            // 
+            this.agendaToolStripMenuItem.Name = "agendaToolStripMenuItem";
+            this.agendaToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.agendaToolStripMenuItem.Text = "Agenda";
+            this.agendaToolStripMenuItem.Click += new System.EventHandler(this.agendaToolStripMenuItem_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -259,5 +268,6 @@
         private System.Windows.Forms.ToolStripMenuItem contrateUmSeguroToolStripMenuItem;
         private System.Windows.Forms.Label LabelImagineCup;
         private System.Windows.Forms.Label LabelContrataSeguro;
+        private System.Windows.Forms.ToolStripMenuItem agendaToolStripMenuItem;
     }
 }

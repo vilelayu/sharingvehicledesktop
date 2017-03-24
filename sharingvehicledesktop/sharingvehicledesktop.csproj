@@ -138,12 +138,6 @@
     <Compile Include="Apresentacao\RateioDosGastos.Designer.cs">
       <DependentUpon>RateioDosGastos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Apresentacao\relatorioDeVistoria.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Apresentacao\relatorioDeVistoria.Designer.cs">
-      <DependentUpon>relatorioDeVistoria.cs</DependentUpon>
-    </Compile>
     <Compile Include="BancoDados\AcessoBancoDados2.cs" />
     <Compile Include="BancoDados\AcessoBancoDeDados.cs" />
     <Compile Include="DTO\AgendaDTO.cs" />
@@ -165,6 +159,7 @@
     <Compile Include="Negocios\AgendaNegocio.cs" />
     <Compile Include="Negocios\CarroNegocio.cs" />
     <Compile Include="Negocios\CombustivelNegocio.cs" />
+    <Compile Include="Negocios\ConfigDataGrid.cs" />
     <Compile Include="Negocios\DeslocamentoNegocio.cs" />
     <Compile Include="Negocios\GastoNegocio.cs" />
     <Compile Include="Negocios\GrupoNegocio.cs" />
@@ -214,9 +209,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Apresentacao\RateioDosGastos.resx">
       <DependentUpon>RateioDosGastos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Apresentacao\relatorioDeVistoria.resx">
-      <DependentUpon>relatorioDeVistoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

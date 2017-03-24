@@ -32,8 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Dia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Horario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -74,30 +72,18 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Dia,
-            this.Horario});
-            this.dataGridView1.Location = new System.Drawing.Point(29, 72);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 72);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 287);
+            this.dataGridView1.Size = new System.Drawing.Size(421, 287);
             this.dataGridView1.TabIndex = 3;
-            // 
-            // Dia
-            // 
-            this.Dia.HeaderText = "Dia";
-            this.Dia.Name = "Dia";
-            // 
-            // Horario
-            // 
-            this.Horario.HeaderText = "Horario";
-            this.Horario.Name = "Horario";
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(336, 72);
+            this.label2.Location = new System.Drawing.Point(452, 58);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 25);
             this.label2.TabIndex = 4;
@@ -108,7 +94,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(336, 138);
+            this.label3.Location = new System.Drawing.Point(452, 139);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(231, 25);
             this.label3.TabIndex = 5;
@@ -119,7 +105,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(336, 213);
+            this.label4.Location = new System.Drawing.Point(455, 213);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(201, 25);
             this.label4.TabIndex = 6;
@@ -130,7 +116,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(336, 291);
+            this.label5.Location = new System.Drawing.Point(452, 291);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(47, 25);
             this.label5.TabIndex = 7;
@@ -141,7 +127,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(534, 291);
+            this.label6.Location = new System.Drawing.Point(634, 291);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(89, 25);
             this.label6.TabIndex = 8;
@@ -149,35 +135,35 @@
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(341, 100);
+            this.txtID.Location = new System.Drawing.Point(457, 95);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(282, 20);
             this.txtID.TabIndex = 9;
             // 
             // txtCodigoMotorista
             // 
-            this.txtCodigoMotorista.Location = new System.Drawing.Point(341, 177);
+            this.txtCodigoMotorista.Location = new System.Drawing.Point(457, 176);
             this.txtCodigoMotorista.Name = "txtCodigoMotorista";
             this.txtCodigoMotorista.Size = new System.Drawing.Size(282, 20);
             this.txtCodigoMotorista.TabIndex = 10;
             // 
             // txtCodigoVeiculo
             // 
-            this.txtCodigoVeiculo.Location = new System.Drawing.Point(341, 241);
+            this.txtCodigoVeiculo.Location = new System.Drawing.Point(457, 241);
             this.txtCodigoVeiculo.Name = "txtCodigoVeiculo";
             this.txtCodigoVeiculo.Size = new System.Drawing.Size(282, 20);
             this.txtCodigoVeiculo.TabIndex = 11;
             // 
             // txtDia
             // 
-            this.txtDia.Location = new System.Drawing.Point(341, 319);
+            this.txtDia.Location = new System.Drawing.Point(457, 319);
             this.txtDia.Name = "txtDia";
             this.txtDia.Size = new System.Drawing.Size(100, 20);
             this.txtDia.TabIndex = 12;
             // 
             // txtHora
             // 
-            this.txtHora.Location = new System.Drawing.Point(522, 320);
+            this.txtHora.Location = new System.Drawing.Point(639, 319);
             this.txtHora.Name = "txtHora";
             this.txtHora.Size = new System.Drawing.Size(100, 20);
             this.txtHora.TabIndex = 13;
@@ -238,8 +224,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Dia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Horario;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

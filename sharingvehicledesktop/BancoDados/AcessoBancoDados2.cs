@@ -19,10 +19,10 @@ namespace sharingvehicledesktop.BancoDados
         private MySqlDataAdapter da;
 
         //Atributos para a conexão com o Banco de Dados
-        private String server = "192.168.2.250"; //Servidor, pode ser tanto a sua máquina local quanto um servidor de verdade
-        private String user = "pinovacao"; //Usuário do banco de dados
-        private String password = "senai"; //Senha do usuário para acessar o banco de dados
-        private String database = "Car"; //Banco de Dados
+        private String server = "localhost"; //Servidor, pode ser tanto a sua máquina local quanto um servidor de verdade
+        private String user = "root"; //Usuário do banco de dados
+        private String password = "anacarolina"; //Senha do usuário para acessar o banco de dados
+        private String database = "sharingvehicle"; //Banco de Dados
 
 
         //Operações da Camada de Dados
