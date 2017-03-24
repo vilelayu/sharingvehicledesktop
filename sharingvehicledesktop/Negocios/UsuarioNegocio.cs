@@ -70,12 +70,13 @@ namespace sharingvehicledesktop.Negocios
         /// <returns></returns>
         public string AtualizarUsuario(UsuarioDTO usuario)
         {
+            acessoDadosSqlServer = new AcessoBancoDeDados();
+
             try
             {
                 acessoDadosSqlServer.LimparParametros();
                 acessoDadosSqlServer.AdicionarParametros("_idUsuario", usuario.id);
-                acessoDadosSqlServer.AdicionarParametros("Nome", usuario.nome);
-                acessoDadosSqlServer.AdicionarParametros("Senha", usuario.senha);
+                acessoDadosSqlServer.AdicionarParametros("_Senha", usuario.senha);
 
                 string retorno = acessoDadosSqlServer.ExecutarManipulacao(CommandType.StoredProcedure, "spAlterarUsuario").ToString();
                 return retorno;
@@ -146,6 +147,7 @@ namespace sharingvehicledesktop.Negocios
         /// <returns></returns>
         public string PesquisaLogin(UsuarioDTO usuario)
         {
+            acessoDadosSqlServer = new AcessoBancoDeDados(); 
             string retorno; 
             try
             {

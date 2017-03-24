@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using sharingvehicledesktop.DTO;
 using sharingvehicledesktop.Negocios;
+using sharingvehicledesktop.Apresentacao;
 
 namespace sharingvehicledesktop.Apresentacao
 {
@@ -16,9 +17,10 @@ namespace sharingvehicledesktop.Apresentacao
     {
         public CadastroUsuario()
         {
-            InitializeComponent();                      
+            InitializeComponent();
+            EscondeItemDeCadastro();
         }
-        
+
         UsuarioDTO dto = new UsuarioDTO();
         UsuarioNegocio negocio = new UsuarioNegocio();
 
@@ -41,7 +43,7 @@ namespace sharingvehicledesktop.Apresentacao
             else if (CbVisualizaSenha.Checked == false)
             {
                 txtSenha.UseSystemPasswordChar = true;
-                TxtRepeteSenha.UseSystemPasswordChar = true; 
+                TxtRepeteSenha.UseSystemPasswordChar = true;
             }
         }
 
@@ -54,7 +56,7 @@ namespace sharingvehicledesktop.Apresentacao
 
         private void btConfirma_Click(object sender, EventArgs e)
         {
-            verificaCamposParaInserir(); 
+            verificaCamposParaInserir();
         }
 
 
@@ -87,9 +89,7 @@ namespace sharingvehicledesktop.Apresentacao
                 }
                 finally
                 {
-                    txtNome.Text = "";
-                    txtSenha.Text = "";
-                    TxtRepeteSenha.Text = "";
+                    LimparParametros(); 
                 }
             }
         }
@@ -98,7 +98,7 @@ namespace sharingvehicledesktop.Apresentacao
         {
             this.Close();
             Form1 novo = new Form1();
-            novo.Show(); 
+            novo.Show();
         }
 
         private void txtSenha_TextChanged(object sender, EventArgs e)
@@ -106,6 +106,63 @@ namespace sharingvehicledesktop.Apresentacao
 
         }
 
+        /// <summary>
+        /// Verifica se o Menu está abertp, caso esteva muda totalmente as funcionalidades do cadastro de usuário para redefinição de senha. 
+        /// </summary>
+        public void EscondeItemDeCadastro()
+        {
+            if (Application.OpenForms.OfType<Menu>().Count() > 0)
+            {
+                lblCadastroUsuario.Text = "Redefina sua senha: ";
+                lblNome.Text = "Qual seu ID?";
+                btConfirma.Hide();
+            }
+            btnRedefinirSenha.Location = new Point(234, 316);
+            btnRedefinirSenha.Visible = true; 
+        }
+
         
+
+        public void TrocaSenha()
+        {
+            try
+            {
+                dto.id = int.Parse(txtNome.Text);
+                dto.senha = txtSenha.Text;
+                negocio.AtualizarUsuario(dto);
+                MessageBox.Show("Senha redefinida com sucesso! \nDeseja fechar está tela?", "Sucesso", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                
+                switch (DialogResult)
+                {
+                    case DialogResult.Yes: this.Hide();
+                        break;
+                    case DialogResult.OK: LimparParametros();
+                        break; 
+                } 
+            }
+            catch
+            {
+                MessageBox.Show("Algo deu errado e não foi possível atualizar sua senha. ", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                LimparParametros();
+            }
+        }
+
+        /// <summary>
+        /// Limpa os parâmetros após realizar suas funções.. 
+        /// </summary>
+        public void LimparParametros()
+        {
+            txtNome.Text = "";
+            txtSenha.Text = "";
+            TxtRepeteSenha.Text = "";
+        }
+
+        private void btnRedefinirSenha_Click(object sender, EventArgs e)
+        {
+            TrocaSenha(); 
+        }
     }
 }

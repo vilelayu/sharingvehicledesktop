@@ -201,7 +201,7 @@
             // 
             // btsalvar
             // 
-            this.btsalvar.Location = new System.Drawing.Point(511, 415);
+            this.btsalvar.Location = new System.Drawing.Point(586, 411);
             this.btsalvar.Name = "btsalvar";
             this.btsalvar.Size = new System.Drawing.Size(75, 23);
             this.btsalvar.TabIndex = 26;
@@ -211,7 +211,7 @@
             // 
             // btcancela
             // 
-            this.btcancela.Location = new System.Drawing.Point(601, 415);
+            this.btcancela.Location = new System.Drawing.Point(505, 411);
             this.btcancela.Name = "btcancela";
             this.btcancela.Size = new System.Drawing.Size(75, 23);
             this.btcancela.TabIndex = 27;
@@ -224,7 +224,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(718, 470);
+            this.ClientSize = new System.Drawing.Size(677, 444);
             this.Controls.Add(this.btcancela);
             this.Controls.Add(this.btsalvar);
             this.Controls.Add(this.label8);
@@ -243,7 +243,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CadastroCar";
             this.Text = "CadastroCar";

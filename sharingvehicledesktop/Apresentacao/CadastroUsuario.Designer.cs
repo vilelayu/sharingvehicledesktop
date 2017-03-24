@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroUsuario));
             this.btConfirma = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblCadastroUsuario = new System.Windows.Forms.Label();
+            this.lblNome = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.btVoltar = new System.Windows.Forms.Button();
@@ -40,6 +40,7 @@
             this.TxtRepeteSenha = new System.Windows.Forms.TextBox();
             this.BtnCancelaCadastroUsu = new System.Windows.Forms.Button();
             this.CbVisualizaSenha = new System.Windows.Forms.CheckBox();
+            this.btnRedefinirSenha = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btConfirma
@@ -50,7 +51,7 @@
             this.btConfirma.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btConfirma.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
             this.btConfirma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btConfirma.Location = new System.Drawing.Point(235, 316);
+            this.btConfirma.Location = new System.Drawing.Point(234, 316);
             this.btConfirma.Name = "btConfirma";
             this.btConfirma.Size = new System.Drawing.Size(75, 23);
             this.btConfirma.TabIndex = 0;
@@ -58,27 +59,27 @@
             this.btConfirma.UseVisualStyleBackColor = false;
             this.btConfirma.Click += new System.EventHandler(this.btConfirma_Click);
             // 
-            // label1
+            // lblCadastroUsuario
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(54, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(277, 31);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Cadastro de usuario";
+            this.lblCadastroUsuario.AutoSize = true;
+            this.lblCadastroUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadastroUsuario.ForeColor = System.Drawing.Color.White;
+            this.lblCadastroUsuario.Location = new System.Drawing.Point(54, 13);
+            this.lblCadastroUsuario.Name = "lblCadastroUsuario";
+            this.lblCadastroUsuario.Size = new System.Drawing.Size(277, 31);
+            this.lblCadastroUsuario.TabIndex = 1;
+            this.lblCadastroUsuario.Text = "Cadastro de usuario";
             // 
-            // label2
+            // lblNome
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(35, 93);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 25);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Nome:";
+            this.lblNome.AutoSize = true;
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.ForeColor = System.Drawing.Color.White;
+            this.lblNome.Location = new System.Drawing.Point(35, 93);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(79, 25);
+            this.lblNome.TabIndex = 2;
+            this.lblNome.Text = "Nome:";
             // 
             // label3
             // 
@@ -146,7 +147,7 @@
             this.BtnCancelaCadastroUsu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.BtnCancelaCadastroUsu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.BtnCancelaCadastroUsu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCancelaCadastroUsu.Location = new System.Drawing.Point(143, 316);
+            this.BtnCancelaCadastroUsu.Location = new System.Drawing.Point(153, 316);
             this.BtnCancelaCadastroUsu.Name = "BtnCancelaCadastroUsu";
             this.BtnCancelaCadastroUsu.Size = new System.Drawing.Size(75, 23);
             this.BtnCancelaCadastroUsu.TabIndex = 9;
@@ -168,12 +169,27 @@
             this.CbVisualizaSenha.UseVisualStyleBackColor = true;
             this.CbVisualizaSenha.CheckedChanged += new System.EventHandler(this.VerificaSenha);
             // 
+            // btnRedefinirSenha
+            // 
+            this.btnRedefinirSenha.BackColor = System.Drawing.Color.White;
+            this.btnRedefinirSenha.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnRedefinirSenha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRedefinirSenha.Location = new System.Drawing.Point(72, 316);
+            this.btnRedefinirSenha.Name = "btnRedefinirSenha";
+            this.btnRedefinirSenha.Size = new System.Drawing.Size(75, 23);
+            this.btnRedefinirSenha.TabIndex = 11;
+            this.btnRedefinirSenha.Text = "Redefinir";
+            this.btnRedefinirSenha.UseVisualStyleBackColor = false;
+            this.btnRedefinirSenha.Visible = false;
+            this.btnRedefinirSenha.Click += new System.EventHandler(this.btnRedefinirSenha_Click);
+            // 
             // CadastroUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(334, 351);
+            this.Controls.Add(this.btnRedefinirSenha);
             this.Controls.Add(this.CbVisualizaSenha);
             this.Controls.Add(this.BtnCancelaCadastroUsu);
             this.Controls.Add(this.TxtRepeteSenha);
@@ -182,8 +198,8 @@
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblNome);
+            this.Controls.Add(this.lblCadastroUsuario);
             this.Controls.Add(this.btConfirma);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -198,8 +214,8 @@
         #endregion
 
         private System.Windows.Forms.Button btConfirma;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblCadastroUsuario;
+        private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Button btVoltar;
@@ -208,5 +224,6 @@
         private System.Windows.Forms.TextBox TxtRepeteSenha;
         private System.Windows.Forms.Button BtnCancelaCadastroUsu;
         private System.Windows.Forms.CheckBox CbVisualizaSenha;
+        private System.Windows.Forms.Button btnRedefinirSenha;
     }
 }

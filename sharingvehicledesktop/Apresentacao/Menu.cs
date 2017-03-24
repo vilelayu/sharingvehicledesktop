@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using sharingvehicledesktop.DTO;
+using sharingvehicledesktop.Apresentacao; 
 
 namespace sharingvehicledesktop.Apresentacao
 {
@@ -20,6 +21,7 @@ namespace sharingvehicledesktop.Apresentacao
             InitializeComponent();
             label1.Text = label1.Text+dto+"!";
             OcultaBradesco();
+            BtnMinimizaWebBradesco.Visible = false; 
         }
 
         public Menu()
@@ -107,12 +109,14 @@ namespace sharingvehicledesktop.Apresentacao
             string url = "http://www.bradescoseguros.com.br/wps/portal/TransforDigital/Site/Produtos/Auto";
             webBradesco.Navigate(url);
             LabelImagineCup.Show();
-            LabelContrataSeguro.Hide(); 
+            LabelContrataSeguro.Hide();
+            BtnFacebook.Hide(); 
         }
 
         private void contrateUmSeguroToolStripMenuItem_Click(object sender, EventArgs e)
         {
             RealizaSeguro();
+            BtnMinimizaWebBradesco.Visible = true; 
         }
 
         public void OcultaBradesco()
@@ -125,6 +129,30 @@ namespace sharingvehicledesktop.Apresentacao
         {
             Agenda agenda = new Agenda();
             agenda.Show();
+        }
+
+        private void BtnMinimizaWebBradesco_Click(object sender, EventArgs e)
+        {
+            BtnMinimizaWebBradesco.Visible = false; 
+            webBradesco.Hide();
+            LabelImagineCup.Visible = false;
+            BtnFacebook.Show(); 
+        }
+
+        private void alterarSenhaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CadastroUsuario MudarSenha = new CadastroUsuario();
+            MudarSenha.Show();        
+        }   
+        
+        /// <summary>
+        /// Abre a página do projeto no facebook através do navegador da máquina. 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnFacebook_Click(object sender, EventArgs e)
+        {            
+            System.Diagnostics.Process.Start("https://www.facebook.com/Sharingvehicle/"); 
         }
     }
 }
