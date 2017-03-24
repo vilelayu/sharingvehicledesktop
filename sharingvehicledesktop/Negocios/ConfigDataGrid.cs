@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using sharingvehicledesktop.BancoDados;
 using System.Data;
 
@@ -18,6 +14,26 @@ namespace sharingvehicledesktop.Negocios
                 DataTable dt = new DataTable();
                 bd.Conectar();
                 dt = bd.RetDataTable("SELECT * from agenda");
+                return dt;
+            }
+
+            catch (Exception ex)
+            {
+                throw new Exception("Erro ao tentar consultar as revisões: " + ex.Message);
+            }
+            finally
+            {
+                bd = null;
+            }
+
+        }
+        public DataTable SelecionaRateio()
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                bd.Conectar();
+                dt = bd.RetDataTable("SELECT * from rateio");
                 return dt;
             }
 
