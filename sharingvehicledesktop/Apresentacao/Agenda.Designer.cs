@@ -44,26 +44,32 @@
             this.txtHora = new System.Windows.Forms.TextBox();
             this.btnSalvarAgenda = new System.Windows.Forms.Button();
             this.BtnCancelar = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(68, 18);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(59, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 25);
+            this.label1.Size = new System.Drawing.Size(163, 25);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Agenda";
+            this.label1.Text = "Agendamento:";
             // 
             // button1
             // 
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Location = new System.Drawing.Point(3, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(46, 39);
             this.button1.TabIndex = 2;
@@ -116,7 +122,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(452, 291);
+            this.label5.Location = new System.Drawing.Point(452, 271);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(47, 25);
             this.label5.TabIndex = 7;
@@ -127,7 +133,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(634, 291);
+            this.label6.Location = new System.Drawing.Point(634, 271);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(89, 25);
             this.label6.TabIndex = 8;
@@ -156,37 +162,80 @@
             // 
             // txtDia
             // 
-            this.txtDia.Location = new System.Drawing.Point(457, 319);
+            this.txtDia.Location = new System.Drawing.Point(457, 299);
             this.txtDia.Name = "txtDia";
             this.txtDia.Size = new System.Drawing.Size(100, 20);
             this.txtDia.TabIndex = 12;
             // 
             // txtHora
             // 
-            this.txtHora.Location = new System.Drawing.Point(639, 319);
+            this.txtHora.Location = new System.Drawing.Point(639, 299);
             this.txtHora.Name = "txtHora";
             this.txtHora.Size = new System.Drawing.Size(100, 20);
             this.txtHora.TabIndex = 13;
             // 
             // btnSalvarAgenda
             // 
-            this.btnSalvarAgenda.Location = new System.Drawing.Point(581, 379);
+            this.btnSalvarAgenda.BackColor = System.Drawing.Color.White;
+            this.btnSalvarAgenda.FlatAppearance.BorderSize = 0;
+            this.btnSalvarAgenda.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnSalvarAgenda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnSalvarAgenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalvarAgenda.Location = new System.Drawing.Point(691, 352);
             this.btnSalvarAgenda.Name = "btnSalvarAgenda";
-            this.btnSalvarAgenda.Size = new System.Drawing.Size(75, 23);
+            this.btnSalvarAgenda.Size = new System.Drawing.Size(75, 29);
             this.btnSalvarAgenda.TabIndex = 14;
             this.btnSalvarAgenda.Text = "Salvar";
-            this.btnSalvarAgenda.UseVisualStyleBackColor = true;
+            this.btnSalvarAgenda.UseVisualStyleBackColor = false;
             this.btnSalvarAgenda.Click += new System.EventHandler(this.btnSalvarAgenda_Click);
             // 
             // BtnCancelar
             // 
-            this.BtnCancelar.Location = new System.Drawing.Point(664, 379);
+            this.BtnCancelar.BackColor = System.Drawing.Color.White;
+            this.BtnCancelar.FlatAppearance.BorderSize = 0;
+            this.BtnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.BtnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCancelar.Location = new System.Drawing.Point(613, 352);
             this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.BtnCancelar.Size = new System.Drawing.Size(75, 29);
             this.BtnCancelar.TabIndex = 15;
             this.BtnCancelar.Text = "Cancelar";
-            this.BtnCancelar.UseVisualStyleBackColor = true;
+            this.BtnCancelar.UseVisualStyleBackColor = false;
             this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Location = new System.Drawing.Point(-3, 384);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(783, 30);
+            this.panel1.TabIndex = 21;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(609, 7);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(163, 16);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "Bradesco Seguros | Gamelyst";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(-4, -2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(783, 43);
+            this.panel2.TabIndex = 22;
             // 
             // Agenda
             // 
@@ -194,6 +243,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(775, 414);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.BtnCancelar);
             this.Controls.Add(this.btnSalvarAgenda);
             this.Controls.Add(this.txtHora);
@@ -207,13 +258,16 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Agenda";
             this.Text = "Agenda";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,5 +290,8 @@
         private System.Windows.Forms.TextBox txtHora;
         private System.Windows.Forms.Button btnSalvarAgenda;
         private System.Windows.Forms.Button BtnCancelar;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel panel2;
     }
 }

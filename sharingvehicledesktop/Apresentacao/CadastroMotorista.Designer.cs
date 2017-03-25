@@ -46,14 +46,20 @@
             this.txtnascimento = new System.Windows.Forms.TextBox();
             this.txtvencimento = new System.Windows.Forms.TextBox();
             this.TxtDataInserir = new System.Windows.Forms.DateTimePicker();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Location = new System.Drawing.Point(3, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(46, 39);
             this.button1.TabIndex = 6;
@@ -64,12 +70,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(68, 18);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(59, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(245, 25);
+            this.label1.Size = new System.Drawing.Size(252, 25);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Cadastro de Motorista";
+            this.label1.Text = "Cadastro de Motorista:";
             // 
             // txtCnh
             // 
@@ -167,22 +173,28 @@
             // 
             // btsalva
             // 
-            this.btsalva.Location = new System.Drawing.Point(470, 372);
+            this.btsalva.BackColor = System.Drawing.Color.White;
+            this.btsalva.FlatAppearance.BorderSize = 0;
+            this.btsalva.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btsalva.Location = new System.Drawing.Point(582, 370);
             this.btsalva.Name = "btsalva";
             this.btsalva.Size = new System.Drawing.Size(75, 23);
             this.btsalva.TabIndex = 39;
             this.btsalva.Text = "Salvar";
-            this.btsalva.UseVisualStyleBackColor = true;
+            this.btsalva.UseVisualStyleBackColor = false;
             this.btsalva.Click += new System.EventHandler(this.btsalva_Click);
             // 
             // btcancela
             // 
-            this.btcancela.Location = new System.Drawing.Point(560, 372);
+            this.btcancela.BackColor = System.Drawing.Color.White;
+            this.btcancela.FlatAppearance.BorderSize = 0;
+            this.btcancela.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btcancela.Location = new System.Drawing.Point(501, 370);
             this.btcancela.Name = "btcancela";
             this.btcancela.Size = new System.Drawing.Size(75, 23);
             this.btcancela.TabIndex = 40;
             this.btcancela.Text = "Cancelar";
-            this.btcancela.UseVisualStyleBackColor = true;
+            this.btcancela.UseVisualStyleBackColor = false;
             this.btcancela.Click += new System.EventHandler(this.btcancela_Click);
             // 
             // txtnascimento
@@ -207,12 +219,47 @@
             this.TxtDataInserir.Size = new System.Drawing.Size(282, 20);
             this.TxtDataInserir.TabIndex = 29;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(-2, -3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(674, 42);
+            this.panel1.TabIndex = 44;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Location = new System.Drawing.Point(-2, 399);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(674, 30);
+            this.panel2.TabIndex = 45;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.White;
+            this.label8.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(502, 7);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(163, 16);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "Bradesco Seguros | Gamelyst";
+            // 
             // CadastroMotorista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(669, 420);
+            this.ClientSize = new System.Drawing.Size(669, 427);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.TxtDataInserir);
             this.Controls.Add(this.txtvencimento);
             this.Controls.Add(this.txtnascimento);
@@ -228,12 +275,15 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "CadastroMotorista";
             this.Text = "CadastroMotorista";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,5 +308,8 @@
         private System.Windows.Forms.TextBox txtnascimento;
         private System.Windows.Forms.TextBox txtvencimento;
         private System.Windows.Forms.DateTimePicker TxtDataInserir;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label8;
     }
 }

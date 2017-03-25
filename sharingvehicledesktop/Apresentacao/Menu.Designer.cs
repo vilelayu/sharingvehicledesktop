@@ -51,17 +51,20 @@
             this.LabelContrataSeguro = new System.Windows.Forms.Label();
             this.BtnMinimizaWebBradesco = new System.Windows.Forms.Button();
             this.PainelDesenvolvedor = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.LblImagineBarra = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.BtnFacebook = new System.Windows.Forms.Button();
             this.BtnGerenciaTamanhoPainel = new System.Windows.Forms.Button();
             this.panelNoticia = new System.Windows.Forms.Panel();
+            this.lblDicaPainel = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.PainelDesenvolvedor.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.White;
+            this.menuStrip1.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem,
             this.cadastrosToolStripMenuItem,
@@ -87,14 +90,14 @@
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // alterarSenhaToolStripMenuItem
             // 
             this.alterarSenhaToolStripMenuItem.Name = "alterarSenhaToolStripMenuItem";
-            this.alterarSenhaToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.alterarSenhaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.alterarSenhaToolStripMenuItem.Text = "Alterar Senha";
             this.alterarSenhaToolStripMenuItem.Click += new System.EventHandler(this.alterarSenhaToolStripMenuItem_Click);
             // 
@@ -264,16 +267,6 @@
             this.PainelDesenvolvedor.Size = new System.Drawing.Size(972, 26);
             this.PainelDesenvolvedor.TabIndex = 21;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(493, 18);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Desenvolvedores: Pedro Marcus Paixão Silva e Yuri Souza Vilela";
-            // 
             // LblImagineBarra
             // 
             this.LblImagineBarra.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -285,6 +278,16 @@
             this.LblImagineBarra.Size = new System.Drawing.Size(105, 19);
             this.LblImagineBarra.TabIndex = 22;
             this.LblImagineBarra.Text = "Imagine Cup ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(11, 3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(493, 18);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Desenvolvedores: Pedro Marcus Paixão Silva e Yuri Souza Vilela";
             // 
             // BtnFacebook
             // 
@@ -305,12 +308,14 @@
             // 
             this.BtnGerenciaTamanhoPainel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnGerenciaTamanhoPainel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnGerenciaTamanhoPainel.FlatAppearance.BorderSize = 0;
             this.BtnGerenciaTamanhoPainel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
             this.BtnGerenciaTamanhoPainel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
             this.BtnGerenciaTamanhoPainel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGerenciaTamanhoPainel.Location = new System.Drawing.Point(937, 0);
+            this.BtnGerenciaTamanhoPainel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGerenciaTamanhoPainel.Location = new System.Drawing.Point(932, 0);
             this.BtnGerenciaTamanhoPainel.Name = "BtnGerenciaTamanhoPainel";
-            this.BtnGerenciaTamanhoPainel.Size = new System.Drawing.Size(35, 24);
+            this.BtnGerenciaTamanhoPainel.Size = new System.Drawing.Size(40, 24);
             this.BtnGerenciaTamanhoPainel.TabIndex = 23;
             this.BtnGerenciaTamanhoPainel.Text = "+";
             this.BtnGerenciaTamanhoPainel.UseVisualStyleBackColor = false;
@@ -328,12 +333,25 @@
             this.panelNoticia.Size = new System.Drawing.Size(409, 422);
             this.panelNoticia.TabIndex = 24;
             // 
+            // lblDicaPainel
+            // 
+            this.lblDicaPainel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDicaPainel.AutoSize = true;
+            this.lblDicaPainel.BackColor = System.Drawing.Color.White;
+            this.lblDicaPainel.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDicaPainel.Location = new System.Drawing.Point(799, 4);
+            this.lblDicaPainel.Name = "lblDicaPainel";
+            this.lblDicaPainel.Size = new System.Drawing.Size(132, 16);
+            this.lblDicaPainel.TabIndex = 25;
+            this.lblDicaPainel.Text = "Aumente o painel aqui: ";
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(972, 471);
+            this.Controls.Add(this.lblDicaPainel);
             this.Controls.Add(this.panelNoticia);
             this.Controls.Add(this.BtnGerenciaTamanhoPainel);
             this.Controls.Add(this.BtnFacebook);
@@ -385,5 +403,6 @@
         private System.Windows.Forms.Button BtnFacebook;
         private System.Windows.Forms.Button BtnGerenciaTamanhoPainel;
         private System.Windows.Forms.Panel panelNoticia;
+        private System.Windows.Forms.Label lblDicaPainel;
     }
 }

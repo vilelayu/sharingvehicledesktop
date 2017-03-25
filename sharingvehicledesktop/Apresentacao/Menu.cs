@@ -165,11 +165,13 @@ namespace sharingvehicledesktop.Apresentacao
             {
                 panelNoticia.Show();
                 BtnGerenciaTamanhoPainel.Text = "-";
+                lblDicaPainel.Text = "Diminua o painel aqui: ";
             }
             else if (BtnGerenciaTamanhoPainel.Text == "-")
             {
                 panelNoticia.Hide();
                 BtnGerenciaTamanhoPainel.Text = "+";
+                lblDicaPainel.Text = "Aumente o painel aqui: "; 
             }
         }
 

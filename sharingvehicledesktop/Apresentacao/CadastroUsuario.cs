@@ -49,9 +49,17 @@ namespace sharingvehicledesktop.Apresentacao
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form1 volta = new Form1();
-            volta.Show();
-            this.Close();
+            
+            if(Application.OpenForms.OfType<Menu>().Count() > 0)
+            {
+                this.Close(); 
+            }
+            else
+            {
+                Form1 volta = new Form1();
+                volta.Show();
+                this.Close();
+            }
         }
 
         private void btConfirma_Click(object sender, EventArgs e)
@@ -89,7 +97,7 @@ namespace sharingvehicledesktop.Apresentacao
                 }
                 finally
                 {
-                    LimparParametros(); 
+                    LimparParametros();
                 }
             }
         }
@@ -107,7 +115,7 @@ namespace sharingvehicledesktop.Apresentacao
         }
 
         /// <summary>
-        /// Verifica se o Menu está abertp, caso esteva muda totalmente as funcionalidades do cadastro de usuário para redefinição de senha. 
+        /// Verifica se o Menu está aberto, caso esteva muda totalmente as funcionalidades do cadastro de usuário para redefinição de senha. 
         /// </summary>
         public void EscondeItemDeCadastro()
         {
@@ -116,12 +124,12 @@ namespace sharingvehicledesktop.Apresentacao
                 lblCadastroUsuario.Text = "Redefina sua senha: ";
                 lblNome.Text = "Qual seu ID?";
                 btConfirma.Hide();
+                btnRedefinirSenha.Location = new Point(215, 273);
+                btnRedefinirSenha.Visible = true;
             }
-            btnRedefinirSenha.Location = new Point(234, 316);
-            btnRedefinirSenha.Visible = true; 
         }
 
-        
+
 
         public void TrocaSenha()
         {
@@ -130,15 +138,9 @@ namespace sharingvehicledesktop.Apresentacao
                 dto.id = int.Parse(txtNome.Text);
                 dto.senha = txtSenha.Text;
                 negocio.AtualizarUsuario(dto);
-                MessageBox.Show("Senha redefinida com sucesso! \nDeseja fechar está tela?", "Sucesso", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                MessageBox.Show("Senha redefinida com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close(); 
                 
-                switch (DialogResult)
-                {
-                    case DialogResult.Yes: this.Hide();
-                        break;
-                    case DialogResult.OK: LimparParametros();
-                        break; 
-                } 
             }
             catch
             {
@@ -162,7 +164,7 @@ namespace sharingvehicledesktop.Apresentacao
 
         private void btnRedefinirSenha_Click(object sender, EventArgs e)
         {
-            TrocaSenha(); 
+            TrocaSenha();
         }
     }
 }

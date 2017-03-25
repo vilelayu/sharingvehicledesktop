@@ -47,14 +47,20 @@
             this.label8 = new System.Windows.Forms.Label();
             this.btsalvar = new System.Windows.Forms.Button();
             this.btcancela = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Location = new System.Drawing.Point(3, -1);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(46, 39);
             this.button1.TabIndex = 4;
@@ -65,12 +71,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(68, 18);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(55, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(205, 25);
+            this.label1.Size = new System.Drawing.Size(212, 25);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Cadastro de Carro";
+            this.label1.Text = "Cadastro de Carro:";
             // 
             // txtcor
             // 
@@ -201,23 +207,62 @@
             // 
             // btsalvar
             // 
-            this.btsalvar.Location = new System.Drawing.Point(586, 411);
+            this.btsalvar.BackColor = System.Drawing.Color.White;
+            this.btsalvar.FlatAppearance.BorderSize = 0;
+            this.btsalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btsalvar.Location = new System.Drawing.Point(584, 385);
             this.btsalvar.Name = "btsalvar";
             this.btsalvar.Size = new System.Drawing.Size(75, 23);
             this.btsalvar.TabIndex = 26;
             this.btsalvar.Text = "Salvar";
-            this.btsalvar.UseVisualStyleBackColor = true;
+            this.btsalvar.UseVisualStyleBackColor = false;
             this.btsalvar.Click += new System.EventHandler(this.btsalvar_Click);
             // 
             // btcancela
             // 
-            this.btcancela.Location = new System.Drawing.Point(505, 411);
+            this.btcancela.BackColor = System.Drawing.Color.White;
+            this.btcancela.FlatAppearance.BorderSize = 0;
+            this.btcancela.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btcancela.Location = new System.Drawing.Point(503, 385);
             this.btcancela.Name = "btcancela";
             this.btcancela.Size = new System.Drawing.Size(75, 23);
             this.btcancela.TabIndex = 27;
             this.btcancela.Text = "Cancelar";
-            this.btcancela.UseVisualStyleBackColor = true;
+            this.btcancela.UseVisualStyleBackColor = false;
             this.btcancela.Click += new System.EventHandler(this.btcancela_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Location = new System.Drawing.Point(-3, 416);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(686, 30);
+            this.panel1.TabIndex = 28;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.White;
+            this.label9.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(505, 7);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(163, 16);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "Bradesco Seguros | Gamelyst";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(-3, -2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(686, 42);
+            this.panel2.TabIndex = 29;
             // 
             // CadastroCar
             // 
@@ -225,6 +270,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(677, 444);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btcancela);
             this.Controls.Add(this.btsalvar);
             this.Controls.Add(this.label8);
@@ -241,12 +288,15 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "CadastroCar";
             this.Text = "CadastroCar";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -272,5 +322,8 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btsalvar;
         private System.Windows.Forms.Button btcancela;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Panel panel2;
     }
 }

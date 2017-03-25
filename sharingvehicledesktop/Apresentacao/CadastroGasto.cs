@@ -42,5 +42,45 @@ namespace sharingvehicledesktop.Apresentacao
         {
             limpaCampos();
         }
+
+        private void TxttipoGasto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNParcelas_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtVParcela_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtcodCar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
