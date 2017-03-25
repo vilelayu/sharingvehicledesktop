@@ -15,7 +15,6 @@ namespace sharingvehicledesktop.Apresentacao
     public partial class Menu : Form
     {
 
-
         public Menu(string dto)
         {
             InitializeComponent();
@@ -48,58 +47,114 @@ namespace sharingvehicledesktop.Apresentacao
 
 
         private void abastecimetoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            CadastroCombustivel abastecer = new CadastroCombustivel();
-            abastecer.Show();
-        }
+        {            
+            if (Application.OpenForms.OfType<CadastroCombustivel>().Count() > 0)
+            {
+                MessageBox.Show("A tela de cadastro de combustível já está em exibição!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                CadastroCombustivel abastecer = new CadastroCombustivel();
+                abastecer.Show();
+            }
+            }
 
         private void carroToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            CadastroCar car = new CadastroCar();
-            car.Show();
-        }
+        {           
+            if (Application.OpenForms.OfType<CadastroCar>().Count() > 0)
+            {
+                MessageBox.Show("A tela de cadastro de veículo já está em exibição!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                CadastroCar car = new CadastroCar();
+                car.Show();
+            }
+            }
 
 
 
         private void motoristaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            CadastroMotorista motorista = new CadastroMotorista();
-            motorista.Show();
-        }
+        {            
+            if (Application.OpenForms.OfType<CadastroMotorista>().Count() > 0)
+            {
+                MessageBox.Show("A tela de cadastro de motorista já está em exibição!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                CadastroMotorista motorista = new CadastroMotorista();
+                motorista.Show();
+            }
+            }
 
         private void gastosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CadastroGasto gasto = new CadastroGasto();
-            gasto.Show();
-        }
+            
+            if (Application.OpenForms.OfType<CadastroGasto>().Count() > 0)
+            {
+                MessageBox.Show("A tela de cadastro de gasto já está em exibição!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                CadastroGasto gasto = new CadastroGasto();
+                gasto.Show();
+            }
+            }
 
         private void mapaGPSToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            PesquisasNoMapa pesquisa = new PesquisasNoMapa();
-            pesquisa.Show();
-        }
+        {           
+            if (Application.OpenForms.OfType<PesquisasNoMapa>().Count() > 0)
+            {
+                MessageBox.Show("A tela para pesquisar no mapa já está em exibição!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                PesquisasNoMapa pesquisa = new PesquisasNoMapa();
+                pesquisa.Show();
+            }
+            }
 
         private void questionarioToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-            questionario tela = new questionario();
-            tela.Show();
-        }
+        {          
+            if (Application.OpenForms.OfType<questionario>().Count() > 0)
+            {
+                MessageBox.Show("A tela de quesstionário já está em exibição!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                questionario tela = new questionario();
+                tela.Show();
+            }
+            }
 
 
 
         private void deslocamentoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Deslocamento NovoDeslocamento = new Deslocamento();
-            NovoDeslocamento.Show();
-        }
+        {           
+            if (Application.OpenForms.OfType<Deslocamento>().Count() > 0)
+            {
+                MessageBox.Show("A tela de deslocamento já está em exibição!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                Deslocamento NovoDeslocamento = new Deslocamento();
+                NovoDeslocamento.Show();
+            }
+            }
 
 
         private void rateioToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            RateioDosGastos Rateio = new RateioDosGastos();
-            Rateio.Show();
-        }
+        {          
+            if (Application.OpenForms.OfType<RateioDosGastos>().Count() > 0)
+            {
+                MessageBox.Show("A tela de rateio já está em exibição!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information); 
+            }
+            else
+            {
+                RateioDosGastos Rateio = new RateioDosGastos();
+                Rateio.Show();
+            }
+            }
 
         /// <summary>
         /// Mostra site do bradesco.
@@ -127,10 +182,17 @@ namespace sharingvehicledesktop.Apresentacao
         }
 
         private void agendaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Agenda agenda = new Agenda();
-            agenda.Show();
-        }
+        {            
+            if (Application.OpenForms.OfType<Agenda>().Count() > 0)
+            {
+                MessageBox.Show("A tela de agendamento já está em exibição!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information); 
+            }
+            else
+            {
+                Agenda agenda = new Agenda();
+                agenda.Show();
+            }
+            }
 
         private void BtnMinimizaWebBradesco_Click(object sender, EventArgs e)
         {
@@ -141,10 +203,17 @@ namespace sharingvehicledesktop.Apresentacao
         }
 
         private void alterarSenhaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            CadastroUsuario MudarSenha = new CadastroUsuario();
-            MudarSenha.Show();
-        }
+        {            
+            if (Application.OpenForms.OfType<CadastroUsuario>().Count() > 0)
+            {
+                MessageBox.Show("A tela de cadastro de usuário já está em exibição!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                CadastroUsuario MudarSenha = new CadastroUsuario();
+                MudarSenha.Show();
+            }
+            }
 
         /// <summary>
         /// Abre a página do projeto no facebook através do navegador da máquina. 

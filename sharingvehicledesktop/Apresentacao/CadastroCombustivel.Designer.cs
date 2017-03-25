@@ -107,7 +107,6 @@
             // btnSalvar
             // 
             this.btnSalvar.BackColor = System.Drawing.Color.White;
-            this.btnSalvar.Enabled = false;
             this.btnSalvar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnSalvar.FlatAppearance.BorderSize = 0;
             this.btnSalvar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -189,7 +188,6 @@
             // btnCancelar
             // 
             this.btnCancelar.BackColor = System.Drawing.Color.White;
-            this.btnCancelar.Enabled = false;
             this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnCancelar.FlatAppearance.BorderSize = 0;
             this.btnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;

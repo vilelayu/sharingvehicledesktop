@@ -40,7 +40,6 @@
             this.motoristaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rateioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gastosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.vistoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mapaGPSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.questionarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contrateUmSeguroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -51,7 +50,6 @@
             this.LabelContrataSeguro = new System.Windows.Forms.Label();
             this.BtnMinimizaWebBradesco = new System.Windows.Forms.Button();
             this.PainelDesenvolvedor = new System.Windows.Forms.Panel();
-            this.LblImagineBarra = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.BtnFacebook = new System.Windows.Forms.Button();
             this.BtnGerenciaTamanhoPainel = new System.Windows.Forms.Button();
@@ -84,20 +82,20 @@
             this.sairToolStripMenuItem,
             this.alterarSenhaToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.menuToolStripMenuItem.Text = "Menu";
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // alterarSenhaToolStripMenuItem
             // 
             this.alterarSenhaToolStripMenuItem.Name = "alterarSenhaToolStripMenuItem";
-            this.alterarSenhaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.alterarSenhaToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.alterarSenhaToolStripMenuItem.Text = "Alterar Senha";
             this.alterarSenhaToolStripMenuItem.Click += new System.EventHandler(this.alterarSenhaToolStripMenuItem_Click);
             // 
@@ -109,71 +107,64 @@
             this.deslocamentoToolStripMenuItem,
             this.motoristaToolStripMenuItem,
             this.rateioToolStripMenuItem,
-            this.gastosToolStripMenuItem,
-            this.vistoriaToolStripMenuItem});
+            this.gastosToolStripMenuItem});
             this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
-            this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
             this.cadastrosToolStripMenuItem.Text = "Cadastros";
             // 
             // abastecimetoToolStripMenuItem
             // 
             this.abastecimetoToolStripMenuItem.Name = "abastecimetoToolStripMenuItem";
-            this.abastecimetoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.abastecimetoToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.abastecimetoToolStripMenuItem.Text = "Abastecimeto";
             this.abastecimetoToolStripMenuItem.Click += new System.EventHandler(this.abastecimetoToolStripMenuItem_Click);
             // 
             // carroToolStripMenuItem
             // 
             this.carroToolStripMenuItem.Name = "carroToolStripMenuItem";
-            this.carroToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.carroToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.carroToolStripMenuItem.Text = "Carro";
             this.carroToolStripMenuItem.Click += new System.EventHandler(this.carroToolStripMenuItem_Click);
             // 
             // deslocamentoToolStripMenuItem
             // 
             this.deslocamentoToolStripMenuItem.Name = "deslocamentoToolStripMenuItem";
-            this.deslocamentoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.deslocamentoToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.deslocamentoToolStripMenuItem.Text = "Deslocamento";
             this.deslocamentoToolStripMenuItem.Click += new System.EventHandler(this.deslocamentoToolStripMenuItem_Click);
             // 
             // motoristaToolStripMenuItem
             // 
             this.motoristaToolStripMenuItem.Name = "motoristaToolStripMenuItem";
-            this.motoristaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.motoristaToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.motoristaToolStripMenuItem.Text = "Motorista";
             this.motoristaToolStripMenuItem.Click += new System.EventHandler(this.motoristaToolStripMenuItem_Click);
             // 
             // rateioToolStripMenuItem
             // 
             this.rateioToolStripMenuItem.Name = "rateioToolStripMenuItem";
-            this.rateioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.rateioToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.rateioToolStripMenuItem.Text = "Rateio";
             this.rateioToolStripMenuItem.Click += new System.EventHandler(this.rateioToolStripMenuItem_Click);
             // 
             // gastosToolStripMenuItem
             // 
             this.gastosToolStripMenuItem.Name = "gastosToolStripMenuItem";
-            this.gastosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.gastosToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.gastosToolStripMenuItem.Text = "Gastos";
             this.gastosToolStripMenuItem.Click += new System.EventHandler(this.gastosToolStripMenuItem_Click);
-            // 
-            // vistoriaToolStripMenuItem
-            // 
-            this.vistoriaToolStripMenuItem.Name = "vistoriaToolStripMenuItem";
-            this.vistoriaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.vistoriaToolStripMenuItem.Text = "Vistoria";
             // 
             // mapaGPSToolStripMenuItem
             // 
             this.mapaGPSToolStripMenuItem.Name = "mapaGPSToolStripMenuItem";
-            this.mapaGPSToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
+            this.mapaGPSToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
             this.mapaGPSToolStripMenuItem.Text = "Mapa/GPS";
             this.mapaGPSToolStripMenuItem.Click += new System.EventHandler(this.mapaGPSToolStripMenuItem_Click);
             // 
             // questionarioToolStripMenuItem
             // 
             this.questionarioToolStripMenuItem.Name = "questionarioToolStripMenuItem";
-            this.questionarioToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
+            this.questionarioToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
             this.questionarioToolStripMenuItem.Text = "Questionario";
             this.questionarioToolStripMenuItem.Click += new System.EventHandler(this.questionarioToolStripMenuItem_Click);
             // 
@@ -260,24 +251,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PainelDesenvolvedor.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PainelDesenvolvedor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PainelDesenvolvedor.Controls.Add(this.LblImagineBarra);
             this.PainelDesenvolvedor.Controls.Add(this.label2);
             this.PainelDesenvolvedor.Location = new System.Drawing.Point(0, 445);
             this.PainelDesenvolvedor.Name = "PainelDesenvolvedor";
             this.PainelDesenvolvedor.Size = new System.Drawing.Size(972, 26);
             this.PainelDesenvolvedor.TabIndex = 21;
-            // 
-            // LblImagineBarra
-            // 
-            this.LblImagineBarra.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.LblImagineBarra.AutoSize = true;
-            this.LblImagineBarra.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblImagineBarra.ForeColor = System.Drawing.Color.Black;
-            this.LblImagineBarra.Location = new System.Drawing.Point(854, 3);
-            this.LblImagineBarra.Name = "LblImagineBarra";
-            this.LblImagineBarra.Size = new System.Drawing.Size(105, 19);
-            this.LblImagineBarra.TabIndex = 22;
-            this.LblImagineBarra.Text = "Imagine Cup ";
             // 
             // label2
             // 
@@ -388,7 +366,6 @@
         private System.Windows.Forms.ToolStripMenuItem motoristaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rateioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gastosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem vistoriaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mapaGPSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem questionarioToolStripMenuItem;
         private System.Windows.Forms.WebBrowser webBradesco;
@@ -399,7 +376,6 @@
         private System.Windows.Forms.Button BtnMinimizaWebBradesco;
         private System.Windows.Forms.Panel PainelDesenvolvedor;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label LblImagineBarra;
         private System.Windows.Forms.Button BtnFacebook;
         private System.Windows.Forms.Button BtnGerenciaTamanhoPainel;
         private System.Windows.Forms.Panel panelNoticia;

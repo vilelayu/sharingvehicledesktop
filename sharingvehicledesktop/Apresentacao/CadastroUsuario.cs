@@ -49,10 +49,10 @@ namespace sharingvehicledesktop.Apresentacao
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
-            if(Application.OpenForms.OfType<Menu>().Count() > 0)
+
+            if (Application.OpenForms.OfType<Menu>().Count() > 0)
             {
-                this.Close(); 
+                this.Close();
             }
             else
             {
@@ -104,9 +104,16 @@ namespace sharingvehicledesktop.Apresentacao
 
         private void BtnCancelaCadastroUsu_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Form1 novo = new Form1();
-            novo.Show();
+            if (Application.OpenForms.OfType<Menu>().Count() > 0)
+            {
+                this.Close();
+            }
+            else
+            {
+                this.Close();
+                Form1 novo = new Form1();
+                novo.Show();
+            }
         }
 
         private void txtSenha_TextChanged(object sender, EventArgs e)
@@ -139,8 +146,8 @@ namespace sharingvehicledesktop.Apresentacao
                 dto.senha = txtSenha.Text;
                 negocio.AtualizarUsuario(dto);
                 MessageBox.Show("Senha redefinida com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Close(); 
-                
+                this.Close();
+
             }
             catch
             {
