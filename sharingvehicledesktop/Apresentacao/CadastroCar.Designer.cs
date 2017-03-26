@@ -249,9 +249,9 @@
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(505, 7);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(163, 16);
+            this.label9.Size = new System.Drawing.Size(164, 16);
             this.label9.TabIndex = 10;
-            this.label9.Text = "Bradesco Seguros | Gamelyst";
+            this.label9.Text = "Sharing Vehicle | ImagineCup";
             // 
             // panel2
             // 

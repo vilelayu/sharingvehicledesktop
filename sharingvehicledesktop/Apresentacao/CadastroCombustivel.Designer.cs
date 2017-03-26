@@ -233,9 +233,9 @@
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(215, 5);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(163, 16);
+            this.label7.Size = new System.Drawing.Size(157, 16);
             this.label7.TabIndex = 10;
-            this.label7.Text = "Bradesco Seguros | Gamelyst";
+            this.label7.Text = "Saring Vehicle | ImagineCup";
             // 
             // CadastroCombustivel
             // 

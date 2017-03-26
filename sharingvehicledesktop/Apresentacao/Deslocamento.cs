@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using sharingvehicledesktop.DTO;
+using sharingvehicledesktop.Negocios;
 
 namespace sharingvehicledesktop.Apresentacao
 {
@@ -16,51 +11,71 @@ namespace sharingvehicledesktop.Apresentacao
         {
             InitializeComponent();
         }
+        DeslocamentoDTO dto = new DeslocamentoDTO();
+        DeslocamentoNegocio negocio = new DeslocamentoNegocio();
 
-        private void label2_Click(object sender, EventArgs e)
+        /// <summary>
+        /// botão responsavel de salvar os dados inseridos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnSalarDeslocamento_Click(object sender, EventArgs e)
         {
+            dto.data = DateTime.Parse( txtDataDeslocamento.Text);
+            dto.idCar =int.Parse( txtIdCarroDeslocamento.Text);
+            dto.idMotorista= int.Parse(txtIdMotoristaDeslocamento.Text);
+            dto.quilometragemDeslocada = int.Parse(txtQuilometragemDeslocamento.Text);
+            MessageBox.Show(negocio.InserteDeslocamento(dto));
+            limpaCampos();
 
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnLimpar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnSalvar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnAtualizar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Deslocamento_Load(object sender, EventArgs e)
-        {
-
-        }
-
-
+        /// <summary>
+        /// responsavel para fechar o formulario e voltar ao menu
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btVoltar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        /// <summary>
+        /// apaga todos os dados digitados no formulario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            limpaCampos();
+        }
+
+        /// <summary>
+        /// apaga todos os dados
+        /// </summary>
+        private void limpaCampos()
+        {
+            txtQuilometragemDeslocamento.Text = "";
+            txtIdMotoristaDeslocamento.Text = "";
+            txtIDdeslocamento.Text = "";
+            txtIdCarroDeslocamento.Text = "";
+            txtDataDeslocamento.Text = "";
+        }
+
+        /// <summary>
+        /// responsavel a mudar os dados ja cadastrado
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btanAtualizarDeslocamento_Click(object sender, EventArgs e)
+        {
+            dto.id = int.Parse(txtIDdeslocamento.Text);
+            dto.data = DateTime.Parse(txtDataDeslocamento.Text);
+            dto.idCar = int.Parse(txtIdCarroDeslocamento.Text);
+            dto.idMotorista = int.Parse(txtIdMotoristaDeslocamento.Text);
+            dto.quilometragemDeslocada = int.Parse(txtQuilometragemDeslocamento.Text);
+            MessageBox.Show(negocio.AlteraDeslocamento(dto));
+            limpaCampos();
         }
     }
 }

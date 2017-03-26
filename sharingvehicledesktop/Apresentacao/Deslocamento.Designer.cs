@@ -96,7 +96,6 @@
             this.label1.Size = new System.Drawing.Size(29, 24);
             this.label1.TabIndex = 5;
             this.label1.Text = "ID";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -108,7 +107,6 @@
             this.label2.Size = new System.Drawing.Size(65, 24);
             this.label2.TabIndex = 6;
             this.label2.Text = "DATA";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -131,7 +129,6 @@
             this.label4.Size = new System.Drawing.Size(126, 24);
             this.label4.TabIndex = 8;
             this.label4.Text = "CARRO - ID ";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -143,7 +140,6 @@
             this.label5.Size = new System.Drawing.Size(175, 24);
             this.label5.TabIndex = 9;
             this.label5.Text = "MOTORISTA - ID ";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // btnLimpar
             // 
@@ -161,6 +157,7 @@
             this.btnLimpar.TabIndex = 14;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btanAtualizarDeslocamento
             // 
@@ -178,6 +175,7 @@
             this.btanAtualizarDeslocamento.TabIndex = 15;
             this.btanAtualizarDeslocamento.Text = "Atualizar";
             this.btanAtualizarDeslocamento.UseVisualStyleBackColor = false;
+            this.btanAtualizarDeslocamento.Click += new System.EventHandler(this.btanAtualizarDeslocamento_Click);
             // 
             // btnSalarDeslocamento
             // 
@@ -195,6 +193,7 @@
             this.btnSalarDeslocamento.TabIndex = 16;
             this.btnSalarDeslocamento.Text = "Salvar";
             this.btnSalarDeslocamento.UseVisualStyleBackColor = false;
+            this.btnSalarDeslocamento.Click += new System.EventHandler(this.btnSalarDeslocamento_Click);
             // 
             // label6
             // 
@@ -239,9 +238,9 @@
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(402, 4);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(163, 16);
+            this.label7.Size = new System.Drawing.Size(164, 16);
             this.label7.TabIndex = 10;
-            this.label7.Text = "Bradesco Seguros | Gamelyst";
+            this.label7.Text = "Sharing Vehicle | ImagineCup";
             // 
             // panel1
             // 
@@ -280,7 +279,6 @@
             this.MaximizeBox = false;
             this.Name = "Deslocamento";
             this.Text = "Deslocamento";
-            this.Load += new System.EventHandler(this.Deslocamento_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
