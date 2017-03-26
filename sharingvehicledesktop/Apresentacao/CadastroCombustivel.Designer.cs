@@ -184,6 +184,7 @@
             this.CmbTipoCombustivel.Name = "CmbTipoCombustivel";
             this.CmbTipoCombustivel.Size = new System.Drawing.Size(232, 21);
             this.CmbTipoCombustivel.TabIndex = 14;
+            this.CmbTipoCombustivel.Text = "Selecione um Combustivel";
             // 
             // btnCancelar
             // 

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using sharingvehicledesktop.DTO;
+using sharingvehicledesktop.Negocios;
 
 namespace sharingvehicledesktop.Apresentacao
 {
@@ -18,7 +19,13 @@ namespace sharingvehicledesktop.Apresentacao
         public CadastroCombustivel()
         {
             InitializeComponent();
+            CmbTipoCombustivel.Items.Add("Disel");
+            CmbTipoCombustivel.Items.Add("Etanol");
+            CmbTipoCombustivel.Items.Add("Gás");
+            CmbTipoCombustivel.Items.Add("Gasolina ");
         }
+
+        CombustivelNegocio combustivel = new CombustivelNegocio();
 
         /// <summary>
         /// Fecha a tela e retorna para o Menu se fora clicado na seta do formulário.
@@ -38,6 +45,7 @@ namespace sharingvehicledesktop.Apresentacao
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             VerificaCamposNulos();
+            InsereDadosDeCombustivel();
         }
 
         /// <summary>
@@ -67,7 +75,7 @@ namespace sharingvehicledesktop.Apresentacao
             txtCodigoveiculo.Text = "";
             txtLitros.Text = "";
             txtValorAbastecimento.Text = "";
-            CmbTipoCombustivel.Text = "";
+            CmbTipoCombustivel.Text = "Selecione um Combustivel";
             DataAbastecimento.Text = "";
         }
 
@@ -76,7 +84,7 @@ namespace sharingvehicledesktop.Apresentacao
         /// </summary>
         private void VerificaCamposNulos()
         {
-            if (txtValorAbastecimento.Text == "" || txtLitros.Text == "" || txtCodigoveiculo.Text == "" || CmbTipoCombustivel.Text == "" || DataAbastecimento.Text == "")
+            if (txtValorAbastecimento.Text == "" || txtLitros.Text == "" || txtCodigoveiculo.Text == "" || CmbTipoCombustivel.Text == "Selecione um Combustivel" || DataAbastecimento.Text == "")
             {
                 MessageBox.Show(" Para prosseguir com o cadastramento deverá ser informado todos os dados. \n Preencha-os corretamente! ", "Opa, algo está errado!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -91,11 +99,14 @@ namespace sharingvehicledesktop.Apresentacao
         /// </summary>
         private void InsereDadosDeCombustivel()
         {
+            CombustivelDTO dtoCombustivel = new CombustivelDTO();
             dtoCombustivel.combustivel = CmbTipoCombustivel.Text;
             dtoCombustivel.dia = DataAbastecimento.MaxDate;
             dtoCombustivel.litro = double.Parse(txtLitros.Text);
             dtoCombustivel.valor = float.Parse(txtValorAbastecimento.Text);
             dtoCombustivel.idCar = int.Parse(txtCodigoveiculo.Text);
+          MessageBox.Show( combustivel.InserirCombustivel(dtoCombustivel));
+            
         }
     }
 }

@@ -169,3 +169,26 @@ C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop9\sharingvehicledesktop\
 C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop9\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.csproj.GenerateResource.Cache
 C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop9\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.exe
 C:\Users\Renam Xavier\Source\Repos\sharingvehicledesktop9\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.pdb
+C:\Users\saulo.melissa-PC\Source\Repos\sharingvehicledesktop8\sharingvehicledesktop\bin\Debug\sharingvehicledesktop.exe.config
+C:\Users\saulo.melissa-PC\Source\Repos\sharingvehicledesktop8\sharingvehicledesktop\bin\Debug\sharingvehicledesktop.exe
+C:\Users\saulo.melissa-PC\Source\Repos\sharingvehicledesktop8\sharingvehicledesktop\bin\Debug\sharingvehicledesktop.pdb
+C:\Users\saulo.melissa-PC\Source\Repos\sharingvehicledesktop8\sharingvehicledesktop\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\saulo.melissa-PC\Source\Repos\sharingvehicledesktop8\sharingvehicledesktop\bin\Debug\MySql.Data.dll
+C:\Users\saulo.melissa-PC\Source\Repos\sharingvehicledesktop8\sharingvehicledesktop\bin\Debug\MySql.Data.xml
+C:\Users\saulo.melissa-PC\Source\Repos\sharingvehicledesktop8\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.csprojResolveAssemblyReference.cache
+C:\Users\saulo.melissa-PC\Source\Repos\sharingvehicledesktop8\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.Agenda.resources
+C:\Users\saulo.melissa-PC\Source\Repos\sharingvehicledesktop8\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.CadastroCar.resources
+C:\Users\saulo.melissa-PC\Source\Repos\sharingvehicledesktop8\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.CadastroCombustivel.resources
+C:\Users\saulo.melissa-PC\Source\Repos\sharingvehicledesktop8\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.CadastroGasto.resources
+C:\Users\saulo.melissa-PC\Source\Repos\sharingvehicledesktop8\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.CadastroMotorista.resources
+C:\Users\saulo.melissa-PC\Source\Repos\sharingvehicledesktop8\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.CadastroUsuario.resources
+C:\Users\saulo.melissa-PC\Source\Repos\sharingvehicledesktop8\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.Deslocamento.resources
+C:\Users\saulo.melissa-PC\Source\Repos\sharingvehicledesktop8\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Form1.resources
+C:\Users\saulo.melissa-PC\Source\Repos\sharingvehicledesktop8\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.Menu.resources
+C:\Users\saulo.melissa-PC\Source\Repos\sharingvehicledesktop8\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.PesquisasNoMapa.resources
+C:\Users\saulo.melissa-PC\Source\Repos\sharingvehicledesktop8\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.questionario.resources
+C:\Users\saulo.melissa-PC\Source\Repos\sharingvehicledesktop8\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Apresentacao.RateioDosGastos.resources
+C:\Users\saulo.melissa-PC\Source\Repos\sharingvehicledesktop8\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.Properties.Resources.resources
+C:\Users\saulo.melissa-PC\Source\Repos\sharingvehicledesktop8\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.csproj.GenerateResource.Cache
+C:\Users\saulo.melissa-PC\Source\Repos\sharingvehicledesktop8\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.exe
+C:\Users\saulo.melissa-PC\Source\Repos\sharingvehicledesktop8\sharingvehicledesktop\obj\Debug\sharingvehicledesktop.pdb
