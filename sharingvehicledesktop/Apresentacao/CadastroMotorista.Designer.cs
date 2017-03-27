@@ -43,12 +43,11 @@
             this.Txtid = new System.Windows.Forms.TextBox();
             this.btsalva = new System.Windows.Forms.Button();
             this.btcancela = new System.Windows.Forms.Button();
-            this.txtnascimento = new System.Windows.Forms.TextBox();
-            this.txtvencimento = new System.Windows.Forms.TextBox();
-            this.TxtDataInserir = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
+            this.datavenc = new System.Windows.Forms.MaskedTextBox();
+            this.datanasc = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -197,28 +196,6 @@
             this.btcancela.UseVisualStyleBackColor = false;
             this.btcancela.Click += new System.EventHandler(this.btcancela_Click);
             // 
-            // txtnascimento
-            // 
-            this.txtnascimento.Location = new System.Drawing.Point(17, 312);
-            this.txtnascimento.Name = "txtnascimento";
-            this.txtnascimento.Size = new System.Drawing.Size(282, 20);
-            this.txtnascimento.TabIndex = 42;
-            // 
-            // txtvencimento
-            // 
-            this.txtvencimento.Location = new System.Drawing.Point(359, 338);
-            this.txtvencimento.Name = "txtvencimento";
-            this.txtvencimento.Size = new System.Drawing.Size(282, 20);
-            this.txtvencimento.TabIndex = 43;
-            // 
-            // TxtDataInserir
-            // 
-            this.TxtDataInserir.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.TxtDataInserir.Location = new System.Drawing.Point(359, 312);
-            this.TxtDataInserir.Name = "TxtDataInserir";
-            this.TxtDataInserir.Size = new System.Drawing.Size(282, 20);
-            this.TxtDataInserir.TabIndex = 29;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
@@ -252,17 +229,34 @@
             this.label8.TabIndex = 10;
             this.label8.Text = "Bradesco Seguros | Gamelyst";
             // 
+            // datavenc
+            // 
+            this.datavenc.Location = new System.Drawing.Point(359, 312);
+            this.datavenc.Mask = "00/00/0000";
+            this.datavenc.Name = "datavenc";
+            this.datavenc.Size = new System.Drawing.Size(278, 20);
+            this.datavenc.TabIndex = 47;
+            this.datavenc.ValidatingType = typeof(System.DateTime);
+            // 
+            // datanasc
+            // 
+            this.datanasc.Location = new System.Drawing.Point(17, 312);
+            this.datanasc.Mask = "00/00/0000";
+            this.datanasc.Name = "datanasc";
+            this.datanasc.Size = new System.Drawing.Size(278, 20);
+            this.datanasc.TabIndex = 48;
+            this.datanasc.ValidatingType = typeof(System.DateTime);
+            // 
             // CadastroMotorista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(669, 427);
+            this.Controls.Add(this.datanasc);
+            this.Controls.Add(this.datavenc);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.TxtDataInserir);
-            this.Controls.Add(this.txtvencimento);
-            this.Controls.Add(this.txtnascimento);
             this.Controls.Add(this.Txtid);
             this.Controls.Add(this.btcancela);
             this.Controls.Add(this.btsalva);
@@ -305,11 +299,10 @@
         private System.Windows.Forms.TextBox Txtid;
         private System.Windows.Forms.Button btsalva;
         private System.Windows.Forms.Button btcancela;
-        private System.Windows.Forms.TextBox txtnascimento;
-        private System.Windows.Forms.TextBox txtvencimento;
-        private System.Windows.Forms.DateTimePicker TxtDataInserir;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.MaskedTextBox datavenc;
+        private System.Windows.Forms.MaskedTextBox datanasc;
     }
 }

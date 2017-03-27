@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using sharingvehicledesktop.Apresentacao;
 using sharingvehicledesktop.DTO;
@@ -33,8 +26,8 @@ namespace sharingvehicledesktop.Apresentacao
         {
             dto.cnh = txtCnh.Text;
             dto.cpf = txtcpf.Text;
-            dto.dataNascimento = txtnascimento.Text;
-            dto.dataVencimentoCnh = txtvencimento.Text;
+            dto.dataNascimento = Convert.ToString( datanasc.Text);
+            dto.dataVencimentoCnh =Convert.ToString(datavenc.Text);
             dto.idUsuario = Txtid.Text;
             dto.nome = txtNome.Text;
 
@@ -49,8 +42,6 @@ namespace sharingvehicledesktop.Apresentacao
             Txtid.Text = "";
             txtcpf.Text = "";
             txtCnh.Text = "";
-            txtvencimento.Text = "";
-            txtnascimento.Text = "";
         }
 
         private void btcancela_Click(object sender, EventArgs e)
