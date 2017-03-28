@@ -45,7 +45,7 @@ namespace sharingvehicledesktop.BancoDados
                 sqlCommand.CommandType = commandType;
                 sqlCommand.CommandText = nomeStoredProcedureOuSQL;
 
-                sqlCommand.CommandTimeout = 300;
+                sqlCommand.CommandTimeout = 3000;
 
                 //Adicionar os parametros no comando
                 foreach (MySqlParameter sqlParameter in sqlParameterCollection)
