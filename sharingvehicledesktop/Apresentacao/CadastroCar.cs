@@ -53,7 +53,11 @@ namespace sharingvehicledesktop.Apresentacao
 
         private void btcancela_Click(object sender, EventArgs e)
         {
-            limpaCampos();
+            DialogResult Retorno = MessageBox.Show("Deseja ralmente cancelar a operação? ", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(Retorno == DialogResult.Yes)
+            {
+                this.Close(); 
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -61,6 +65,11 @@ namespace sharingvehicledesktop.Apresentacao
            // Menu menu = new Menu();
           //  menu.Show();
             this.Hide();
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            limpaCampos(); 
         }
     }
 }

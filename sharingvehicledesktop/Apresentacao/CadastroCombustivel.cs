@@ -55,15 +55,12 @@ namespace sharingvehicledesktop.Apresentacao
         /// <param name="e"></param>
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Tem certeza que deseja cancelar a operação e fechar a tela? ", "Tem certeza?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (DialogResult == DialogResult.Yes)
-            {
-                this.Close();
-            }
-            else if (DialogResult == DialogResult.No)
+            DialogResult Retorno = MessageBox.Show("Tem certeza que deseja cancelar a operação e fechar a tela? ", "Tem certeza?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (Retorno == DialogResult.Yes)
             {
                 LimpaCampos();
-            }
+                this.Close();
+            }            
         }
 
       
@@ -107,6 +104,16 @@ namespace sharingvehicledesktop.Apresentacao
             dtoCombustivel.idCar = int.Parse(txtCodigoveiculo.Text);
           MessageBox.Show( combustivel.InserirCombustivel(dtoCombustivel));
             
+        }
+
+        /// <summary>
+        /// Limpa os campos da tela. 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void button2_Click(object sender, EventArgs e)
+        {
+            LimpaCampos();
         }
     }
 }

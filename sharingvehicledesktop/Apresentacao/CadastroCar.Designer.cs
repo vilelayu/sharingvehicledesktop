@@ -50,6 +50,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -80,21 +81,21 @@
             // 
             // txtcor
             // 
-            this.txtcor.Location = new System.Drawing.Point(42, 273);
+            this.txtcor.Location = new System.Drawing.Point(42, 213);
             this.txtcor.Name = "txtcor";
             this.txtcor.Size = new System.Drawing.Size(282, 20);
             this.txtcor.TabIndex = 17;
             // 
             // txtMarca
             // 
-            this.txtMarca.Location = new System.Drawing.Point(42, 209);
+            this.txtMarca.Location = new System.Drawing.Point(42, 149);
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(282, 20);
             this.txtMarca.TabIndex = 16;
             // 
             // txtrenavam
             // 
-            this.txtrenavam.Location = new System.Drawing.Point(42, 132);
+            this.txtrenavam.Location = new System.Drawing.Point(42, 72);
             this.txtrenavam.Name = "txtrenavam";
             this.txtrenavam.Size = new System.Drawing.Size(282, 20);
             this.txtrenavam.TabIndex = 15;
@@ -104,7 +105,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(37, 245);
+            this.label4.Location = new System.Drawing.Point(37, 185);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(56, 25);
             this.label4.TabIndex = 14;
@@ -115,7 +116,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(37, 170);
+            this.label3.Location = new System.Drawing.Point(37, 110);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 25);
             this.label3.TabIndex = 13;
@@ -126,7 +127,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(37, 104);
+            this.label2.Location = new System.Drawing.Point(37, 44);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 25);
             this.label2.TabIndex = 12;
@@ -134,21 +135,21 @@
             // 
             // txtquilometragem
             // 
-            this.txtquilometragem.Location = new System.Drawing.Point(384, 273);
+            this.txtquilometragem.Location = new System.Drawing.Point(384, 213);
             this.txtquilometragem.Name = "txtquilometragem";
             this.txtquilometragem.Size = new System.Drawing.Size(282, 20);
             this.txtquilometragem.TabIndex = 23;
             // 
             // txtplaca
             // 
-            this.txtplaca.Location = new System.Drawing.Point(384, 209);
+            this.txtplaca.Location = new System.Drawing.Point(384, 149);
             this.txtplaca.Name = "txtplaca";
             this.txtplaca.Size = new System.Drawing.Size(282, 20);
             this.txtplaca.TabIndex = 22;
             // 
             // txtmodelo
             // 
-            this.txtmodelo.Location = new System.Drawing.Point(384, 132);
+            this.txtmodelo.Location = new System.Drawing.Point(384, 72);
             this.txtmodelo.Name = "txtmodelo";
             this.txtmodelo.Size = new System.Drawing.Size(282, 20);
             this.txtmodelo.TabIndex = 21;
@@ -158,7 +159,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(379, 245);
+            this.label5.Location = new System.Drawing.Point(379, 185);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(177, 25);
             this.label5.TabIndex = 20;
@@ -169,7 +170,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(379, 170);
+            this.label6.Location = new System.Drawing.Point(379, 110);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(78, 25);
             this.label6.TabIndex = 19;
@@ -180,7 +181,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(379, 104);
+            this.label7.Location = new System.Drawing.Point(379, 44);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(96, 25);
             this.label7.TabIndex = 18;
@@ -189,7 +190,7 @@
             // cbcombustivel
             // 
             this.cbcombustivel.FormattingEnabled = true;
-            this.cbcombustivel.Location = new System.Drawing.Point(42, 359);
+            this.cbcombustivel.Location = new System.Drawing.Point(42, 299);
             this.cbcombustivel.Name = "cbcombustivel";
             this.cbcombustivel.Size = new System.Drawing.Size(225, 21);
             this.cbcombustivel.TabIndex = 24;
@@ -199,7 +200,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(37, 322);
+            this.label8.Location = new System.Drawing.Point(37, 262);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(230, 25);
             this.label8.TabIndex = 25;
@@ -210,7 +211,7 @@
             this.btsalvar.BackColor = System.Drawing.Color.White;
             this.btsalvar.FlatAppearance.BorderSize = 0;
             this.btsalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btsalvar.Location = new System.Drawing.Point(584, 385);
+            this.btsalvar.Location = new System.Drawing.Point(584, 325);
             this.btsalvar.Name = "btsalvar";
             this.btsalvar.Size = new System.Drawing.Size(75, 23);
             this.btsalvar.TabIndex = 26;
@@ -223,7 +224,7 @@
             this.btcancela.BackColor = System.Drawing.Color.White;
             this.btcancela.FlatAppearance.BorderSize = 0;
             this.btcancela.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btcancela.Location = new System.Drawing.Point(503, 385);
+            this.btcancela.Location = new System.Drawing.Point(503, 325);
             this.btcancela.Name = "btcancela";
             this.btcancela.Size = new System.Drawing.Size(75, 23);
             this.btcancela.TabIndex = 27;
@@ -236,7 +237,7 @@
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Location = new System.Drawing.Point(-3, 416);
+            this.panel1.Location = new System.Drawing.Point(-3, 356);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(686, 30);
             this.panel1.TabIndex = 28;
@@ -264,12 +265,26 @@
             this.panel2.Size = new System.Drawing.Size(686, 42);
             this.panel2.TabIndex = 29;
             // 
+            // btnLimpar
+            // 
+            this.btnLimpar.BackColor = System.Drawing.Color.White;
+            this.btnLimpar.FlatAppearance.BorderSize = 0;
+            this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpar.Location = new System.Drawing.Point(421, 325);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpar.TabIndex = 30;
+            this.btnLimpar.Text = "Limpar ";
+            this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
             // CadastroCar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(677, 444);
+            this.ClientSize = new System.Drawing.Size(677, 384);
+            this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btcancela);
@@ -291,6 +306,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "CadastroCar";
             this.Text = "CadastroCar";
             this.panel1.ResumeLayout(false);
@@ -325,5 +341,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnLimpar;
     }
 }

@@ -164,5 +164,10 @@ namespace sharingvehicledesktop.Apresentacao
                 NavigateToRoute(new string[2] { txtPesquisa.Text, txtRegiaoDaPesquisa.Text });
             }
         }
+
+        private void PesquisasNoMapa_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

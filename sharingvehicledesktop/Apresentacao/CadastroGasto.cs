@@ -40,7 +40,12 @@ namespace sharingvehicledesktop.Apresentacao
 
         private void btcancelar_Click(object sender, EventArgs e)
         {
-            limpaCampos();
+            DialogResult Resultado = MessageBox.Show("Se cancelar esta operação sua tela será fechada. \nDeseja realmente cancelar a operação? ", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (Resultado == DialogResult.Yes)
+            {
+                this.Close(); 
+            }
+            
         }
 
         private void TxttipoGasto_TextChanged(object sender, EventArgs e)
@@ -81,6 +86,11 @@ namespace sharingvehicledesktop.Apresentacao
         private void txtcodCar_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            limpaCampos();
         }
     }
 }

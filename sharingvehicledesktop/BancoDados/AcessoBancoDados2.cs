@@ -19,9 +19,9 @@ namespace sharingvehicledesktop.BancoDados
         private MySqlDataAdapter da;
 
         //Atributos para a conexão com o Banco de Dados
-        private String server = "localhost"; //Servidor, pode ser tanto a sua máquina local quanto um servidor de verdade
-        private String user = "root"; //Usuário do banco de dados
-        private String password = "anacarolina"; //Senha do usuário para acessar o banco de dados
+        private String server = "br-cdbr-azure-south-b.cloudapp.net"; //Servidor, pode ser tanto a sua máquina local quanto um servidor de verdade
+        private String user = "b114183ff158fc"; //Usuário do banco de dados
+        private String password = "d163c872"; //Senha do usuário para acessar o banco de dados
         private String database = "sharingvehicle"; //Banco de Dados
 
 

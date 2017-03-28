@@ -46,7 +46,12 @@ namespace sharingvehicledesktop.Apresentacao
 
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
-            LimpaCampos();
+            DialogResult Retorno = MessageBox.Show("Deseja realmente cancelar a opração? ", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (Retorno == DialogResult.Yes)
+            {
+                this.Close();
+            }
+            else LimpaCampos(); 
         }
 
         public void LimpaCampos()
@@ -71,6 +76,16 @@ namespace sharingvehicledesktop.Apresentacao
         {
             ConfigDataGrid grid = new ConfigDataGrid();
             dataGridView1.DataSource = grid.SelecionaDia();
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            LimpaCampos(); 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

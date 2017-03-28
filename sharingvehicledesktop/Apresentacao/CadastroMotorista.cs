@@ -46,12 +46,21 @@ namespace sharingvehicledesktop.Apresentacao
 
         private void btcancela_Click(object sender, EventArgs e)
         {
-            limpacampos();
+            DialogResult Retorno = MessageBox.Show("Tem certeza que deseja cancelar a operação e fechar a tela? ", "Tem certeza?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(Retorno == DialogResult.Yes)
+            {
+                this.Close(); 
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {          
             this.Close();
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            limpacampos(); 
         }
     }
 }

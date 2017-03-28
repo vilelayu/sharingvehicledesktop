@@ -1,6 +1,7 @@
 ﻿using System;
 using sharingvehicledesktop.BancoDados;
 using System.Data;
+using System.Windows.Forms; 
 
 namespace sharingvehicledesktop.Negocios
 {
@@ -19,6 +20,7 @@ namespace sharingvehicledesktop.Negocios
 
             catch (Exception ex)
             {
+                MessageBox.Show("Erro ao tentar consultar as revisões: \n" + ex.Message); 
                 throw new Exception("Erro ao tentar consultar as revisões: " + ex.Message);
             }
             finally
@@ -39,6 +41,7 @@ namespace sharingvehicledesktop.Negocios
 
             catch (Exception ex)
             {
+                MessageBox.Show("Erro ao tentar consultar as revisões: \n" + ex.Message); 
                 throw new Exception("Erro ao tentar consultar as revisões: " + ex.Message);
             }
             finally

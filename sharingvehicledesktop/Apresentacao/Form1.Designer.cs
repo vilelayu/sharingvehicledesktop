@@ -39,7 +39,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -50,7 +50,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(5, 109);
+            this.label1.Location = new System.Drawing.Point(5, 93);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 24);
             this.label1.TabIndex = 0;
@@ -62,7 +62,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(6, 138);
+            this.label2.Location = new System.Drawing.Point(6, 122);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 24);
             this.label2.TabIndex = 1;
@@ -70,16 +70,16 @@
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(92, 113);
+            this.txtUsuario.Location = new System.Drawing.Point(92, 97);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(191, 20);
+            this.txtUsuario.Size = new System.Drawing.Size(251, 20);
             this.txtUsuario.TabIndex = 2;
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(92, 142);
+            this.txtSenha.Location = new System.Drawing.Point(92, 126);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(191, 20);
+            this.txtSenha.Size = new System.Drawing.Size(251, 20);
             this.txtSenha.TabIndex = 3;
             this.txtSenha.UseSystemPasswordChar = true;
             // 
@@ -92,7 +92,7 @@
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(190, 227);
+            this.button1.Location = new System.Drawing.Point(269, 227);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 26);
             this.button1.TabIndex = 4;
@@ -108,7 +108,7 @@
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(271, 227);
+            this.button2.Location = new System.Drawing.Point(186, 227);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 26);
             this.button2.TabIndex = 5;
@@ -135,7 +135,7 @@
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 14.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.Location = new System.Drawing.Point(11, 228);
+            this.label4.Location = new System.Drawing.Point(7, 227);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(171, 23);
             this.label4.TabIndex = 7;
@@ -156,23 +156,24 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Location = new System.Drawing.Point(-2, 263);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Location = new System.Drawing.Point(-2, 262);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(360, 28);
             this.panel2.TabIndex = 9;
             // 
-            // label5
+            // label7
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(189, 5);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(163, 16);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Bradesco Seguros | Gamelyst";
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(188, 6);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(164, 16);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Sharing Vehicle | ImagineCup";
             // 
             // Form1
             // 
@@ -221,7 +222,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label7;
     }
 }
 

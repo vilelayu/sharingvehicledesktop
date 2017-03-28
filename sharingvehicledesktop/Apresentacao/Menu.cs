@@ -20,8 +20,7 @@ namespace sharingvehicledesktop.Apresentacao
             InitializeComponent();
             label1.Text = label1.Text + dto + "!";
             OcultaBradesco();
-            BtnMinimizaWebBradesco.Visible = false;
-            panelNoticia.Hide(); 
+            BtnMinimizaWebBradesco.Visible = false;          
         }
 
         public Menu()
@@ -38,10 +37,13 @@ namespace sharingvehicledesktop.Apresentacao
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-            Form1 log = new Form1();
-            log.Show();
-            this.Close();
+            DialogResult Resultado = MessageBox.Show("Confirmando você sairá do sistema. \nDeseja relamente sair do sistema? ", "Aviso :(", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (Resultado == DialogResult.Yes)
+            {
+                Form1 log = new Form1();
+                log.Show();
+                this.Close();
+            }
         }
 
 
@@ -223,30 +225,11 @@ namespace sharingvehicledesktop.Apresentacao
         private void BtnFacebook_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://www.facebook.com/Sharingvehicle/");
-        }
-
-        /// <summary>
-        /// Aumenta e diminui o painel de notícias.
-        /// </summary>
-        public void verificaTamanhopainel()
+        }     
+        
+        private void Menu_Load(object sender, EventArgs e)
         {
-            if (BtnGerenciaTamanhoPainel.Text == "+")
-            {
-                panelNoticia.Show();
-                BtnGerenciaTamanhoPainel.Text = "-";
-                lblDicaPainel.Text = "Diminua o painel aqui: ";
-            }
-            else if (BtnGerenciaTamanhoPainel.Text == "-")
-            {
-                panelNoticia.Hide();
-                BtnGerenciaTamanhoPainel.Text = "+";
-                lblDicaPainel.Text = "Aumente o painel aqui: "; 
-            }
-        }
 
-        private void BtnGerenciaTamanhoPainel_Click(object sender, EventArgs e)
-        {
-            verificaTamanhopainel(); 
         }
     }
 }

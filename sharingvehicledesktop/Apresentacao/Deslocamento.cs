@@ -77,5 +77,14 @@ namespace sharingvehicledesktop.Apresentacao
             MessageBox.Show(negocio.AlteraDeslocamento(dto));
             limpaCampos();
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            DialogResult Retorno = MessageBox.Show("Deseja realmente cancelar a operação? ", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(Retorno == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
     }
 }

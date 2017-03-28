@@ -104,15 +104,27 @@ namespace sharingvehicledesktop.Apresentacao
 
         private void BtnCancelaCadastroUsu_Click(object sender, EventArgs e)
         {
-            if (Application.OpenForms.OfType<Menu>().Count() > 0)
+            VerificaRetorno();
+        }
+
+        public void VerificaRetorno()
+        {
+            DialogResult Retorno = MessageBox.Show("Aqui você cancelará a operação. \nDeseja realmente cancelar a operação? ", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            switch (Retorno)
             {
-                this.Close();
-            }
-            else
-            {
-                this.Close();
-                Form1 novo = new Form1();
-                novo.Show();
+                case DialogResult.Yes:
+                    if (Application.OpenForms.OfType<Menu>().Count() > 0)
+                    {
+                        this.Close();
+                    }
+                    else
+                    {
+                        this.Close();
+                        Form1 novo = new Form1();
+                        novo.Show();
+                    }
+                    break;
             }
         }
 

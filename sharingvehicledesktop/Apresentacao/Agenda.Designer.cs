@@ -45,8 +45,9 @@
             this.btnSalvarAgenda = new System.Windows.Forms.Button();
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnLimpar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -74,6 +75,7 @@
             this.button1.Size = new System.Drawing.Size(46, 39);
             this.button1.TabIndex = 2;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 
@@ -104,7 +106,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(231, 25);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Codigo do Motorista:";
+            this.label3.Text = "Código do Motorista:";
             // 
             // label4
             // 
@@ -115,7 +117,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(201, 25);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Codigo do veiculo";
+            this.label4.Text = "Código do veiculo";
             // 
             // label5
             // 
@@ -137,7 +139,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(89, 25);
             this.label6.TabIndex = 8;
-            this.label6.Text = "Horario";
+            this.label6.Text = "Horário";
             // 
             // txtID
             // 
@@ -181,9 +183,9 @@
             this.btnSalvarAgenda.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnSalvarAgenda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnSalvarAgenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalvarAgenda.Location = new System.Drawing.Point(691, 352);
+            this.btnSalvarAgenda.Location = new System.Drawing.Point(691, 357);
             this.btnSalvarAgenda.Name = "btnSalvarAgenda";
-            this.btnSalvarAgenda.Size = new System.Drawing.Size(75, 29);
+            this.btnSalvarAgenda.Size = new System.Drawing.Size(75, 24);
             this.btnSalvarAgenda.TabIndex = 14;
             this.btnSalvarAgenda.Text = "Salvar";
             this.btnSalvarAgenda.UseVisualStyleBackColor = false;
@@ -196,9 +198,9 @@
             this.BtnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
             this.BtnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCancelar.Location = new System.Drawing.Point(613, 352);
+            this.BtnCancelar.Location = new System.Drawing.Point(610, 357);
             this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(75, 29);
+            this.BtnCancelar.Size = new System.Drawing.Size(75, 24);
             this.BtnCancelar.TabIndex = 15;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.UseVisualStyleBackColor = false;
@@ -208,23 +210,24 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label8);
             this.panel1.Location = new System.Drawing.Point(-3, 384);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(783, 30);
             this.panel1.TabIndex = 21;
             // 
-            // label7
+            // label8
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(609, 7);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(163, 16);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Bradesco Seguros | Gamelyst";
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.White;
+            this.label8.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(607, 6);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(164, 16);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "Sharing Vehicle | ImagineCup";
             // 
             // panel2
             // 
@@ -237,12 +240,28 @@
             this.panel2.Size = new System.Drawing.Size(783, 43);
             this.panel2.TabIndex = 22;
             // 
+            // btnLimpar
+            // 
+            this.btnLimpar.BackColor = System.Drawing.Color.White;
+            this.btnLimpar.FlatAppearance.BorderSize = 0;
+            this.btnLimpar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.btnLimpar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpar.Location = new System.Drawing.Point(529, 357);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(75, 24);
+            this.btnLimpar.TabIndex = 23;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
             // Agenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(775, 414);
+            this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BtnCancelar);
@@ -261,6 +280,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Agenda";
             this.Text = "Agenda";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -291,7 +311,8 @@
         private System.Windows.Forms.Button btnSalvarAgenda;
         private System.Windows.Forms.Button BtnCancelar;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnLimpar;
     }
 }

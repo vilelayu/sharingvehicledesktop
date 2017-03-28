@@ -50,11 +50,9 @@
             this.LabelContrataSeguro = new System.Windows.Forms.Label();
             this.BtnMinimizaWebBradesco = new System.Windows.Forms.Button();
             this.PainelDesenvolvedor = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.BtnFacebook = new System.Windows.Forms.Button();
-            this.BtnGerenciaTamanhoPainel = new System.Windows.Forms.Button();
-            this.panelNoticia = new System.Windows.Forms.Panel();
-            this.lblDicaPainel = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.PainelDesenvolvedor.SuspendLayout();
             this.SuspendLayout();
@@ -251,11 +249,25 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PainelDesenvolvedor.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PainelDesenvolvedor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PainelDesenvolvedor.Controls.Add(this.label7);
             this.PainelDesenvolvedor.Controls.Add(this.label2);
             this.PainelDesenvolvedor.Location = new System.Drawing.Point(0, 445);
             this.PainelDesenvolvedor.Name = "PainelDesenvolvedor";
             this.PainelDesenvolvedor.Size = new System.Drawing.Size(972, 26);
             this.PainelDesenvolvedor.TabIndex = 21;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(802, 3);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(164, 16);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Sharing Vehicle | ImagineCup";
             // 
             // label2
             // 
@@ -282,56 +294,12 @@
             this.BtnFacebook.UseVisualStyleBackColor = true;
             this.BtnFacebook.Click += new System.EventHandler(this.BtnFacebook_Click);
             // 
-            // BtnGerenciaTamanhoPainel
-            // 
-            this.BtnGerenciaTamanhoPainel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnGerenciaTamanhoPainel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.BtnGerenciaTamanhoPainel.FlatAppearance.BorderSize = 0;
-            this.BtnGerenciaTamanhoPainel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
-            this.BtnGerenciaTamanhoPainel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
-            this.BtnGerenciaTamanhoPainel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGerenciaTamanhoPainel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnGerenciaTamanhoPainel.Location = new System.Drawing.Point(932, 0);
-            this.BtnGerenciaTamanhoPainel.Name = "BtnGerenciaTamanhoPainel";
-            this.BtnGerenciaTamanhoPainel.Size = new System.Drawing.Size(40, 24);
-            this.BtnGerenciaTamanhoPainel.TabIndex = 23;
-            this.BtnGerenciaTamanhoPainel.Text = "+";
-            this.BtnGerenciaTamanhoPainel.UseVisualStyleBackColor = false;
-            this.BtnGerenciaTamanhoPainel.Click += new System.EventHandler(this.BtnGerenciaTamanhoPainel_Click);
-            // 
-            // panelNoticia
-            // 
-            this.panelNoticia.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelNoticia.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panelNoticia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelNoticia.Location = new System.Drawing.Point(563, 24);
-            this.panelNoticia.Name = "panelNoticia";
-            this.panelNoticia.Size = new System.Drawing.Size(409, 422);
-            this.panelNoticia.TabIndex = 24;
-            // 
-            // lblDicaPainel
-            // 
-            this.lblDicaPainel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDicaPainel.AutoSize = true;
-            this.lblDicaPainel.BackColor = System.Drawing.Color.White;
-            this.lblDicaPainel.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDicaPainel.Location = new System.Drawing.Point(799, 4);
-            this.lblDicaPainel.Name = "lblDicaPainel";
-            this.lblDicaPainel.Size = new System.Drawing.Size(132, 16);
-            this.lblDicaPainel.TabIndex = 25;
-            this.lblDicaPainel.Text = "Aumente o painel aqui: ";
-            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(972, 471);
-            this.Controls.Add(this.lblDicaPainel);
-            this.Controls.Add(this.panelNoticia);
-            this.Controls.Add(this.BtnGerenciaTamanhoPainel);
             this.Controls.Add(this.BtnFacebook);
             this.Controls.Add(this.PainelDesenvolvedor);
             this.Controls.Add(this.BtnMinimizaWebBradesco);
@@ -344,6 +312,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Menu";
             this.Text = "Sharing Vehicle ";
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.PainelDesenvolvedor.ResumeLayout(false);
@@ -377,8 +346,6 @@
         private System.Windows.Forms.Panel PainelDesenvolvedor;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BtnFacebook;
-        private System.Windows.Forms.Button BtnGerenciaTamanhoPainel;
-        private System.Windows.Forms.Panel panelNoticia;
-        private System.Windows.Forms.Label lblDicaPainel;
+        private System.Windows.Forms.Label label7;
     }
 }
