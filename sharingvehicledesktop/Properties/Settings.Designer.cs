@@ -44,5 +44,16 @@ namespace sharingvehicledesktop.Properties {
                 return ((string)(this["conexaoP"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Database=sharingvehicle;Data Source=br-cdbr-azure-south-b.cloudapp.net;User Id=b1" +
+            "14183ff158fc;Password=d163c872")]
+        public string conexaoA {
+            get {
+                return ((string)(this["conexaoA"]));
+            }
+        }
     }
 }
