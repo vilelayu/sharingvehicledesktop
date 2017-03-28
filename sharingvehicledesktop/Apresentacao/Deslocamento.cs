@@ -21,7 +21,7 @@ namespace sharingvehicledesktop.Apresentacao
         /// <param name="e"></param>
         private void btnSalarDeslocamento_Click(object sender, EventArgs e)
         {
-            dto.data = DateTime.Parse( txtDataDeslocamento.Text);
+            dto.data =  txtDataDeslocamento.Text;
             dto.idCar =int.Parse( txtIdCarroDeslocamento.Text);
             dto.idMotorista= int.Parse(txtIdMotoristaDeslocamento.Text);
             dto.quilometragemDeslocada = int.Parse(txtQuilometragemDeslocamento.Text);
@@ -70,7 +70,7 @@ namespace sharingvehicledesktop.Apresentacao
         private void btanAtualizarDeslocamento_Click(object sender, EventArgs e)
         {
             dto.id = int.Parse(txtIDdeslocamento.Text);
-            dto.data = DateTime.Parse(txtDataDeslocamento.Text);
+            dto.data = txtDataDeslocamento.Text;
             dto.idCar = int.Parse(txtIdCarroDeslocamento.Text);
             dto.idMotorista = int.Parse(txtIdMotoristaDeslocamento.Text);
             dto.quilometragemDeslocada = int.Parse(txtQuilometragemDeslocamento.Text);

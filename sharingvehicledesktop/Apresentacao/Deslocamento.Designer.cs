@@ -32,7 +32,6 @@
             this.txtIDdeslocamento = new System.Windows.Forms.TextBox();
             this.txtIdCarroDeslocamento = new System.Windows.Forms.TextBox();
             this.txtIdMotoristaDeslocamento = new System.Windows.Forms.TextBox();
-            this.txtDataDeslocamento = new System.Windows.Forms.TextBox();
             this.txtQuilometragemDeslocamento = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,6 +47,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.txtDataDeslocamento = new System.Windows.Forms.MaskedTextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -72,13 +72,6 @@
             this.txtIdMotoristaDeslocamento.Name = "txtIdMotoristaDeslocamento";
             this.txtIdMotoristaDeslocamento.Size = new System.Drawing.Size(187, 20);
             this.txtIdMotoristaDeslocamento.TabIndex = 2;
-            // 
-            // txtDataDeslocamento
-            // 
-            this.txtDataDeslocamento.Location = new System.Drawing.Point(333, 157);
-            this.txtDataDeslocamento.Name = "txtDataDeslocamento";
-            this.txtDataDeslocamento.Size = new System.Drawing.Size(187, 20);
-            this.txtDataDeslocamento.TabIndex = 3;
             // 
             // txtQuilometragemDeslocamento
             // 
@@ -271,6 +264,15 @@
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
+            // txtDataDeslocamento
+            // 
+            this.txtDataDeslocamento.Location = new System.Drawing.Point(333, 157);
+            this.txtDataDeslocamento.Mask = "00/00/0000";
+            this.txtDataDeslocamento.Name = "txtDataDeslocamento";
+            this.txtDataDeslocamento.Size = new System.Drawing.Size(187, 20);
+            this.txtDataDeslocamento.TabIndex = 22;
+            this.txtDataDeslocamento.ValidatingType = typeof(System.DateTime);
+            // 
             // Deslocamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -278,6 +280,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(573, 309);
             this.ControlBox = false;
+            this.Controls.Add(this.txtDataDeslocamento);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
@@ -290,7 +293,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtQuilometragemDeslocamento);
-            this.Controls.Add(this.txtDataDeslocamento);
             this.Controls.Add(this.txtIdMotoristaDeslocamento);
             this.Controls.Add(this.txtIdCarroDeslocamento);
             this.Controls.Add(this.txtIDdeslocamento);
@@ -313,7 +315,6 @@
         private System.Windows.Forms.TextBox txtIDdeslocamento;
         private System.Windows.Forms.TextBox txtIdCarroDeslocamento;
         private System.Windows.Forms.TextBox txtIdMotoristaDeslocamento;
-        private System.Windows.Forms.TextBox txtDataDeslocamento;
         private System.Windows.Forms.TextBox txtQuilometragemDeslocamento;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -329,5 +330,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.MaskedTextBox txtDataDeslocamento;
     }
 }
