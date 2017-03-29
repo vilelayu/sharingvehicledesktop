@@ -30,16 +30,17 @@ namespace sharingvehicledesktop.Apresentacao
                 dtoAgenda.idMotorista = int.Parse(txtCodigoMotorista.Text);
                 dtoAgenda.horario = DateTime.Parse(txtHora.Text);
                 dtoAgenda.dia = DateTime.Parse(txtDia.Text);
-                NegocioAgenda.InserirAgenda(dtoAgenda);
+               MessageBox.Show( NegocioAgenda.InserirAgenda(dtoAgenda));
             }
             catch
             {
-                MessageBox.Show("Erro");
+                
+                MessageBox.Show(NegocioAgenda.InserirAgenda(dtoAgenda));
             }
             finally
             {
                 LimpaCampos();
-                caregaGrid();
+               // caregaGrid();
             }
                
         }
