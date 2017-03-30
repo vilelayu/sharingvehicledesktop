@@ -14,7 +14,7 @@ namespace sharingvehicledesktop.Negocios
             {
                 DataTable dt = new DataTable();
                 bd.Conectar();
-                dt = bd.RetDataTable("SELECT * from agenda");
+                dt = bd.RetDataTable("SELECT id, marca, modelo,placa ,quilometragem from carro");
                 return dt;
             }
 

@@ -20,73 +20,40 @@ namespace sharingvehicledesktop.Apresentacao
         {
             
         }
-
-        private void btnSalvarAgenda_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                dtoAgenda.id = int.Parse(txtID.Text);
-                dtoAgenda.idCar = int.Parse(txtCodigoVeiculo.Text);
-                dtoAgenda.idMotorista = int.Parse(txtCodigoMotorista.Text);
-                dtoAgenda.horario = DateTime.Parse(txtHora.Text);
-                dtoAgenda.dia = DateTime.Parse(txtDia.Text);
-               MessageBox.Show( NegocioAgenda.InserirAgenda(dtoAgenda));
-            }
-            catch
-            {
-                
-                MessageBox.Show(NegocioAgenda.InserirAgenda(dtoAgenda));
-            }
-            finally
-            {
-                LimpaCampos();
-               // caregaGrid();
-            }
-               
-        }
-
-        private void BtnCancelar_Click(object sender, EventArgs e)
-        {
-            DialogResult Retorno = MessageBox.Show("Deseja realmente cancelar a opração? ", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (Retorno == DialogResult.Yes)
-            {
-                this.Close();
-            }
-            else LimpaCampos(); 
-        }
-
         public void LimpaCampos()
         {
-            txtDia.Text = "";
-            txtHora.Text = "";
-            txtID.Text = "";
-            txtCodigoVeiculo.Text = "";
-            txtCodigoMotorista.Text = "";
+           
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            txtID.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-            txtDia.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-            txtHora.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
-            txtCodigoMotorista.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
-            txtCodigoVeiculo.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
-            
-        }
+        
+        
         private void caregaGrid()
         {
             ConfigDataGrid grid = new ConfigDataGrid();
             dataGridView1.DataSource = grid.SelecionaDia();
         }
 
-        private void btnLimpar_Click(object sender, EventArgs e)
-        {
-            LimpaCampos(); 
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Btcancela_Click(object sender, EventArgs e)
+        {
+            DialogResult Retorno = MessageBox.Show("Deseja realmente cancelar a opração? ", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (Retorno == DialogResult.Yes)
+            {
+                this.Close();
+            }
+            else LimpaCampos();
+        }
+        /// <summary>
+        /// transmite o codigo do veiculo selecionado para o campo 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtCodveiculo.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
         }
     }
 }

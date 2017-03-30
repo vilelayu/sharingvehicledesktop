@@ -77,7 +77,7 @@ namespace sharingvehicledesktop.Negocios
                 acessoDadosSqlServer.LimparParametros();
 
                 acessoDadosSqlServer.AdicionarParametros("Carro_ID", dto.idCar);
-                acessoDadosSqlServer.AdicionarParametros("Motorisata_ID", dto.idMotorista);
+                acessoDadosSqlServer.AdicionarParametros("Motorista_ID", dto.idMotorista);
                 acessoDadosSqlServer.AdicionarParametros("Horario", dto.horario);
                 acessoDadosSqlServer.AdicionarParametros("Dia", dto.dia);
 
