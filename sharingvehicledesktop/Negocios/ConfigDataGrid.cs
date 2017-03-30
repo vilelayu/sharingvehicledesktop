@@ -8,7 +8,11 @@ namespace sharingvehicledesktop.Negocios
     class ConfigDataGrid
     {
         AcessoBancoDados2 bd = new AcessoBancoDados2();
-        public DataTable SelecionaDia()
+        /// <summary>
+        /// mostra todos os veiculos cadastrados no sistema
+        /// </summary>
+        /// <returns></returns>
+        public DataTable SelecionaVeiculo()
         {
             try
             {

@@ -78,8 +78,8 @@ namespace sharingvehicledesktop.Negocios
 
                 acessoDadosSqlServer.AdicionarParametros("Carro_ID", dto.idCar);
                 acessoDadosSqlServer.AdicionarParametros("Motorista_ID", dto.idMotorista);
-                acessoDadosSqlServer.AdicionarParametros("Horario", dto.horario);
-                acessoDadosSqlServer.AdicionarParametros("Dia", dto.dia);
+                acessoDadosSqlServer.AdicionarParametros("dataHoraSaida", dto.dataHoraSaida);
+                acessoDadosSqlServer.AdicionarParametros("datahoraDevolucao", dto.datahoraDevolucao);
 
                 string retorno = acessoDadosSqlServer.ExecutarManipulacao(CommandType.StoredProcedure, "spInsereAgenda").ToString();
                 return retorno;
@@ -137,8 +137,8 @@ namespace sharingvehicledesktop.Negocios
 
                 acessoDadosSqlServer.AdicionarParametros("_Carro_ID", dto.idCar);
                 acessoDadosSqlServer.AdicionarParametros("_Motorisata_ID", dto.idMotorista);
-                acessoDadosSqlServer.AdicionarParametros("_Horario", dto.horario);
-                acessoDadosSqlServer.AdicionarParametros("_Dia", dto.dia);
+                acessoDadosSqlServer.AdicionarParametros("_Horario", dto.datahoraDevolucao);
+                acessoDadosSqlServer.AdicionarParametros("_Dia", dto.dataHoraSaida);
 
 
                 string retorno = acessoDadosSqlServer.ExecutarManipulacao(CommandType.StoredProcedure, "spAlterarAgenda").ToString();

@@ -44,6 +44,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btSolicitar = new System.Windows.Forms.Button();
             this.Btcancela = new System.Windows.Forms.Button();
+            this.mtbDataHoraSaida = new System.Windows.Forms.MaskedTextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtcogmotorista = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -78,9 +82,9 @@
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Location = new System.Drawing.Point(-3, 384);
+            this.panel1.Location = new System.Drawing.Point(0, 459);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(783, 30);
+            this.panel1.Size = new System.Drawing.Size(749, 30);
             this.panel1.TabIndex = 21;
             // 
             // label8
@@ -90,7 +94,7 @@
             this.label8.BackColor = System.Drawing.Color.White;
             this.label8.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(607, 6);
+            this.label8.Location = new System.Drawing.Point(573, 6);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(164, 16);
             this.label8.TabIndex = 12;
@@ -125,9 +129,9 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(22, 307);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 15);
+            this.label3.Size = new System.Drawing.Size(146, 15);
             this.label3.TabIndex = 24;
-            this.label3.Text = "Data/Hora:";
+            this.label3.Text = "Data/Hora de saida:";
             // 
             // label4
             // 
@@ -142,7 +146,7 @@
             // 
             // mtbDataHora
             // 
-            this.mtbDataHora.Location = new System.Drawing.Point(122, 302);
+            this.mtbDataHora.Location = new System.Drawing.Point(174, 302);
             this.mtbDataHora.Mask = "00/00/0000 90:00";
             this.mtbDataHora.Name = "mtbDataHora";
             this.mtbDataHora.Size = new System.Drawing.Size(145, 20);
@@ -153,13 +157,13 @@
             // 
             this.txtObs.Location = new System.Drawing.Point(122, 342);
             this.txtObs.Name = "txtObs";
-            this.txtObs.Size = new System.Drawing.Size(357, 20);
+            this.txtObs.Size = new System.Drawing.Size(554, 20);
             this.txtObs.TabIndex = 27;
             // 
             // txtCodveiculo
             // 
             this.txtCodveiculo.HideSelection = false;
-            this.txtCodveiculo.Location = new System.Drawing.Point(122, 260);
+            this.txtCodveiculo.Location = new System.Drawing.Point(108, 256);
             this.txtCodveiculo.Name = "txtCodveiculo";
             this.txtCodveiculo.Size = new System.Drawing.Size(100, 20);
             this.txtCodveiculo.TabIndex = 28;
@@ -169,7 +173,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 87);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(583, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(664, 150);
             this.dataGridView1.TabIndex = 29;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -187,17 +191,18 @@
             // btSolicitar
             // 
             this.btSolicitar.BackColor = System.Drawing.Color.White;
-            this.btSolicitar.Location = new System.Drawing.Point(578, 346);
+            this.btSolicitar.Location = new System.Drawing.Point(508, 389);
             this.btSolicitar.Name = "btSolicitar";
             this.btSolicitar.Size = new System.Drawing.Size(75, 23);
             this.btSolicitar.TabIndex = 31;
             this.btSolicitar.Text = "Solicitar";
             this.btSolicitar.UseVisualStyleBackColor = false;
+            this.btSolicitar.Click += new System.EventHandler(this.btSolicitar_Click);
             // 
             // Btcancela
             // 
             this.Btcancela.BackColor = System.Drawing.Color.White;
-            this.Btcancela.Location = new System.Drawing.Point(659, 346);
+            this.Btcancela.Location = new System.Drawing.Point(601, 389);
             this.Btcancela.Name = "Btcancela";
             this.Btcancela.Size = new System.Drawing.Size(75, 23);
             this.Btcancela.TabIndex = 32;
@@ -205,12 +210,55 @@
             this.Btcancela.UseVisualStyleBackColor = false;
             this.Btcancela.Click += new System.EventHandler(this.Btcancela_Click);
             // 
+            // mtbDataHoraSaida
+            // 
+            this.mtbDataHoraSaida.Location = new System.Drawing.Point(531, 305);
+            this.mtbDataHoraSaida.Mask = "00/00/0000 90:00";
+            this.mtbDataHoraSaida.Name = "mtbDataHoraSaida";
+            this.mtbDataHoraSaida.Size = new System.Drawing.Size(145, 20);
+            this.mtbDataHoraSaida.TabIndex = 34;
+            this.mtbDataHoraSaida.ValidatingType = typeof(System.DateTime);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("DengXian", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(348, 307);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(177, 15);
+            this.label6.TabIndex = 33;
+            this.label6.Text = "Data/Hora de devolução:";
+            // 
+            // txtcogmotorista
+            // 
+            this.txtcogmotorista.HideSelection = false;
+            this.txtcogmotorista.Location = new System.Drawing.Point(576, 256);
+            this.txtcogmotorista.Name = "txtcogmotorista";
+            this.txtcogmotorista.Size = new System.Drawing.Size(100, 20);
+            this.txtcogmotorista.TabIndex = 36;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(402, 256);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(152, 16);
+            this.label7.TabIndex = 35;
+            this.label7.Text = "Codigo do Motorista:";
+            // 
             // Agenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(780, 413);
+            this.ClientSize = new System.Drawing.Size(749, 489);
+            this.Controls.Add(this.txtcogmotorista);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.mtbDataHoraSaida);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.Btcancela);
             this.Controls.Add(this.btSolicitar);
             this.Controls.Add(this.label5);
@@ -256,5 +304,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btSolicitar;
         private System.Windows.Forms.Button Btcancela;
+        private System.Windows.Forms.MaskedTextBox mtbDataHoraSaida;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtcogmotorista;
+        private System.Windows.Forms.Label label7;
     }
 }
