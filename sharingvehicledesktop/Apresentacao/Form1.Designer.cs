@@ -54,7 +54,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 24);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Usuario:";
+            this.label1.Text = "Usuário:";
             // 
             // label2
             // 

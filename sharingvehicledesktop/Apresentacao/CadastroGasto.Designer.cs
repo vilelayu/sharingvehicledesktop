@@ -42,8 +42,8 @@
             this.btSalvar = new System.Windows.Forms.Button();
             this.btcancelar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -110,7 +110,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(187, 25);
             this.label7.TabIndex = 27;
-            this.label7.Text = "Codigo do carro:";
+            this.label7.Text = "Código do carro:";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // txtNParcelas
@@ -138,7 +138,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(230, 25);
             this.label3.TabIndex = 24;
-            this.label3.Text = "Numero de parcelas:";
+            this.label3.Text = "Número de parcelas:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
@@ -189,17 +189,6 @@
             this.panel1.Size = new System.Drawing.Size(323, 30);
             this.panel1.TabIndex = 33;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.btVolta);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(-2, -2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(323, 40);
-            this.panel2.TabIndex = 34;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -211,6 +200,17 @@
             this.label4.Size = new System.Drawing.Size(164, 16);
             this.label4.TabIndex = 11;
             this.label4.Text = "Sharing Vehicle | ImagineCup";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.btVolta);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(-2, -2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(323, 40);
+            this.panel2.TabIndex = 34;
             // 
             // button1
             // 
@@ -248,7 +248,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "CadastroGasto";
-            this.Text = "CadastroGasto";
+            this.Text = "Cadastro de gasto";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

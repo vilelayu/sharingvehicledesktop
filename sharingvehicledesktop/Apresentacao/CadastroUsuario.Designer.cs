@@ -73,7 +73,7 @@
             this.lblCadastroUsuario.Name = "lblCadastroUsuario";
             this.lblCadastroUsuario.Size = new System.Drawing.Size(286, 31);
             this.lblCadastroUsuario.TabIndex = 1;
-            this.lblCadastroUsuario.Text = "Cadastro de usuario:";
+            this.lblCadastroUsuario.Text = "Cadastro de usuário:";
             // 
             // lblNome
             // 
@@ -246,7 +246,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CadastroUsuario";
-            this.Text = "CadastroUsuario";
+            this.Text = "Cadastro de usuário";
             this.Load += new System.EventHandler(this.CadastroUsuario_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

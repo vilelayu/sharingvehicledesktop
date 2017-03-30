@@ -120,16 +120,16 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 16);
             this.label2.TabIndex = 23;
-            this.label2.Text = "Veiculo:";
+            this.label2.Text = "Veículo:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("DengXian", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(22, 307);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(146, 15);
+            this.label3.Size = new System.Drawing.Size(149, 16);
             this.label3.TabIndex = 24;
             this.label3.Text = "Data/Hora de saida:";
             // 
@@ -186,11 +186,13 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(146, 16);
             this.label5.TabIndex = 30;
-            this.label5.Text = "Escolha um veiculo:";
+            this.label5.Text = "Escolha um veículo:";
             // 
             // btSolicitar
             // 
             this.btSolicitar.BackColor = System.Drawing.Color.White;
+            this.btSolicitar.FlatAppearance.BorderSize = 0;
+            this.btSolicitar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btSolicitar.Location = new System.Drawing.Point(508, 389);
             this.btSolicitar.Name = "btSolicitar";
             this.btSolicitar.Size = new System.Drawing.Size(75, 23);
@@ -202,6 +204,8 @@
             // Btcancela
             // 
             this.Btcancela.BackColor = System.Drawing.Color.White;
+            this.Btcancela.FlatAppearance.BorderSize = 0;
+            this.Btcancela.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btcancela.Location = new System.Drawing.Point(601, 389);
             this.Btcancela.Name = "Btcancela";
             this.Btcancela.Size = new System.Drawing.Size(75, 23);
@@ -222,11 +226,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("DengXian", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(348, 307);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(177, 15);
+            this.label6.Size = new System.Drawing.Size(183, 16);
             this.label6.TabIndex = 33;
             this.label6.Text = "Data/Hora de devolução:";
             // 
@@ -247,7 +251,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(152, 16);
             this.label7.TabIndex = 35;
-            this.label7.Text = "Codigo do Motorista:";
+            this.label7.Text = "Código do Motorista:";
             // 
             // Agenda
             // 

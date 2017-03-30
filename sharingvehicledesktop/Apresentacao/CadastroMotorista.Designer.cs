@@ -45,9 +45,9 @@
             this.btcancela = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.datavenc = new System.Windows.Forms.MaskedTextBox();
             this.datanasc = new System.Windows.Forms.MaskedTextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -218,6 +218,19 @@
             this.panel2.Size = new System.Drawing.Size(674, 30);
             this.panel2.TabIndex = 45;
             // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.White;
+            this.label8.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(496, 5);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(164, 16);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "Sharing Vehicle | ImagineCup";
+            // 
             // datavenc
             // 
             this.datavenc.Location = new System.Drawing.Point(359, 252);
@@ -235,19 +248,6 @@
             this.datanasc.Size = new System.Drawing.Size(278, 20);
             this.datanasc.TabIndex = 48;
             this.datanasc.ValidatingType = typeof(System.DateTime);
-            // 
-            // label8
-            // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(496, 5);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(164, 16);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "Sharing Vehicle | ImagineCup";
             // 
             // btnLimpar
             // 
@@ -289,7 +289,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "CadastroMotorista";
-            this.Text = "CadastroMotorista";
+            this.Text = "Cadastro de motorista";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

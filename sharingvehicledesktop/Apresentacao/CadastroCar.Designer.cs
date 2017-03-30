@@ -129,9 +129,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(37, 44);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 25);
+            this.label2.Size = new System.Drawing.Size(117, 25);
             this.label2.TabIndex = 12;
-            this.label2.Text = "Renavan:";
+            this.label2.Text = "Renavam:";
             // 
             // txtquilometragem
             // 
@@ -204,7 +204,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(230, 25);
             this.label8.TabIndex = 25;
-            this.label8.Text = "Tipo de combustivel:";
+            this.label8.Text = "Tipo de combustível:";
             // 
             // btsalvar
             // 
@@ -308,7 +308,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CadastroCar";
-            this.Text = "CadastroCar";
+            this.Text = "Cadastro de carro";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

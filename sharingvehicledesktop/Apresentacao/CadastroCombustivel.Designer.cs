@@ -154,7 +154,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(223, 25);
             this.label4.TabIndex = 11;
-            this.label4.Text = "Tipo do combustivel";
+            this.label4.Text = "Tipo do combustível";
             // 
             // label5
             // 
@@ -277,7 +277,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "CadastroCombustivel";
-            this.Text = "CadastroCombustivel";
+            this.Text = "Cadastro de combustível";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
